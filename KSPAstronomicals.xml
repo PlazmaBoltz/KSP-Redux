@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Assets>
-    <StellarBody Id="Sol">
-        <MeanRadius Km="696342" />
-        <Mass Suns="1" />
+    <StellarBody Id="Kerbol">
+        <MeanRadius Km="261600" />
+        <Mass Suns="0.00087827295" />
         <Diffuse Path="Textures/Sol_Diffuse.jpg" Category="Terrain"/>
         <Color R="1" G="1" B="1" />
         <Sunlight R="9" G="9" B="9" />
     </StellarBody>
 
-    <Vehicle Id="Gemini7" Parent="Earth">
+    <Vehicle Id="Gemini7" Parent="Kerbin">
         <Canvas Id="Navball"/>
         <Canvas Id="Altitude"/>
         <Canvas Id="GameTime"/>
@@ -210,7 +210,7 @@
         <Color R="0.33" G="0.95" B="0" />
     </Vehicle>
 
-    <Vehicle Id="Gemini6a" Parent="Earth">
+    <Vehicle Id="Gemini6a" Parent="Kerbin">
         <Canvas Id="Navball"/>
         <Canvas Id="Altitude"/>
         <Canvas Id="GameTime"/>
@@ -241,7 +241,7 @@
         <Color R="0.33" G="0.95" B="0" />
     </Vehicle>
 
-    <Vehicle Id="Rocket" Parent="Earth">
+    <Vehicle Id="Rocket" Parent="Kerbin">
         <Canvas Id="Navball"/>
         <Canvas Id="Altitude"/>
         <Canvas Id="GameTime"/>
@@ -444,7 +444,7 @@
         <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
     </Vehicle>
 
-    <KittenEva Id="Hunter" Parent="Earth">
+    <KittenEva Id="Jeb" Parent="Kerbin">
         
         <Character Id="TestKitty"/>
         
@@ -460,7 +460,7 @@
         <RootPart Id="KittenBackPackPart">
         </RootPart>
 
-        <SemiMajorAxis Km="6713" />
+        <SemiMajorAxis Km="80" />
         <Inclination Degrees="28.87" />
         <Eccentricity Value="0.0077" />
         <LongitudeOfAscendingNode Degrees="60.48" />
@@ -475,12 +475,12 @@
         <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
     </KittenEva>
     
-    <AtmosphericBody Id="Earth" Parent="Sol">
+    <AtmosphericBody Id="Kerbin" Parent="Kerbol">
         <MeshCollection Id="EarthScale"/>
-        <SemiMajorAxis Au="1" />
-        <Inclination Degrees="0.00005" />
-        <Eccentricity Value="0.0167" />
-        <LongitudeOfAscendingNode Degrees="-11.261" />
+        <SemiMajorAxis Au="0.091" />
+        <Inclination Degrees="0" />
+        <Eccentricity Value="0" />
+        <LongitudeOfAscendingNode Degrees="3.14" />
         <ArgumentOfPeriapsis Degrees="114.207" />
         <Diffuse Path="Textures/Earth_Diffuse.dds" Category="Terrain"/>
         <Normal Path="Textures/Earth_Normal.dds" Category="Terrain"/>
@@ -711,8 +711,8 @@
         </Terrain>
 
         <MeanAnomalyAtEpoch Degrees="100" />
-        <MeanRadius Km="6371" />
-        <Mass Earths="1" />
+        <MeanRadius Km="600" />
+        <Mass Earths="0.00886054219" />
         <Color R="0.11" G="0.31" B="0.415" />
         <Period Days="1"/>
         <AxialTilt Degrees="23.44" />
@@ -1265,9 +1265,9 @@
         </Landmark>
     </AtmosphericBody>
 
-    <TerrestrialBody Id="ScreenshotLuna" Parent="Earth">
+    <TerrestrialBody Id="Mun" Parent="Kerbin">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="10000" />
+        <SemiMajorAxis Km="12000" />
         <Inclination Degrees="18.28" />
         <Eccentricity Value="0.0549" />
         <LongitudeOfAscendingNode Degrees="90" />
@@ -1729,8 +1729,8 @@
         </GroundClutter>
         -->
         <MeanAnomalyAtEpoch Degrees="0" />
-        <MeanRadius Km="1737.1" />
-        <Mass Lunars="1" />
+        <MeanRadius Km="200" />
+        <Mass Kg="975990660000000000000" />
         <TidallyLocked Value="true" />
         <AxialTilt Degrees="6.68" />
         <AxialAlignment Degrees="180" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<System Id="ScreenshotsLuna">
-    <DisplayName Value="Screenshots - Luna" />
+<System Id="KerbolOnly">
+    <DisplayName Value="KSP System - Kerbol Only" />
 
     <!-- generated and cached using the 'textures summarize' in game and used for VRAM estimates -->
     <VesselTextures Size="184 MB">
@@ -24,11 +24,11 @@
         <Texture Width="8" Height="8" Count="3" Size="768 B" />
         <Texture Width="1" Height="1" Count="2" Size="8 B" />
     </UnscaledTextures>
-    <LoadFromLibrary Id="Sol"/>
+    <LoadFromLibrary Id="Kerbol"/>
 
-    <LoadFromLibrary Id="Earth" Parent="Sol"/>
-    <LoadFromLibrary Id="ScreenshotLuna" Parent="Earth"/>
-    <LoadFromLibrary Id="Rocket" Parent="Earth" />
-    <LoadFromLibrary Id="Hunter" Parent="Earth" />
+    <LoadFromLibrary Id="Kerbin" Parent="Kerbol"/>
+    <LoadFromLibrary Id="Mun" Parent="Kerbin"/>
+    <LoadFromLibrary Id="Rocket" Parent="Kerbin" />
+    <LoadFromLibrary Id="Hunter" Parent="Kerbin" />
 
 </System>
