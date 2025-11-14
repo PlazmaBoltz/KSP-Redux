@@ -460,7 +460,7 @@
         <RootPart Id="KittenBackPackPart">
         </RootPart>
 
-        <SemiMajorAxis Km="120" />
+        <SemiMajorAxis Km="500" />
         <Inclination Degrees="28.87" />
         <Eccentricity Value="0.0077" />
         <LongitudeOfAscendingNode Degrees="60.48" />
@@ -482,9 +482,9 @@
         <Eccentricity Value="0" />
         <LongitudeOfAscendingNode Degrees="3.14" />
         <ArgumentOfPeriapsis Degrees="114.207" />
-        <Diffuse Path="Textures/Earth_Diffuse.dds" Category="Terrain"/>
-        <Normal Path="Textures/Earth_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Earth_Height.ktx2" Category="Terrain">
+        <Diffuse Path="../Core/Textures/Earth_Diffuse.dds" Category="Terrain"/>
+        <Normal Path="../Core/Textures/Earth_Normal.dds" Category="Terrain"/>
+        <Height Path="../Core/Textures/Earth_Height.ktx2" Category="Terrain">
             <Minimum Km="-10.930"/>
             <Maximum Km="8.627"/>
         </Height>
@@ -1273,9 +1273,9 @@
         <LongitudeOfAscendingNode Degrees="90" />
         <ArgumentOfPeriapsis Degrees="318.15" />
         <Color R="0.33" G="0.33" B="0.33" /> <!-- used for the sprite and planetshine -->
-        <Diffuse Path="Textures/Luna_Diffuse.ktx2" Category="Terrain"/>
-        <Normal Path="Textures/Luna_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Luna_Height.ktx2" Category="Terrain">
+        <Diffuse Path="../Core/Textures/Luna_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="../Core/Textures/Luna_Normal.dds" Category="Terrain"/>
+        <Height Path="../Core/Textures/Luna_Height.ktx2" Category="Terrain">
             <Maximum Km="10.785"/>
             <Minimum Km="-9.129"/>
         </Height>
