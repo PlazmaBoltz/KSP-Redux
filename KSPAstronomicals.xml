@@ -460,7 +460,7 @@
         <RootPart Id="KittenBackPackPart">
         </RootPart>
 
-        <SemiMajorAxis Km="80" />
+        <SemiMajorAxis Km="120" />
         <Inclination Degrees="28.87" />
         <Eccentricity Value="0.0077" />
         <LongitudeOfAscendingNode Degrees="60.48" />

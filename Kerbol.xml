@@ -29,6 +29,6 @@
     <LoadFromLibrary Id="Kerbin" Parent="Kerbol"/>
     <LoadFromLibrary Id="Mun" Parent="Kerbin"/>
     <LoadFromLibrary Id="Rocket" Parent="Kerbin" />
-    <LoadFromLibrary Id="Hunter" Parent="Kerbin" />
+    <LoadFromLibrary Id="Jeb" Parent="Kerbin" />
 
 </System>
