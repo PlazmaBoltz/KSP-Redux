@@ -1,0 +1,49 @@
+name = "KSP Redux"
+
+
+textureSizeCaps = [ 0, 8192, 4096, 2048, 1024, 512, 256, 128 ]
+supportedShadowMaps = [ 16384, 8192 , 4096 , 2048, 1024 ,512 ]
+simulationSpeeds = [ 0, 0.1, 1, 2, 4, 10, 30, 120, 600, 1200, 3600, 14400, 86400, 604800, 2592000, 7776000 ]
+
+supportedCloudQuality = [
+#  { name = "Ultra",  value = 6 },
+  { name = "High",   value = 9 },
+  { name = "Medium", value = 12 },
+  { name = "Low",    value = 16 },
+]
+
+supportedExhaustQuality = [
+#  { name = "Ultra",  value = 2 },
+  { name = "High",   value = 4 },
+  { name = "Medium", value = 8 },
+  { name = "Low",    value = 16 },
+]
+
+supportedOceanSimQuality = [
+  #  { name = "Ultra",  value = 512 },
+  { name = "High",   value = 256 },
+  { name = "Medium", value = 128 },
+  { name = "Low",    value = 64 },
+]
+
+supportedShadowSlots = [
+    #   { name = "Burning (64)",    value = 64  },
+    #   { name = "Ultra (49)",      value = 49  },
+    #   { name = "Very High (36)",  value = 36  },
+    { name = "High (25)",       value = 25  },
+    { name = "Medium (16)",     value = 16  },
+    { name = "Low (9)",         value = 9   },
+    { name = "Very Low (4)",    value = 4   },
+]
+
+supportedKittenFurQuality = [
+    #   { name = "Ultra",  value = 128  },
+    #   { name = "Very High",  value = 64  },
+    { name = "High", value = 32 },
+    { name = "Medium", value = 16 },
+    { name = "Low", value = 8 },
+    { name = "Very Low", value = 4 },
+]
+
+assets = [ "KSPAstronomicals.xml" ]
+systems = ["Kerbol.xml"]
