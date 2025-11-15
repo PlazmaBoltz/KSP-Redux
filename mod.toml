@@ -45,5 +45,5 @@ supportedKittenFurQuality = [
     { name = "Very Low", value = 4 },
 ]
 
-assets = [ "KSPAstronomicals.xml" ]
+assets = [ "KSPAstronomicals.xml", "DefaultAssets.xml" ]
 systems = ["Kerbol.xml", "StockSystem.xml" ]

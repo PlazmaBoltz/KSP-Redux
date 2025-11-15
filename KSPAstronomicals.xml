@@ -3240,7 +3240,7 @@
             </Layer>
         </Clouds>
         <MeanRadius Km="83.5" />
-        <Mass Zg="0.025" />
+        <Mass Kg="29397311000000000000000" />
         <Color R="0.26" G="0.55" B="0.62" />
     </AtmosphericBody>
 
