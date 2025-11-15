@@ -39,7 +39,7 @@
     <LoadFromLibrary Id="Dres" Parent="Kerbol" />
     <LoadFromLibrary Id="Jool" Parent="Kerbol" />
     <LoadFromLibrary Id="Laythe" Parent="Jool" />
-    <LoadFromLibrary Id="Val" Parent="Jool" />
+    <LoadFromLibrary Id="Vall" Parent="Jool" />
     <LoadFromLibrary Id="Tylo" Parent="Jool" />
     <LoadFromLibrary Id="Pol" Parent="Jool" />
     <LoadFromLibrary Id="Bop" Parent="Jool" />

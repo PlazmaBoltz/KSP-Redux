@@ -2032,7 +2032,7 @@
         <Terrain>
         </Terrain>
         <Mass Kg="122439800000000000000000" />
-        <Color R="1.0" G="0.87" B="0.68" />
+        <Color R="0.9" G="0.1" B="0.9" />
         <Retrograde Value="true"/>
         <Period Days="243"/>
         <AxialTilt Degrees="177.4" />
@@ -2288,20 +2288,20 @@
     </TerrestrialBody>
     <TerrestrialBody Id="Dres" Parent="Kerbol">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Au="2.769" />
-        <Inclination Degrees="10.594" />
-        <Eccentricity Value="0.0758" />
-        <LongitudeOfAscendingNode Degrees="80.3056" />
-        <ArgumentOfPeriapsis Degrees="73.5977" />
+        <SemiMajorAxis Km="40839348.203" />
+        <Inclination Degrees="5" />
+        <Eccentricity Value=".145" />
+        <LongitudeOfAscendingNode Degrees="280" />
+        <ArgumentOfPeriapsis Degrees="90" />
         <Diffuse Path="Textures/Dres_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Dres_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Dres_Height.png" Category="Terrain">
-            <Maximum Km="20"/>
-            <Minimum Km="0"/>
+            <Maximum Km="5.6697"/>
+            <Minimum Km="0.0254"/>
         </Height>
-        <MeanAnomalyAtEpoch Degrees="95.989" />
-        <MeanRadius Km="469.73" />
-        <Mass Zg="9.393" />
+        <MeanAnomalyAtEpoch Degrees="180" />
+        <MeanRadius Km="138" />
+        <Mass kg="321909370000000000000" />
         <Color R="0.72" G="0.72" B="0.72" />
     </TerrestrialBody>
 
@@ -2316,7 +2316,7 @@
         <MeanRadius Km="6000" />
         <Mass Kg="4233212700000000000000000" />
         <Diffuse Id="JupiterDiffuse" Path="../Core/Textures/Jupiter_Diffuse.dds" Category="Terrain"/>
-        <Color R="1.0" G="0.69" B="0.36" />
+        <Color R="0.08" G="0.47" B="0.2" />
         <Period Hours="9" Minutes="55" Seconds="30"/>
         <AxialTilt Degrees="3.13" />
         <AxialAlignment Degrees="0" />
@@ -2828,77 +2828,81 @@
     </AtmosphericBody>
     <TerrestrialBody Id="Pol" Parent="Jool">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="421700" />
-        <Inclination Degrees="0.036" />
-        <Eccentricity Value="0.0041" />
-        <LongitudeOfAscendingNode Degrees="355.8" />
-        <ArgumentOfPeriapsis Degrees="84.129" />
-        <MeanAnomalyAtEpoch Degrees="355.8" />
+        <SemiMajorAxis Km="	179890" />
+        <Inclination Degrees="4.25" />
+        <Eccentricity Value="0.171" />
+        <LongitudeOfAscendingNode Degrees="2" />
+        <ArgumentOfPeriapsis Degrees="15" />
+        <MeanAnomalyAtEpoch Degrees="51.5" />
         <Diffuse Path="Textures/Pol_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Pol_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Pol_Height.png" Category="Terrain">
-            <Maximum Km="100"/>
-            <Minimum Km="0"/>
+            <Maximum Km="5.5902"/>
+            <Minimum Km="0.7835"/>
         </Height>
-        <MeanRadius Km="1821.6" />
-        <Mass Zg="89.32" />
+        <MeanRadius Km="44" />
+        <Mass Kg="10813507000000000000" />
         <Period Days="1" Hours="18" Minutes="27" Seconds="21"/>
+        <Color R="0.8" G="0.75" B="0.57" />
     </TerrestrialBody>
-    <TerrestrialBody Id="Val" Parent="Jool">
+    <TerrestrialBody Id="Vall" Parent="Jool">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="671100" />
-        <Inclination Degrees="0.466" />
-        <Eccentricity Value="0.0094" />
-        <LongitudeOfAscendingNode Degrees="181.4" />
-        <ArgumentOfPeriapsis Degrees="219.106" />
-        <MeanAnomalyAtEpoch Degrees="181.4" />
+        <SemiMajorAxis Km="43152" />
+        <Inclination Degrees="0" />
+        <Eccentricity Value="0" />
+        <LongitudeOfAscendingNode Degrees="0" />
+        <ArgumentOfPeriapsis Degrees="0" />
+        <MeanAnomalyAtEpoch Degrees="51.5" />
         <Diffuse Path="Textures/Vall_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Vall_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Vall_Height.png" Category="Terrain">
-            <Maximum Km="60"/>
-            <Minimum Km="0"/>
+            <Maximum Km="7.9891"/>
+            <Minimum Km="-0.3943"/>
         </Height>
-        <MeanRadius Km="1560.8" />
-        <Mass Zg="47.97" />
+        <MeanRadius Km="300" />
+        <Mass Kg="3108765500000000000000" />
         <Period Days="3" Hours="13" Minutes="13" Seconds="26"/>
         <AxialTilt Degrees="0.1" />
         <AxialAlignment Degrees="0" />
+        <Color R="0.95" G="0.78" B="0.64" />
     </TerrestrialBody>
     <TerrestrialBody Id="Tylo" Parent="Jool">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="1070400" />
-        <Inclination Degrees="0.177" />
-        <Eccentricity Value="0.0015" />
-        <LongitudeOfAscendingNode Degrees="52.2" />
-        <ArgumentOfPeriapsis Degrees="63.552" />
+        <SemiMajorAxis Km="68500" />
+        <Inclination Degrees="0.025" />
+        <Eccentricity Value="0" />
+        <LongitudeOfAscendingNode Degrees="0" />
+        <ArgumentOfPeriapsis Degrees="0" />
         <Diffuse Path="Textures/Tylo_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Tylo_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Tylo_Height.png" Category="Terrain">
-            <Maximum Km="50"/>
+            <Maximum Km="11.2825"/>
             <Minimum Km="0"/>
         </Height>
-        <MeanAnomalyAtEpoch Degrees="52.2" />
-        <MeanRadius Km="2634.1" />
-        <Mass Zg="148.2" />
+        <MeanAnomalyAtEpoch Degrees="180" />
+        <MeanRadius Km="600" />
+        <Mass Kg="42332127000000000000000" />
         <Period Days="7" Hours="3" Minutes="43" Seconds="12"/>
+        <Color R="0.66" G="0.59" B="0.38" />
     </TerrestrialBody>
     <TerrestrialBody Id="Bop" Parent="Jool">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="1882700" />
-        <Inclination Degrees="0.192" />
-        <Eccentricity Value="0.0074" />
-        <LongitudeOfAscendingNode Degrees="21.6" />
-        <ArgumentOfPeriapsis Degrees="298.848" />
-        <MeanAnomalyAtEpoch Degrees="21.6" />
+        <SemiMajorAxis Km="	128500" />
+        <Inclination Degrees="15" />
+        <Eccentricity Value="0.235" />
+        <LongitudeOfAscendingNode Degrees="10" />
+        <ArgumentOfPeriapsis Degrees="25" />
+        <MeanAnomalyAtEpoch Degrees="51.56" />
         <Diffuse Path="Textures/Bop_Diffuse.dds" Category="Terrain"/>
         <Normal Path="Textures/Bop_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Bop_Height.png" Category="Terrain">
-            <Maximum Km="1000"/>
-            <Minimum Km="0"/>
+            <Maximum Km="21.754"/>
+            <Minimum Km="2.0032"/>
         </Height>
-        <MeanRadius Km="2410.3" />
-        <Mass Zg="107.6" />
+        <MeanRadius Km="65" />
+        <Mass Kg="37261090000000000000" />
         <Period Days="16" Hours="16" Minutes="32" Seconds="10"/>
+        <Color R="0.66" G="0.59" B="0.38" />
     </TerrestrialBody>
 
     <AtmosphericBody Id="Laythe" Parent="Jool">
@@ -2957,25 +2961,25 @@
         </Atmosphere>
         <MeanRadius Km="83.5" />
         <Mass Zg="0.025" />
-        <Color R="1.0" G="0.2" B="0.1" />
+        <Color R="0.26" G="0.55" B="0.62" />
     </AtmosphericBody>
 
     <TerrestrialBody Id="Eeloo" Parent="Kerbol">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Au="39.48" />
-        <Inclination Degrees="17.14175" />
-        <Eccentricity Value="0.2488" />
-        <LongitudeOfAscendingNode Degrees="110.30347" />
-        <ArgumentOfPeriapsis Degrees="113.76329" />
-        <MeanAnomalyAtEpoch Degrees="238.92881" />
-        <MeanRadius Km="1188.3" />
+        <SemiMajorAxis Km="	90118820" />
+        <Inclination Degrees="6.15" />
+        <Eccentricity Value="0.26" />
+        <LongitudeOfAscendingNode Degrees="50" />
+        <ArgumentOfPeriapsis Degrees="260" />
+        <MeanAnomalyAtEpoch Degrees="180" />
+        <MeanRadius Km="210" />
         <Diffuse Path="Textures/Eeloo_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Eeloo_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Eeloo_Height.png" Category="Terrain">
-            <Maximum Km="50"/>
-            <Minimum Km="0"/>
+            <Maximum Km="3.8734"/>
+            <Minimum Km="-0.3869"/>
         </Height>
-        <Mass Zg="13.03" />
+        <Mass Kg="1114922400000000000000" />
         <Color R="0.95" G="0.78" B="0.64" />
     </TerrestrialBody>
 </Assets>
