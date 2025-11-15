@@ -1529,7 +1529,7 @@
         <AxialAlignment Degrees="180" />
     </TerrestrialBody> 
 
-     <TerrestrialBody Id="Minmus" Parent="Kerbin">   
+    <TerrestrialBody Id="Minmus" Parent="Kerbin">   
         <MeshCollection Id= "Asteroid"/>
         <SemiMajorAxis Km="47000" />
         <Inclination Degrees="6.0" />
@@ -2023,33 +2023,21 @@
         <ArgumentOfPeriapsis Degrees="54.891" />
         <MeanAnomalyAtEpoch Degrees="181.97973" />
         <MeanRadius Km="6051.8" />
-        <Diffuse Id="EveDiffuse" Path="Textures/Eve_Color.png" Category="Terrain"/>
+        <Diffuse Path="Textures/Eve_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Eve_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Eve_Height.png" Category="Terrain">
             <Maximum Km="7.526"/>
             <Minimum Km="-1.8768"/>
         </Height>
+        <Terrain>
+        </Terrain>
         <Mass Kg="122439800000000000000000" />
         <Color R="1.0" G="0.87" B="0.68" />
         <Retrograde Value="true"/>
         <Period Days="243"/>
         <AxialTilt Degrees="177.4" />
         <AxialAlignment Degrees="0" />
-        <Ocean>
-            <Level Km="0" />
-            <MeshCollection Id="Optimized"/>
-            <Waves>
-                <Count Value="64" />  <!-- a bit high and slow, but detailed enough to test shading/geometry -->
-                <Length M="100" />
-                <Amplitude Value="0.01" />
-                <Speed Value="2" />
-                <LengthPersistence Value="0.93" />
-                <AmplitudePersistence Value="0.975" />
-                <SpeedPersistence Value="1.01" />
-            </Waves>
-            <Color R="0.0901711" G="0.2208759" B="0.31672597" />
-            <TransparencyDepth M="1000" />
-        </Ocean>
+        
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -2084,7 +2072,7 @@
         <ArgumentOfPeriapsis Degrees="79.465" />
         <MeanAnomalyAtEpoch Degrees="53.23" />
         <MeanRadius Km="6.2" />
-        <Diffuse Id="GillyDiffuse" Path="Textures/Gilly_Color.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Gilly_Color.dds" Category="Terrain"/>
         <Normal Path="../Core/Textures/Phobos_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Gilly_Height.png" Category="Terrain">
             <Maximum Km="6"/>
