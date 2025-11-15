@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Assets>
     <StellarBody Id="Kerbol">
         <MeanRadius Km="261600" />
@@ -475,7 +475,7 @@
         <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
     </KittenEva>
     
-    <AtmosphericBody Id="Kerbin" Parent="Kerbol">  
+    <AtmosphericBody Id="Kerbin" Parent="Kerbol"> 
         <MeshCollection Id="EarthScale"/>
         <SemiMajorAxis Au="0.091" />
         <Inclination Degrees="0" />
@@ -616,7 +616,7 @@
                         <Diffuse Id="EarthCliffsDiffuse" Path="Textures/Planets/Earth/Cliffs/Cliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthCliffsNormal" Path="Textures/Planets/Earth/Cliffs/Cliffs_Normal.dds" Category="Terrain"/>
                         <RoughMetalAo Id="EarthCliffsRoughSpecAO" Path="Textures/Planets/Earth/Cliffs/Cliffs_RoughSpecAO.dds" Category="Terrain"/>
-                        <Displacement Id="EarthCliffsDisplacement" Path="Textures/Planets/Earth/Cliffs/Cliffs_Displacement.png" Category="Terrain"/>
+                     <Displacement Id="EarthCliffsDisplacement" Path="Textures/Planets/Earth/Cliffs/Cliffs_Displacement.png" Category="Terrain"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
                         <TextureTiling Value="0.028" />
@@ -715,7 +715,7 @@
         <Mass Earths="0.00886054219" />
         <Color R="0.11" G="0.31" B="0.415" />
         <Period Days="1"/>
-        <AxialTilt Degrees="23.44" />
+        <AxialTilt Degrees="0" />
         <AxialAlignment Degrees="0" />
         <Atmosphere>
             <Visual>
@@ -744,6 +744,7 @@
         </Atmosphere>
         <Ocean>
             <Level Km="0" />
+            <TransparencyDepth M = "1000"/>
             <MeshCollection Id="OceanEarth"/>
             <WindWaves>
                 <!-- The WindTexture is used to adjust wind speed and fetch locally, lerping between min and max-->
@@ -754,7 +755,7 @@
                 <MaxWindFetch Km="800.0"/>
                 <Directionality Value="1.0"/>
                 <FoamAmount Value="0.5"/>
-                <Depth Km="0.2"/>
+                <Depth Km="0.01"/>
             </WindWaves>
             <GerstnerWaves> <!-- leaving this in just for the cool factor of combining big gerstner waves with FFT -->
                 <Count Value="0" /> <!-- change to 1 for tsunami waves -->
@@ -1055,14 +1056,14 @@
             <Latitude Degrees="0" />
             <Longitude Degrees="0" />
         </Landmark>
-    </AtmosphericBody>  
+    </AtmosphericBody>   
 
     <TerrestrialBody Id="Mun" Parent="Kerbin">  
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="Asteroid"/>
         <SemiMajorAxis Km="12000" />
-        <Inclination Degrees="18.28" />
-        <Eccentricity Value="0.0549" />
-        <LongitudeOfAscendingNode Degrees="90" />
+        <Inclination Degrees="0" />
+        <Eccentricity Value="0" />
+        <LongitudeOfAscendingNode Degrees="0" />
         <ArgumentOfPeriapsis Degrees="318.15" />
         <Color R="0.33" G="0.33" B="0.33" /> <!-- used for the sprite and planetshine -->
         <Diffuse Path="Textures/Mun_Diffuse.png" Category="Terrain"/>
@@ -1071,12 +1072,13 @@
             <Maximum Km="7.0611"/>
             <Minimum Km="-0.2479"/>
         </Height>
+        <!--
         <Terrain>
-            <!-- In progress... -->
+            
             <BiomeIDMap Path="Textures/Luna_Biome_ID.png" Category="Terrain"/>
             <BiomeControlMap Path="Textures/Luna_Biome_Control.png" Category="Terrain"/>
 
-            <!-- Global Procedural Modifiers -->
+         
             <ProceduralModifiers>
 
                 <GradientScale Value="2.6" />
@@ -1177,7 +1179,7 @@
                         </SplinePoint>
                     </AmplitudeHeightCurve>
 
-                    <!-- Determines crater displacement based on distance from crater center perturbed by the radius noise -->
+                    
                     <CraterShapeCurve>
                         <SplinePoint>
                             <Key Value="0.0" />
@@ -1211,7 +1213,7 @@
                         </SplinePoint>
                     </CraterShapeCurve>
 
-                    <!-- Modifies crater inner noise displacement based on distance from crater center -->
+                   
                     <CraterInnerNoiseCurve>
                         <SplinePoint>
                             <Key Value="0.0" />
@@ -1356,16 +1358,15 @@
                     </AmplitudeHeightCurve>
                 </Modifier>
 
-                <!-- more modifiers here -->
+               
                 
             </ProceduralModifiers>
 
             <BiomeMaterials>
-                <!-- Define any properties such as biome blending strength here -->
-                <!-- Order matters! The order these appear corresponds to the ID in the ID map, starting from 0 -->
+                
 
                 <BlendStrength Value="2.25" />
-                <!-- Base terrain -->
+               
                 <BiomeMaterial Name="Surface">
 
                     <SlopeBlendStrength Value="10.5" />
@@ -1409,11 +1410,11 @@
 
                     
 
-                <!-- more modifiers here -->
+               
 
                 </BiomeMaterial>
 
-                <!-- Craters -->
+                
                 <BiomeMaterial Name="Craters">
 
                     <SlopeBlendStrength Value="15.5" />
@@ -1450,7 +1451,7 @@
 
                 </BiomeMaterial>
 
-                <!-- Maria -->
+               
                 <BiomeMaterial Name="Maria">
 
                     <SlopeBlendStrength Value="15.0" />
@@ -1498,7 +1499,7 @@
                             <Order Value="0" />
                         </Modifier>
 
-                    <!-- more modifiers here -->
+                    
                 
                     </ProceduralModifiers>
 
@@ -1508,8 +1509,7 @@
 
         </Terrain>
 
-        <!-- Ground Clutter - Please keep this, it's just commented out for everyone for now -->
-        <!-- <GroundClutter>
+        
             <Group Id="Rocks">
                 <ObjectSeparation M="500" /> 
                 <GenerationRange M="10000" />
@@ -1520,6 +1520,7 @@
             </Group>
         </GroundClutter>
         -->
+        
         <MeanAnomalyAtEpoch Degrees="0" />
         <MeanRadius Km="200" />
         <Mass Kg="975990660000000000000" />
@@ -1528,8 +1529,8 @@
         <AxialAlignment Degrees="180" />
     </TerrestrialBody> 
 
-<TerrestrialBody Id="Minmus" Parent="Kerbin">   
-        <MeshCollection Id="Default"/>
+     <TerrestrialBody Id="Minmus" Parent="Kerbin">   
+        <MeshCollection Id= "Asteroid"/>
         <SemiMajorAxis Km="47000" />
         <Inclination Degrees="6.0" />
         <Eccentricity Value="0" />
@@ -1542,6 +1543,7 @@
             <Maximum Km="5.7246"/>
             <Minimum Km="0"/>
         </Height>
+
      <!--   <Terrain>
             <BiomeIDMap Path="Textures/Luna_Biome_ID.png" Category="Terrain"/>
             <BiomeControlMap Path="Textures/Luna_Biome_Control.png" Category="Terrain"/>
