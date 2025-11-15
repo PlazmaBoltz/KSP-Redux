@@ -475,7 +475,7 @@
         <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
     </KittenEva>
     
-    <AtmosphericBody Id="Kerbin" Parent="Kerbol">  <!--kerbin---------------------------->
+    <AtmosphericBody Id="Kerbin" Parent="Kerbol">  
         <MeshCollection Id="EarthScale"/>
         <SemiMajorAxis Au="0.091" />
         <Inclination Degrees="0" />
@@ -1055,9 +1055,9 @@
             <Latitude Degrees="0" />
             <Longitude Degrees="0" />
         </Landmark>
-    </AtmosphericBody>   <!--kerbin---------------------------->
+    </AtmosphericBody>  
 
-    <TerrestrialBody Id="Mun" Parent="Kerbin">   <!--Mun---------------------------->
+    <TerrestrialBody Id="Mun" Parent="Kerbin">  
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="12000" />
         <Inclination Degrees="18.28" />
@@ -1526,9 +1526,9 @@
         <TidallyLocked Value="true" />
         <AxialTilt Degrees="6.68" />
         <AxialAlignment Degrees="180" />
-    </TerrestrialBody> <!--Mun---------------------------->
+    </TerrestrialBody> 
 
-     <TerrestrialBody Id="Minmus" Parent="Kerbin">   <!--Minmus---------------------------->
+     <TerrestrialBody Id="Minmus" Parent="Kerbin">   
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="47000" />
         <Inclination Degrees="6.0" />
@@ -1997,6 +1997,6 @@
         <TidallyLocked Value="true" />
         <AxialTilt Degrees="0" />
         <AxialAlignment Degrees="180" />
-    </TerrestrialBody> <!--Minmus---------------------------->
+    </TerrestrialBody> 
     
 </Assets>
