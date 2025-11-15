@@ -296,7 +296,7 @@
 		<FadeOut Time="5"/>
 		</MusicPlaylist>
 	<!--KSP Redux Music -->
-		<MusicPlaylist Id="KspOst" LocationId = "Kerbin" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicPlaylist Id="KspOst" LocationId = "Kerbol" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
 		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
 		</MusicFile>
 		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
@@ -310,147 +310,8 @@
 				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
 		</MusicFile>
 		<FadeOut Time="1"/>
-		<Loop/>
-	</MusicPlaylist>
-	
-		<MusicPlaylist Id="KspOst" LocationId = "Mun" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
-		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<FadeOut Time="1"/>
-		<Loop/>
 	</MusicPlaylist>
 
-
-			<MusicPlaylist Id="KspOst" LocationId = "Minmus" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
-		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<FadeOut Time="1"/>
-		<Loop/>
-	</MusicPlaylist>
-
-
-			<MusicPlaylist Id="KspOst" LocationId = "Kerbol" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
-		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<FadeOut Time="1"/>
-		<Loop/>
-	</MusicPlaylist>
-
-		<MusicPlaylist Id="KspOst" LocationId = "Eve" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
-		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<FadeOut Time="1"/>
-		<Loop/>
-	</MusicPlaylist>
-
-			<MusicPlaylist Id="KspOst" LocationId = "Gilly" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
-		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<FadeOut Time="1"/>
-		<Loop/>
-	</MusicPlaylist>
-
-			<MusicPlaylist Id="KspOst" LocationId = "Duna" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
-		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<FadeOut Time="1"/>
-		<Loop/>
-	</MusicPlaylist>
-
-
-			<MusicPlaylist Id="KspOst" LocationId = "Ike" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
-		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<FadeOut Time="1"/>
-		<Loop/>
-	</MusicPlaylist>
-
-	<MusicPlaylist Id="KspOst" LocationId = "Dres" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
-		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
-		</MusicFile>
-		<FadeOut Time="1"/>
-		<Loop/>
-	</MusicPlaylist>
 </Assets>
 
 
