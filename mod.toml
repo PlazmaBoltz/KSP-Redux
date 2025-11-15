@@ -1,7 +1,7 @@
 name = "KSP Redux"
 
 
-textureSizeCaps = [ 0, 8192, 4096, 2048, 1024, 512, 256, 128 ]
+textureSizeCaps = [ 0, 4096, 2048, 1024, 512, 256, 128 ]
 supportedShadowMaps = [ 16384, 8192 , 4096 , 2048, 1024 ,512 ]
 simulationSpeeds = [ 0, 0.1, 1, 2, 4, 10, 30, 120, 600, 1200, 3600, 14400, 86400, 604800, 2592000, 7776000 ]
 
@@ -45,5 +45,5 @@ supportedKittenFurQuality = [
     { name = "Very Low", value = 4 },
 ]
 
-assets = [ "KSPAstronomicals.xml" ]
+assets = [ "KSPAstronomicals.xml", "Stock System.xml" ]
 systems = ["Kerbol.xml"]
