@@ -2311,7 +2311,7 @@
         <Inclination Degrees="1.304" />
         <Eccentricity Value="0.05" />
         <LongitudeOfAscendingNode Degrees="52" />
-        <ArgumentOfPeriapsis Degrees="0" />
+        <ArgumentOfPeriapsis Degrees="0.01" />
         <MeanAnomalyAtEpoch Degrees="5.7" />
         <MeanRadius Km="6000" />
         <Mass Kg="4233212700000000000000000" />
@@ -2844,7 +2844,7 @@
         <Mass Zg="89.32" />
         <Period Days="1" Hours="18" Minutes="27" Seconds="21"/>
     </TerrestrialBody>
-    <TerrestrialBody Id="Vall" Parent="Jool">
+    <TerrestrialBody Id="Val" Parent="Jool">
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="671100" />
         <Inclination Degrees="0.466" />
