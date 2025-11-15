@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <System Id="KerbolOnly">
-    <DisplayName Value="KSP System - Kerbin+Mun Only" />
+    <DisplayName Value="KSP System - Kerbin+Mun+Minmus Only" />
 
     <!-- generated and cached using the 'textures summarize' in game and used for VRAM estimates -->
     <VesselTextures Size="184 MB">
