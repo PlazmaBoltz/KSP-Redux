@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Assets>
+	<MeshFile Id="GizmoSphere" Path="Meshes/gizmo_sphere.glb"/>
+	<MeshFile Id="Sphere" Path="Meshes/sphere.glb"/>
+	<MeshFile Id="Box" Path="Meshes/box.glb"/>
+	<MeshFile Id="ApolloCSM" Path="Meshes/apollo_csm.glb"/>
+	<MeshFile Id="ApolloCSMDetails" Path="Meshes/apollo_csm_details.glb"/>
+	<MeshFile Id="ApolloManeuverThruster" Path="Meshes/apollo_maneuver_thruster.glb"/>
+	<MeshFile Id="ApolloCylinder" Path="Meshes/apollo_cylinder.glb"/>
+	<Texture Id="GaugeFontAtlas" Path="Textures/GaugeFontAtlas.png"/>
+	<Texture Id="EmptyWhite" Path="Textures/Planets/EmptyWhite.png"/>
+	<Texture Id="EmptyBlack" Path="Textures/Planets/EmptyBlack.png"/>
+	<Texture Id="EmptyNormal" Path="Textures/Planets/EmptyNormal.png"/>
+	<Texture Id="ExhaustNoise64" Path="Textures/Exhaust_Noise_64.png"/>
+	<Shader Id="DistantSphereVert" Path="Shaders/DistantSphere.vert"/>
+	<Shader Id="DistantSphereFrag" Path="Shaders/DistantSphere.frag"/>
+	<Shader Id="UnlitMeshVert" Path="Shaders/Mesh/UnlitMesh.vert"/>
+	<Shader Id="UnlitMeshFrag" Path="Shaders/Mesh/UnlitMesh.frag"/>
+    <Shader Id="MeshVert" Path="Shaders/Mesh/Mesh.vert"/>
+	<Shader Id="MeshFrag" Path="Shaders/Mesh/Mesh.frag"/>
+    <Shader Id="ModelGlassFrag" Path="Shaders/Mesh/ModelGlass.frag"/>
+	<Shader Id="LineVert" Path="Shaders/Line.vert"/>
+	<Shader Id="LineFrag" Path="Shaders/Line.frag"/>
+	<Shader Id="StarVert" Path="Shaders/Star.vert"/>
+	<Shader Id="StarFrag" Path="Shaders/Star.frag"/>
+	<Shader Id="StaticCelestialDistanceVert" Path="Shaders/StaticCelestialDistance.vert"/>
+	<Shader Id="StaticCelestialDistanceFrag" Path="Shaders/StaticCelestialDistance.frag"/>
+	<Shader Id="SpriteVert" Path="Shaders/Sprite.vert"/>
+	<Shader Id="SpriteFrag" Path="Shaders/Sprite.frag"/>
+	<Shader Id="ScreenspaceVert" Path="Shaders/PostProcess/screenspace_quad.vert"/>
+	<!-- Planet -->
+	<Shader Id="PlanetShadowPass" Path="Shaders/Planet/PlanetShadowPass.vert"/>
+	<Shader Id="ShadowPass" Path="Shaders/ShadowPass.vert"/>
+	<Shader Id="ShadowPassNoPush" Path="Shaders/ShadowPassNoPush.vert"/>
+	<Shader Id="PlanetMeshVertexDataComp" Path="Shaders/Planet/TerrainMesh/GenerateMeshHeight.comp"/>
+	<Shader Id="PlanetMeshNormalDataComp" Path="Shaders/Planet/TerrainMesh/GenerateMeshNormals.comp"/>
+
+	<Shader Id="PlanetVert" Path="Shaders/Planet/Planet.vert"/>
+	<Shader Id="PlanetTessControl" Path="Shaders/Planet/PlanetTessControl.tesc"/>
+	<Shader Id="PlanetTessEvaluation" Path="Shaders/Planet/PlanetTessEvaluation.tese"/>
+	<Shader Id="PlanetFrag" Path="Shaders/Planet/Planet.frag"/>
+	<Shader Id="PlanetFrustumCullingCompute" Path="Shaders/Planet/Culling/PlanetFrustumCulling.comp"/>
+	<Shader Id="ClutterSolidVert" Path="Shaders/Planet/GroundClutter/Solid.vert"/>
+	<Shader Id="ClutterSolidFrag" Path="Shaders/Planet/GroundClutter/Solid.frag"/>
+
+	<!-- Planet Exporter -->
+	<Shader Id="GeneratePlanetHeightComp" Path="Shaders/Planet/Exporter/GenerateHeightTexture.comp"/>
+	<Shader Id="GeneratePlanetNormalComp" Path="Shaders/Planet/Exporter/GenerateNormalTexture.comp"/>
+	<Shader Id="GeneratePlanetGradientComp" Path="Shaders/Planet/Exporter/GenerateGradientTexture.comp"/>
+	<Shader Id="GeneratePlanetColorComp" Path="Shaders/Planet/Exporter/GenerateColorTexture.comp"/>
+	<Shader Id="GeneratePlanetMapComp" Path="Shaders/Planet/Exporter/RenderMap.comp"/>
+	<Shader Id="ReductionPhase1Comp" Path="Shaders/Planet/Exporter/ParallelReductionMinMaxPhase0.comp"/>
+	<Shader Id="ReductionPhase2Comp" Path="Shaders/Planet/Exporter/ParallelReductionMinMax.comp"/>
+	<Shader Id="ExporterNormalizeHeight" Path="Shaders/Planet/Exporter/Normalize.comp"/>
+	<Shader Id="GenerateKernelSizesComp" Path="Shaders/Planet/Exporter/GenerateKernelSizes.comp"/>
+	<Shader Id="VariantMaxFilterComp" Path="Shaders/Planet/Exporter/VariantMaxFilter.comp"/>
+	<Shader Id="VariantBoxBlurFilterComp" Path="Shaders/Planet/Exporter/VariantBoxBlurFilter.comp"/>
+
+	<!-- Bloom -->
+	<Shader Id="SunbloomFrag" Path="Shaders/PostProcess/sunbloom.frag"/>
+	<Shader Id="SunbloomMergeCompute" Path="Shaders/PostProcess/sunbloom_merge.comp" />
+	<Shader Id="SunbloomBlurCompute" Path="Shaders/PostProcess/sunbloom_blur.comp" />
+	<Shader Id="GlobalVerticalBlurBloomCompute" Path="Shaders/PostProcess/bloom_vertical_blur.comp"/>
+	<Shader Id="GlobalHorizontalBlurComposeBloomCompute" Path="Shaders/PostProcess/bloom_horizontal_blur_compose.comp"/>
+	<Shader Id="KawaseDownsampleCompute" Path="Shaders/PostProcess/kawase_downsample.comp"/>
+	<Shader Id="KawaseUpsampleComposeCompute" Path="Shaders/PostProcess/kawase_upsample.comp"/>
+	<Shader Id="KawaseDownsampleThresholdCompute" Path="Shaders/PostProcess/kawase_downsample_with_thresholds.comp"/>
+	<!-- Tonemapping -->
+	<Shader Id="CompositeFrag" Path="Shaders/PostProcess/composite.frag"/>
+	<!-- Gizmos -->
+	<Shader Id="GizmoVert" Path="Shaders/Gizmo.vert"/>
+	<Shader Id="GizmoFrag" Path="Shaders/Gizmo.frag"/>
+	<Shader Id="DebugGizmoMeshVert" Path="Shaders/Gizmos/MeshGizmo.vert"/>
+	<Shader Id="DebugGizmoLineVert" Path="Shaders/Gizmos/LineGizmo.vert"/>
+	<Shader Id="DebugGizmoFrag" Path="Shaders/Gizmos/Gizmo.frag"/>
+	<!-- Volumetric exhausts -->
+	<Shader Id="VolumetricExhaustVert" Path="Shaders/VolumetricExhaust/VolumetricExhaust.vert"/>
+	<Shader Id="VolumetricExhaustFrag" Path="Shaders/VolumetricExhaust/VolumetricExhaust.frag"/>
+	<Shader Id="VolumetricExhaustPrePassFrag" Path="Shaders/VolumetricExhaust/VolumetricExhaustPrePass.frag"/>
+	<Shader Id="VolumetricExhaustDepthWriteFrag" Path="Shaders/VolumetricExhaust/DepthWrite.frag"/>
+	<Shader Id="ExhaustDenoiseCompute" Path="Shaders/VolumetricExhaust/ExhaustDenoise.comp"/>
+	<Shader Id="ExhaustOitCompute" Path="Shaders/VolumetricExhaust/ExhaustOit.comp"/>
+	<Shader Id="VolumetricExhaustUpscaleCompute" Path="Shaders/VolumetricExhaust/UpscaleExhausts.comp"/>
+	<Shader Id="DownscaleDepthCompute" Path="Shaders/VolumetricExhaust/DownscaleDepth.comp"/>
+	<Shader Id="VolumetricExhaustComposeCompute" Path="Shaders/VolumetricExhaust/Compose.comp"/>
+	<!-- Atmosphere -->
+	<Shader Id="AtmosphereCompute" Path="Shaders/Atmosphere/Atmosphere.comp"/>
+	<Shader Id="AtmosphereTransmittanceLutCompute" Path="Shaders/Atmosphere/TransmittanceLut.comp"/>
+	<Shader Id="AtmosphereSkyLutCompute" Path="Shaders/Atmosphere/SkyLut.comp"/>
+	<Shader Id="AtmosphereAerialPerspectiveLutCompute" Path="Shaders/Atmosphere/AerialPerspectiveLut.comp"/>
+	<Shader Id="MultipleScatteringLutCompute" Path="Shaders/Atmosphere/MultipleScatteringLut.comp"/>
+	<Shader Id="AmbientLutCompute" Path="Shaders/Atmosphere/AmbientLut.comp"/>
+	<Shader Id="GodraysCompute" Path="Shaders/Atmosphere/Godrays.comp"/>
+	<!-- Clouds -->
+	<Shader Id="RaymarchCloudCompute" Path="Shaders/Clouds/RaymarchCloud.comp"/>
+	<Shader Id="DilateCloudMotionVectorsCompute" Path="Shaders/Clouds/DilateMotionVectors.comp"/>
+	<Shader Id="UpscaleCloudCompute" Path="Shaders/Clouds/UpscaleCloud.comp"/>
+	<Shader Id="2dCloudCompute" Path="Shaders/Clouds/2DCloud.comp"/>
+	<Shader Id="GenerateWorleyNoiseCompute" Path="Shaders/Clouds/Noise/GenerateWorleyNoise.comp"/>
+	<Texture Id="TemporalNoise" Path="Textures/Clouds/TemporalNoise.png"/> <!-- leave this uncompressed -->
+	<Texture Id="FlowmapNoise" Path="Textures/Clouds/Compressed/FlowmapNoise.dds">
+		<IsVirtual>false</IsVirtual>
+		<Manifest>
+			<MaxSize>0</MaxSize>
+			<MipMaps>false</MipMaps>
+		</Manifest>
+	</Texture>
+	<!-- Water -->
+	<Shader Id="OceanQuadFrag" Path="Shaders/Water/OceanQuad.frag"/>
+	<Shader Id="OceanMeshTesselatedVert" Path="Shaders/Water/Geometry/OceanMeshTesselated.vert"/>
+	<Shader Id="OceanTessControl" Path="Shaders/Water/Geometry/OceanTessControl.tesc"/>
+	<Shader Id="OceanTessEvaluation" Path="Shaders/Water/Geometry/OceanTessEvaluation.tese"/>
+	<Shader Id="OceanMeshFrag" Path="Shaders/Water/OceanMesh.frag"/>
+	<Shader Id="CopyScreenCompute" Path="Shaders/Water/CopyScreen.comp"/>
+	<Shader Id="OceanFrustumCullingCompute" Path="Shaders/Water/Geometry/OceanFrustumCulling.comp"/>
+	<Shader Id="GenerateSpectrumCompute" Path="Shaders/Water/FFT/GenerateSpectrum.comp"/>
+	<Shader Id="EvolveSpectrumCompute" Path="Shaders/Water/FFT/EvolveSpectrum.comp"/>
+	<Shader Id="FFTCompute" Path="Shaders/Water/FFT/FFT.comp"/>
+	<Shader Id="PostProcessFFTCompute" Path="Shaders/Water/FFT/PostProcessFFT.comp"/>
+	<Shader Id="FastMipMapCompute" Path="Shaders/Water/FFT/FastMipMap.comp"/> <!-- replace with single-pass mipmapping when implemented -->
+    <!-- PBR IBL -->
+    <Texture Id="Brdf" Path="Textures/Brdf/Brdf.dds"/>
+    <Texture Id="StarsPreFiltered" Path="Textures/IBL/Stars_Pre_Filtered_Specular.dds"/>
+    <Texture Id="StarsIrradiance" Path="Textures/IBL/Stars_Irradiance.dds"/>
+    <!-- Thin Film Interference -->
+    <Texture Id="ThinFilmInterferenceLut" Path="Textures/ThinFilmInterferenceWaveform.png"/>
+
+    <Gltf Id="CombinedTransformGizmoGlb" Path="Meshes/combined_transform_gizmo.glb"/>
+
+	<Shader Id="GroundClutterGenerator" Path="Shaders/Planet/GroundClutter/Generate.comp"/>
+	<Shader Id="GroundClutterEvaluator" Path="Shaders/Planet/GroundClutter/Evaluate.comp"/>
+    <Shader Id="GenericGizmoVert" Path="Shaders/GenericGizmo.vert"/>
+	<Shader Id="GenericGizmoFrag" Path="Shaders/GenericGizmo.frag"/>
+	<Shader Id="GenericGizmoGlassBallFrag" Path="Shaders/GenericGizmoGlassBall.frag"/>
+	<Shader Id="FullScreenTriangleVert" Path="Shaders/FullScreenTriangle.vert"/>
+	<Shader Id="CopyFrag" Path="Shaders/Copy.frag"/>
+	<Shader Id="GridFrag" Path="Shaders/Grid.frag"/>
+	<MeshFile Id="ConeMesh" Path="Meshes/cone.glb"/>
+    <MeshFile Id="ConeWithTailMesh" Path="Meshes/cone_with_tail.glb"/>
+	<MeshFile Id="ConeReverseMesh" Path="Meshes/reverse_cone.glb"/>
+    <MeshFile Id="PyramidWithTailMesh" Path="Meshes/pyramid_with_tail.glb"/>
+
+	<Shader Id="SelectedComp" Path="Shaders/Selected.comp"/>
+	
+	<SpatialSoundData Id="DefaultSpatialSoundData">
+		<VolumeRange Min="1" Max="10000"/>
+		<TwoDRange Min="0" Max="0"/>
+	</SpatialSoundData>
+
+	<SpatialSoundData Id="WindSpatialData">
+		<VolumeRange Min="5" Max="10000"/>
+		<TwoDRange Min="5" Max="150"/>
+	</SpatialSoundData>
+
+	<SpatialSoundData Id="EngineSpatialData">
+		<VolumeRange Min="10" Max="10000"/>
+		<TwoDRange Min="5" Max="20"/>
+	</SpatialSoundData>
+	
+	<SoundGroup Id="RcsSoundGroup" MuteFadeSpeed="0">
+		<Behavior Value="StealLowest"/>
+		<MaxChannels Value="4"/>
+	</SoundGroup>
+
+	<SoundFile Id="DefaultEngineSoundFile" Path="Sounds/EngineDefault.wav">
+		<Loop/>
+	</SoundFile>
+	
+	<Sound Id="LedButtonDown" SimSpeed="Ignore" Channel="UI">
+		<SoundFile Path="Sounds/LedButtonDown.wav" TwoD="true"/>
+	</Sound>
+	
+	<Sound Id="DefaultEngine" Channel="Sfx">
+		<SoundFile Id="DefaultEngineSoundFile"/>
+		<SpatialSoundData Id="EngineSpatialData"/>
+		<FadeOut Time="0.1"/>
+		<Param Type="Volume" Input="Custom" Id="Throttle" InMin="0" InMax="1" OutMin="0.1" OutMax="1"/>
+		<Param Type="Pitch" Input="Custom" Id="Throttle" InMin="0" InMax="1" OutMin="0.5" OutMax="1"/>
+	</Sound>
+	
+	<Sound Id="DefaultEngineStart" Channel="Sfx">
+		<SoundFile Path="Sounds/EngineDefaultStart.wav"/>
+		<SpatialSoundData Id="EngineSpatialData"/>
+		<FadeOut Time="0.1"/>
+		<Param Type="Volume" Input="Custom" Id="Throttle" InMin="0" InMax="1" OutMin="0.1" OutMax="1"/>
+	</Sound>
+	<Sound Id="DefaultRcsThruster" Channel="Sfx">
+		<SoundFile Path="Sounds/RCSDefault.wav">
+			<Loop>
+				<Start Value="93227" Unit="Pcm"/>
+			</Loop>
+		</SoundFile>
+		<SoundGroup Id="RcsSoundGroup"/>
+		<FadeOut Time="0.1"/>
+		<Pitch Min="0.9" Max="1.1"/>
+		<Volume Min="0.8" Max="1"/>
+	</Sound>
+	<CompoundSound Id="DefaultEngineSoundBehavior">
+		<StartSound Id="DefaultEngineStart"/>
+		<Sound Id="DefaultEngine"/>
+		<StopSound Id="DefaultEngineStart"/>
+	</CompoundSound>
+	
+	<MultiSound Id="AtmosphericMovement">
+		<Sound Priority="125" SimSpeed="OnlyLower" Channel="Sfx">
+			<SoundFile Path="Sounds/WindLight.ogg">
+				<Loop/>
+			</SoundFile>
+			<SpatialSoundData Id="WindSpatialData"/>
+			<FadeIn Time="0.3"/>
+			<FadeOut Time="0.2"/>
+			<Param Type="Pitch" Input="Custom" Id="SurfaceVelocity" InMin="0" InMax="8000" OutMin="0.25" OutMax="5"/>
+			<Param Type="Volume" Input="Custom" Id="DynamicPressure" InMin="0" InMax="40000" OutMin="0" OutMax="1"/>
+		</Sound>
+		<Sound Priority="125" SimSpeed="OnlyLower" Channel="Sfx">
+			<SoundFile Path="Sounds/Wind.ogg">
+				<Loop/>
+			</SoundFile>
+			<SpatialSoundData Id="WindSpatialData"/>
+			<FadeIn Time="0.3"/>
+			<FadeOut Time="0.2"/>
+			<Param Type="Pitch" Input="Custom" Id="SurfaceVelocity" InMin="0" InMax="4000" OutMin="0.5" OutMax="3"/>
+			<Param Type="Volume" Mode="Reverse" Input="Custom" Id="SurfaceVelocity" InMin="500" InMax="3000" OutMin="0" OutMax="1"/>
+			<Param Type="Volume" Input="Custom" Id="DynamicPressure" InMin="0" InMax="100000" OutMin="0" OutMax="1"/>
+		</Sound>
+		<Sound Priority="125" SimSpeed="OnlyLower" Channel="Sfx">
+			<SoundFile Path="Sounds/WindHeavy.ogg">
+				<Loop/>
+			</SoundFile>
+			<SpatialSoundData Id="WindSpatialData"/>
+			<FadeIn Time="0.3"/>
+			<FadeOut Time="0.2"/>
+			<Param Type="Volume" Mode="Reverse" Input="Custom" Id="SurfaceVelocity" InMin="0" InMax="1000" OutMin="0" OutMax="0.9"/>
+			<Param Type="Volume" Input="Custom" Id="DynamicPressure" InMin="0" InMax="50000" OutMin="0" OutMax="1"/>
+		</Sound>
+	</MultiSound>
+	
+	<MusicPlaylist Id="EarthSOIMusic" LocationId="Earth" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="Music/08_SunSynchronous.ogg" StreamFromDisk="true" TwoD="true" Volume="0.2">
+			<Loop>
+				<Start Value="5666" Unit="Ms"/>
+			</Loop>
+			<SyncPoint Value="5666" Unit="Ms" />
+			<SyncPoint Value="15800" Unit="Ms" />
+			<SyncPoint Value="29233" Unit="Ms" />
+			<SyncPoint Value="56600" Unit="Ms" />
+			<SyncPoint Value="68533" Unit="Ms" />
+			<SyncPoint Value="83066" Unit="Ms" />
+			<SyncPoint Value="116433" Unit="Ms" />
+			<SyncPoint Value="139600" Unit="Ms" />
+			<SyncPoint Value="177200" Unit="Ms" />
+			<SyncPoint Value="194666" Unit="Ms" />
+			<SyncPoint Value="220233" Unit="Ms" />
+			<SyncPoint Value="242800" Unit="Ms" />
+		</MusicFile>
+		<FadeOut Time="5"/>
+	</MusicPlaylist>
+	<MusicPlaylist Id="LunaSOIMusic" LocationId="Luna" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="Music/06_TheSmallBlueDot.ogg" StreamFromDisk="true" TwoD="true" Volume="0.2">
+			<Loop>
+				<Start Value="6967" Unit="Ms"/>
+			</Loop>
+			<SyncPoint Value="6967" Unit="Ms" />
+			<SyncPoint Value="21633" Unit="Ms" />
+			<SyncPoint Value="37200" Unit="Ms" />
+			<SyncPoint Value="54333" Unit="Ms" />
+			<SyncPoint Value="80100" Unit="Ms" />
+			<SyncPoint Value="116333" Unit="Ms" />
+			<SyncPoint Value="134933" Unit="Ms" />
+			<SyncPoint Value="163567" Unit="Ms" />
+			<SyncPoint Value="189700" Unit="Ms" />
+			<SyncPoint Value="221700" Unit="Ms" />
+			<SyncPoint Value="239800" Unit="Ms" />
+			<SyncPoint Value="252300" Unit="Ms" />
+			<SyncPoint Value="271300" Unit="Ms" />
+			<SyncPoint Value="292967" Unit="Ms" />
+		</MusicFile>
+		<FadeOut Time="5"/>
+	</MusicPlaylist>
+	<MusicPlaylist Id="SolSOIMusic" LocationId="Sol" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="Music/02_LiminalSpace.ogg" StreamFromDisk="true" TwoD="true" Volume="0.2">
+			<Loop/>
+		</MusicFile>
+		<FadeOut Time="5"/>
+	</MusicPlaylist>
+	<MusicPlaylist Id="MarsSOIMusic" LocationId="Mars" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="Music/01_Stardance.ogg" StreamFromDisk="true" TwoD="true" Volume="0.2">
+			<Loop/>
+		</MusicFile>
+		<FadeOut Time="5"/>
+	</MusicPlaylist>
+	<MusicPlaylist Id="JupiterSOIMusic" LocationId="Jupiter" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="Music/00_Drifting.ogg" StreamFromDisk="true" TwoD="true" Volume="0.2">
+			<Loop/>
+		</MusicFile>
+		<FadeOut Time="5"/>
+		</MusicPlaylist>
+	<!--KSP Redux Music -->
+		<MusicPlaylist Id="KspOst" LocationId = "Kerbin" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<FadeOut Time="1"/>
+		<Loop/>
+	</MusicPlaylist>
+	
+		<MusicPlaylist Id="KspOst" LocationId = "Mun" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<FadeOut Time="1"/>
+		<Loop/>
+	</MusicPlaylist>
+
+
+			<MusicPlaylist Id="KspOst" LocationId = "Minmus" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<FadeOut Time="1"/>
+		<Loop/>
+	</MusicPlaylist>
+
+
+			<MusicPlaylist Id="KspOst" LocationId = "Kerbol" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<FadeOut Time="1"/>
+		<Loop/>
+	</MusicPlaylist>
+
+		<MusicPlaylist Id="KspOst" LocationId = "Eve" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<FadeOut Time="1"/>
+		<Loop/>
+	</MusicPlaylist>
+
+			<MusicPlaylist Id="KspOst" LocationId = "Gilly" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<FadeOut Time="1"/>
+		<Loop/>
+	</MusicPlaylist>
+
+			<MusicPlaylist Id="KspOst" LocationId = "Duna" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<FadeOut Time="1"/>
+		<Loop/>
+	</MusicPlaylist>
+
+
+			<MusicPlaylist Id="KspOst" LocationId = "Ike" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<FadeOut Time="1"/>
+		<Loop/>
+	</MusicPlaylist>
+
+	<MusicPlaylist Id="KspOst" LocationId = "Dres" SimSpeed="Ignore" SelectionRule="Shuffle" Channel="Music">
+		<MusicFile Path="KSPMusic/Arcadia.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<MusicFile Path="KSPMusic/Wizardtorium.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrozenStar.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/FrostWaltz.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/DreamyFlashback.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+				<MusicFile Path="KSPMusic/ImpactLento.mp3" StreamFromDisk="true" TwoD="true" Volume="0.2">
+		</MusicFile>
+		<FadeOut Time="1"/>
+		<Loop/>
+	</MusicPlaylist>
+</Assets>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
