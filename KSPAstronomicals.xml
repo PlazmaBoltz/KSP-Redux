@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Assets>
     <StellarBody Id="Kerbol">
         <MeanRadius Km="261600" />
@@ -475,7 +475,7 @@
         <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
     </KittenEva>
     
-    <AtmosphericBody Id="Kerbin" Parent="Kerbol">  
+    <AtmosphericBody Id="Kerbin" Parent="Kerbol"> 
         <MeshCollection Id="EarthScale"/>
         <SemiMajorAxis Au="0.091" />
         <Inclination Degrees="0" />
@@ -744,6 +744,7 @@
         </Atmosphere>
         <Ocean>
             <Level Km="0" />
+            <TransparencyDepth M = "1000"/>
             <MeshCollection Id="OceanEarth"/>
             <WindWaves>
                 <!-- The WindTexture is used to adjust wind speed and fetch locally, lerping between min and max-->
@@ -754,7 +755,7 @@
                 <MaxWindFetch Km="800.0"/>
                 <Directionality Value="1.0"/>
                 <FoamAmount Value="0.5"/>
-                <Depth Km="0.2"/>
+                <Depth Km="0.01"/>
             </WindWaves>
             <GerstnerWaves> <!-- leaving this in just for the cool factor of combining big gerstner waves with FFT -->
                 <Count Value="0" /> <!-- change to 1 for tsunami waves -->
@@ -1055,7 +1056,7 @@
             <Latitude Degrees="0" />
             <Longitude Degrees="0" />
         </Landmark>
-    </AtmosphericBody>  
+    </AtmosphericBody>   
 
     <TerrestrialBody Id="Mun" Parent="Kerbin">  
         <MeshCollection Id="Default"/>
@@ -1071,12 +1072,13 @@
             <Maximum Km="7.0611"/>
             <Minimum Km="-0.2479"/>
         </Height>
+        <!--
         <Terrain>
-            <!-- In progress... -->
+            
             <BiomeIDMap Path="Textures/Luna_Biome_ID.png" Category="Terrain"/>
             <BiomeControlMap Path="Textures/Luna_Biome_Control.png" Category="Terrain"/>
 
-            <!-- Global Procedural Modifiers -->
+         
             <ProceduralModifiers>
 
                 <GradientScale Value="2.6" />
@@ -1177,7 +1179,7 @@
                         </SplinePoint>
                     </AmplitudeHeightCurve>
 
-                    <!-- Determines crater displacement based on distance from crater center perturbed by the radius noise -->
+                    
                     <CraterShapeCurve>
                         <SplinePoint>
                             <Key Value="0.0" />
@@ -1211,7 +1213,7 @@
                         </SplinePoint>
                     </CraterShapeCurve>
 
-                    <!-- Modifies crater inner noise displacement based on distance from crater center -->
+                   
                     <CraterInnerNoiseCurve>
                         <SplinePoint>
                             <Key Value="0.0" />
@@ -1356,16 +1358,15 @@
                     </AmplitudeHeightCurve>
                 </Modifier>
 
-                <!-- more modifiers here -->
+               
                 
             </ProceduralModifiers>
 
             <BiomeMaterials>
-                <!-- Define any properties such as biome blending strength here -->
-                <!-- Order matters! The order these appear corresponds to the ID in the ID map, starting from 0 -->
+                
 
                 <BlendStrength Value="2.25" />
-                <!-- Base terrain -->
+               
                 <BiomeMaterial Name="Surface">
 
                     <SlopeBlendStrength Value="10.5" />
@@ -1409,11 +1410,11 @@
 
                     
 
-                <!-- more modifiers here -->
+               
 
                 </BiomeMaterial>
 
-                <!-- Craters -->
+                
                 <BiomeMaterial Name="Craters">
 
                     <SlopeBlendStrength Value="15.5" />
@@ -1450,7 +1451,7 @@
 
                 </BiomeMaterial>
 
-                <!-- Maria -->
+               
                 <BiomeMaterial Name="Maria">
 
                     <SlopeBlendStrength Value="15.0" />
@@ -1498,7 +1499,7 @@
                             <Order Value="0" />
                         </Modifier>
 
-                    <!-- more modifiers here -->
+                    
                 
                     </ProceduralModifiers>
 
@@ -1508,8 +1509,7 @@
 
         </Terrain>
 
-        <!-- Ground Clutter - Please keep this, it's just commented out for everyone for now -->
-        <!-- <GroundClutter>
+        
             <Group Id="Rocks">
                 <ObjectSeparation M="500" /> 
                 <GenerationRange M="10000" />
@@ -1528,7 +1528,7 @@
         <AxialAlignment Degrees="180" />
     </TerrestrialBody> 
 
-<TerrestrialBody Id="Minmus" Parent="Kerbin">   
+     <TerrestrialBody Id="Minmus" Parent="Kerbin">   
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="47000" />
         <Inclination Degrees="6.0" />
