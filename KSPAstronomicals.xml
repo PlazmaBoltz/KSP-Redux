@@ -1528,7 +1528,7 @@
         <AxialAlignment Degrees="180" />
     </TerrestrialBody> 
 
-     <TerrestrialBody Id="Minmus" Parent="Kerbin">   
+<TerrestrialBody Id="Minmus" Parent="Kerbin">   
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="47000" />
         <Inclination Degrees="6.0" />
@@ -1542,12 +1542,11 @@
             <Maximum Km="5.7246"/>
             <Minimum Km="0"/>
         </Height>
-        <Terrain>
-            <!-- In progress... -->
+     <!--   <Terrain>
             <BiomeIDMap Path="Textures/Luna_Biome_ID.png" Category="Terrain"/>
             <BiomeControlMap Path="Textures/Luna_Biome_Control.png" Category="Terrain"/>
 
-            <!-- Global Procedural Modifiers -->
+         Global Procedural Modifiers 
             <ProceduralModifiers>
 
                 <GradientScale Value="2.6" />
@@ -1648,7 +1647,7 @@
                         </SplinePoint>
                     </AmplitudeHeightCurve>
 
-                    <!-- Determines crater displacement based on distance from crater center perturbed by the radius noise -->
+                    
                     <CraterShapeCurve>
                         <SplinePoint>
                             <Key Value="0.0" />
@@ -1682,7 +1681,6 @@
                         </SplinePoint>
                     </CraterShapeCurve>
 
-                    <!-- Modifies crater inner noise displacement based on distance from crater center -->
                     <CraterInnerNoiseCurve>
                         <SplinePoint>
                             <Key Value="0.0" />
@@ -1827,16 +1825,15 @@
                     </AmplitudeHeightCurve>
                 </Modifier>
 
-                <!-- more modifiers here -->
+               
                 
             </ProceduralModifiers>
 
             <BiomeMaterials>
-                <!-- Define any properties such as biome blending strength here -->
-                <!-- Order matters! The order these appear corresponds to the ID in the ID map, starting from 0 -->
+               
 
                 <BlendStrength Value="2.25" />
-                <!-- Base terrain -->
+               
                 <BiomeMaterial Name="Surface">
 
                     <SlopeBlendStrength Value="10.5" />
@@ -1880,11 +1877,11 @@
 
                     
 
-                <!-- more modifiers here -->
+              
 
                 </BiomeMaterial>
 
-                <!-- Craters -->
+                
                 <BiomeMaterial Name="Craters">
 
                     <SlopeBlendStrength Value="15.5" />
@@ -1921,7 +1918,7 @@
 
                 </BiomeMaterial>
 
-                <!-- Maria -->
+                
                 <BiomeMaterial Name="Maria">
 
                     <SlopeBlendStrength Value="15.0" />
@@ -1969,7 +1966,7 @@
                             <Order Value="0" />
                         </Modifier>
 
-                    <!-- more modifiers here -->
+                   
                 
                     </ProceduralModifiers>
 
@@ -1978,9 +1975,7 @@
             </BiomeMaterials>
 
         </Terrain>
-
-        <!-- Ground Clutter - Please keep this, it's just commented out for everyone for now -->
-        <!-- <GroundClutter>
+       
             <Group Id="Rocks">
                 <ObjectSeparation M="500" /> 
                 <GenerationRange M="10000" />
@@ -1990,7 +1985,7 @@
                 </ClutterObject>
             </Group>
         </GroundClutter>
-        -->
+        --> 
         <MeanAnomalyAtEpoch Degrees="5.566" />
         <MeanRadius Km="60" />
         <Mass Kg="26457580000000000000" />
