@@ -1997,18 +1997,18 @@
     </TerrestrialBody> 
     <TerrestrialBody Id="Moho" Parent="Kerbol">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Au="0.39" />
-        <Inclination Degrees="7.00487" />
-        <Eccentricity Value="0.2056" />
-        <LongitudeOfAscendingNode Degrees="48.331" />
-        <ArgumentOfPeriapsis Degrees="29.124" />
-        <MeanAnomalyAtEpoch Degrees="252.25084" />
-        <MeanRadius Km="2439.7" />
+        <SemiMajorAxis Km="5263138.304" />
+        <Inclination Degrees="7" />
+        <Eccentricity Value="0.2" />
+        <LongitudeOfAscendingNode Degrees="70" />
+        <ArgumentOfPeriapsis Degrees="15" />
+        <MeanAnomalyAtEpoch Degrees="180" />
+        <MeanRadius Km="250" />
         <Diffuse Path="Textures/Moho_Color.dds" Category="Terrain"/>
         <Normal Path="Textures/Moho_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Moho_Height.png" Category="Terrain">
-            <Maximum Km="60"/>
-            <Maximum Km="0"/>
+            <Maximum Km="6.8173"/>
+            <Maximum Km="0.028"/>
         </Height>
         <Mass Zg="330.11" />
         <Color R="1" G="1" B="1" />
@@ -2022,7 +2022,7 @@
         <LongitudeOfAscendingNode Degrees="76.680" />
         <ArgumentOfPeriapsis Degrees="54.891" />
         <MeanAnomalyAtEpoch Degrees="181.97973" />
-        <MeanRadius Km="6051.8" />
+        <MeanRadius Km="700" />
         <Diffuse Path="Textures/Eve_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Eve_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Eve_Height.png" Category="Terrain">
@@ -2037,7 +2037,6 @@
         <Period Days="243"/>
         <AxialTilt Degrees="177.4" />
         <AxialAlignment Degrees="0" />
-        
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -2065,39 +2064,39 @@
     </AtmosphericBody>
     <TerrestrialBody Id="Gilly" Parent="Eve">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="23463.2" />
-        <Inclination Degrees="1.788" />
-        <Eccentricity Value="0.00033" />
-        <LongitudeOfAscendingNode Degrees="23.264" />
-        <ArgumentOfPeriapsis Degrees="79.465" />
-        <MeanAnomalyAtEpoch Degrees="53.23" />
+        <SemiMajorAxis Km="31500" />
+        <Inclination Degrees="12" />
+        <Eccentricity Value="0.55" />
+        <LongitudeOfAscendingNode Degrees="80" />
+        <ArgumentOfPeriapsis Degrees="10" />
+        <MeanAnomalyAtEpoch Degrees="51.5662" />
         <MeanRadius Km="6.2" />
         <Diffuse Path="Textures/Gilly_Color.dds" Category="Terrain"/>
         <Normal Path="../Core/Textures/Phobos_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Gilly_Height.png" Category="Terrain">
-            <Maximum Km="6"/>
-            <Minimum Km="0"/>
+            <Maximum Km="6.4006"/>
+            <Minimum Km="1.4932"/>
         </Height>
-        <Mass Pg="1.4762" />
+        <Mass Kg="124203630000000000" />
     </TerrestrialBody>
     <AtmosphericBody Id="Duna" Parent="Kerbol">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Au="1.523679" />
-        <Inclination Degrees="1.85061" />
-        <Eccentricity Value="0.0934" />
-        <LongitudeOfAscendingNode Degrees="49.558" />
-        <ArgumentOfPeriapsis Degrees="286.537" />
+        <SemiMajorAxis Km="	20726155.264" />
+        <Inclination Degrees="0.06" />
+        <Eccentricity Value="0.051" />
+        <LongitudeOfAscendingNode Degrees="135.5" />
+        <ArgumentOfPeriapsis Degrees="0" />
         <Diffuse Path="Textures/Duna_Diffuse.dds" Category="Terrain"/>
         <Normal Path="Textures/Duna_Normal.dds" Power="0.1" Category="Terrain"/>
         <Height Path="Textures/Duna_Height.png" Category="Terrain">
-            <Maximum Km="100"/>
-            <Minimum Km="0"/>
+            <Maximum Km="8.2643"/>
+            <Minimum Km="0.1245"/>
         </Height>
-        <MeanAnomalyAtEpoch Degrees="355.453" />
-        <MeanRadius Km="3389.5" />
-        <Mass Zg="641.71" />
+        <MeanAnomalyAtEpoch Degrees="180" />
+        <MeanRadius Km="320" />
+        <Mass Kg="4515427000000000000000" />
         <Color R="1.0" G="0.27" B="0.0" />
-        <Period Days="1" Minutes="37" Seconds="22"/>
+        <Period Days="3" Minutes="11" Seconds="22"/>
         <AxialTilt Degrees="25.19" />
         <AxialAlignment Degrees="0" />
         <Atmosphere>
@@ -2272,19 +2271,19 @@
     </AtmosphericBody>
     <TerrestrialBody Id="Ike" Parent="Duna">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="14377" />
-        <Inclination Degrees="1.093" />
-        <Eccentricity Value="0.0151" />
-        <LongitudeOfAscendingNode Degrees="48.331" />
-        <ArgumentOfPeriapsis Degrees="150.057" />
+        <SemiMajorAxis Km="3200" />
+        <Inclination Degrees="0.2" />
+        <Eccentricity Value="0.03" />
+        <LongitudeOfAscendingNode Degrees="0" />
+        <ArgumentOfPeriapsis Degrees="0" />
         <Diffuse Path="Textures/Ike_Color.dds" Category="Terrain"/>
         <Normal Path="Textures/Ike_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Ike_Height.png" Category="Terrain">
-            <Maximum Km="40"/>
-            <Minimum Km="0"/>
+            <Maximum Km="12.7351"/>
+            <Minimum Km="0.0731"/>
         </Height>
-        <MeanAnomalyAtEpoch Degrees="15.0" />
-        <MeanRadius Km="214.7" />
-        <Mass Pg="10.659" />
+        <MeanAnomalyAtEpoch Degrees="97" />
+        <MeanRadius Km="130" />
+        <Mass Kg="278216150000000000000" />
     </TerrestrialBody>
 </Assets>
