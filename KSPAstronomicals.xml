@@ -2041,7 +2041,7 @@
             <Visual>
                 <RayleighScattering>
                 <Coefficients R="0.010164952309956612" G="0.0017078347497573156" B="0.017139341502007476" />
-                <ScaleHeight Km="70" />
+                <ScaleHeight Km="20" />
                 </RayleighScattering>
                 <MieScattering>
                 <Coefficients R="3.38492581975984E-11" G="9.041547028799431E-11" B="2.6062822546719228E-11" />
@@ -2052,18 +2052,18 @@
                 <Ozone>
                 <Coefficients R="9.022429924380184E-12" G="9.390008814171062E-11" B="3.31868870529802E-11" />
                 <Altitude Km="0" />
-                <Extent Km="90" />
+                <Extent Km="70" />
                 </Ozone>
             </Visual>
             <Physical>
-                <SeaLevelPressure Atm="92.0"/>
-                <SeaLevelDensity KgPerM3="65.0"/>
-                <ScaleHeight Km="18" />
+                <SeaLevelPressure Atm="5"/>
+                <SeaLevelDensity KgPerM3="50.0"/>
+                <ScaleHeight Km="6" />
             </Physical>
         </Atmosphere>
     </AtmosphericBody>
     <TerrestrialBody Id="Gilly" Parent="Eve">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="Asteroid"/>
         <SemiMajorAxis Km="31500" />
         <Inclination Degrees="12" />
         <Eccentricity Value="0.55" />
@@ -2270,7 +2270,7 @@
         
     </AtmosphericBody>
     <TerrestrialBody Id="Ike" Parent="Duna">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="Asteroid"/>
         <SemiMajorAxis Km="3200" />
         <Inclination Degrees="0.2" />
         <Eccentricity Value="0.03" />
