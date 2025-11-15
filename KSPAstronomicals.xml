@@ -2293,9 +2293,9 @@
         <Eccentricity Value="0.0758" />
         <LongitudeOfAscendingNode Degrees="80.3056" />
         <ArgumentOfPeriapsis Degrees="73.5977" />
-        <Diffuse Path="Textures/Dres_Color.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Dres_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Dres_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Dres_Height.dds" Category="Terrain">
+        <Height Path="Textures/Dres_Height.png" Category="Terrain">
             <Maximum Km="20"/>
             <Minimum Km="0"/>
         </Height>
@@ -2834,9 +2834,9 @@
         <LongitudeOfAscendingNode Degrees="355.8" />
         <ArgumentOfPeriapsis Degrees="84.129" />
         <MeanAnomalyAtEpoch Degrees="355.8" />
-        <Diffuse Path="Textures/Pol_Color.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Pol_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Pol_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Pol_Height.dds" Category="Terrain">
+        <Height Path="Textures/Pol_Height.png" Category="Terrain">
             <Maximum Km="100"/>
             <Minimum Km="0"/>
         </Height>
@@ -2852,9 +2852,9 @@
         <LongitudeOfAscendingNode Degrees="181.4" />
         <ArgumentOfPeriapsis Degrees="219.106" />
         <MeanAnomalyAtEpoch Degrees="181.4" />
-        <Diffuse Path="Textures/Vall_Color.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Vall_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Vall_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Vall_Height.dds" Category="Terrain">
+        <Height Path="Textures/Vall_Height.png" Category="Terrain">
             <Maximum Km="60"/>
             <Minimum Km="0"/>
         </Height>
@@ -2871,9 +2871,9 @@
         <Eccentricity Value="0.0015" />
         <LongitudeOfAscendingNode Degrees="52.2" />
         <ArgumentOfPeriapsis Degrees="63.552" />
-        <Diffuse Id="TyloDiffuse" Path="Textures/Tylo_Color.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Tylo_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Tylo_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Tylo_Height.dds" Category="Terrain">
+        <Height Path="Textures/Tylo_Height.png" Category="Terrain">
             <Maximum Km="50"/>
             <Minimum Km="0"/>
         </Height>
@@ -2892,7 +2892,7 @@
         <MeanAnomalyAtEpoch Degrees="21.6" />
         <Diffuse Path="Textures/Bop_Diffuse.dds" Category="Terrain"/>
         <Normal Path="Textures/Bop_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Bop_Height.dds" Category="Terrain">
+        <Height Path="Textures/Bop_Height.png" Category="Terrain">
             <Maximum Km="1000"/>
             <Minimum Km="0"/>
         </Height>
@@ -2969,9 +2969,9 @@
         <ArgumentOfPeriapsis Degrees="113.76329" />
         <MeanAnomalyAtEpoch Degrees="238.92881" />
         <MeanRadius Km="1188.3" />
-        <Diffuse Path="Textures/Eeloo_Color.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Eeloo_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Eeloo_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Eeloo_Height.dds" Category="Terrain">
+        <Height Path="Textures/Eeloo_Height.png" Category="Terrain">
             <Maximum Km="50"/>
             <Minimum Km="0"/>
         </Height>
