@@ -1537,7 +1537,7 @@
         <LongitudeOfAscendingNode Degrees="78" />
         <ArgumentOfPeriapsis Degrees="38" />
         <Color R="0.33" G="0.43" B="0.43" /> <!-- used for the sprite and planetshine -->
-        <Diffuse Path="Textures/Minmus_Diffuse.png" Category="Terrain"/>
+        <Diffuse Path="Textures/Minmus_Color.png" Category="Terrain"/>
         <Normal Path="../Core/Textures/Luna_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Minmus_Height.png" Category="Terrain">
             <Maximum Km="5.7246"/>
@@ -2023,7 +2023,7 @@
         <ArgumentOfPeriapsis Degrees="54.891" />
         <MeanAnomalyAtEpoch Degrees="181.97973" />
         <MeanRadius Km="700" />
-        <Diffuse Path="Textures/Eve_Color.png" Category="Terrain"/>
+        <Diffuse Path="Textures/Eve_Color.dds" Category="Terrain"/>
         <Normal Path="Textures/Eve_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Eve_Height.png" Category="Terrain">
             <Maximum Km="7.526"/>
@@ -2071,7 +2071,7 @@
         <ArgumentOfPeriapsis Degrees="10" />
         <MeanAnomalyAtEpoch Degrees="51.5662" />
         <MeanRadius Km="6.2" />
-        <Diffuse Path="Textures/Gilly_Color.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Gilly_Color.png" Category="Terrain"/>
         <Normal Path="../Core/Textures/Phobos_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Gilly_Height.png" Category="Terrain">
             <Maximum Km="6.4006"/>
@@ -2086,7 +2086,7 @@
         <Eccentricity Value="0.051" />
         <LongitudeOfAscendingNode Degrees="135.5" />
         <ArgumentOfPeriapsis Degrees="0" />
-        <Diffuse Path="Textures/Duna_Diffuse.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Duna_Diffuse.png" Category="Terrain"/>
         <Normal Path="Textures/Duna_Normal.dds" Power="0.1" Category="Terrain"/>
         <Height Path="Textures/Duna_Height.png" Category="Terrain">
             <Maximum Km="8.2643"/>
@@ -2276,7 +2276,7 @@
         <Eccentricity Value="0.03" />
         <LongitudeOfAscendingNode Degrees="0" />
         <ArgumentOfPeriapsis Degrees="0" />
-        <Diffuse Path="Textures/Ike_Color.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Ike_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Ike_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Ike_Height.png" Category="Terrain">
             <Maximum Km="12.7351"/>
@@ -2341,7 +2341,7 @@
 
         <Clouds>
             <OrbitTransitionStartAltitude Km="5000" />
-            <OrbitTransitionEndAltitude Km="300000000" />
+            <OrbitTransitionEndAltitude Km="3000000000" />
             <MaxShadowsAltitude Km="9000" />
             <VolumetricsFlickerReductionDistance Km="10000.0"/>
             <Layer Id="JupiterLowerClouds">
@@ -2893,7 +2893,7 @@
         <LongitudeOfAscendingNode Degrees="10" />
         <ArgumentOfPeriapsis Degrees="25" />
         <MeanAnomalyAtEpoch Degrees="51.56" />
-        <Diffuse Path="Textures/Bop_Diffuse.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Bop_Diffuse.png" Category="Terrain"/>
         <Normal Path="Textures/Bop_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Bop_Height.png" Category="Terrain">
             <Maximum Km="21.754"/>
@@ -2959,6 +2959,286 @@
                 <ScaleHeight Km="11" />
             </Physical>
         </Atmosphere>
+        <Clouds>
+            <OrbitTransitionStartAltitude Km="0" />
+            <OrbitTransitionEndAltitude Km="0" />
+            <MaxShadowsAltitude Km="100" />
+            <VolumetricsFlickerReductionDistance Km="0"/>
+            <Layer Id="LaytheClouds">
+                <RotationSpeed X="0" Y="0" Z="-20" />
+                <Texture Id="Textures/Clouds/compressed/Earth_clouds_tile_mask.dds" Path="Textures/Clouds/compressed/Earth_clouds_tile_mask.dds" Category="Terrain"/>
+                <Detail>
+                    <Texture Id="CloudDetail2048" Path="Textures/Clouds/CloudDetail2048.png" Category="Terrain"/>
+                    <Size Km ="200"/>
+                </Detail>
+            <TwoDimensionalCloud>
+                <Color R="1.0" G="1.0" B="1.0" />
+                <Lambertian Value="0.65" />
+                <UseAlphaOnly Value="true" />
+            </TwoDimensionalCloud>
+            <Raymarching>
+                <Step Scale="0.006">
+                    <Size Km="0.07"/>
+                    <MaxSize Km="1.5"/>
+                </Step>
+                <LightDistance Km="1.8"/>
+                <LightSamples Value="6"/>
+            </Raymarching>
+            <Noise>
+                <ScrollSpeed Value="5"/>
+            </Noise>
+            <CloudType Name="Stratus">
+                <StartAltitude Km="2.0"/>
+                <Height Km="0.6"/>
+                <Density Value="0.002"/>
+                <NoiseScale Km="2.3"/>
+                <EdgeSharpness Value="0.87"/>
+                <MultipleScatteringBrightness Value="0.7"/>
+                <CloudShape InterpolateShapes="true">
+                    <ShapeCurve>
+                        <SplinePoint>
+                            <Key Value="0.0"/>
+                            <Value Value="0.0"/>
+                            <InTangent Value="1.633945"/>
+                            <OutTangent Value="1.633945"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.1140957"/>
+                            <Value Value="0.8506892"/>
+                            <InTangent Value="0.06669102"/>
+                            <OutTangent Value="0.261398"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.3686106"/>
+                            <Value Value="0.9575245"/>
+                            <InTangent Value="0.0"/>
+                            <OutTangent Value="0.0"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0"/>
+                            <Value Value="0.0"/>
+                            <InTangent Value="-0.369256"/>
+                            <OutTangent Value="-0.5550035"/>
+                        </SplinePoint>
+                    </ShapeCurve>
+                </CloudShape>
+            </CloudType>
+            <CloudType Name="Cumulus">
+                <StartAltitude Km="2.0"/>
+                <Height Km="1.2"/>
+                <Density Value="0.012"/>
+                <NoiseScale Km="2.3"/>
+                <EdgeSharpness Value="0.96"/>
+                <MultipleScatteringBrightness Value="0.8"/>
+                <CloudShape InterpolateShapes="true">
+                    <ShapeCurve>
+                        <SplinePoint>
+                            <Key Value="0.0"/>
+                            <Value Value="0.0"/>
+                            <InTangent Value="1.633945"/>
+                            <OutTangent Value="1.633945"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.08695792"/>
+                            <Value Value="0.976166"/>
+                            <InTangent Value="0.06669102"/>
+                            <OutTangent Value="0.04846065"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0"/>
+                            <Value Value="0.0"/>
+                            <InTangent Value="-0.7966601"/>
+                            <OutTangent Value="-0.5550035"/>
+                        </SplinePoint>
+                    </ShapeCurve>
+                </CloudShape>
+            </CloudType>
+            <CloudType Name="Cumulus Congestus 1">
+                <StartAltitude Km="2.0"/>
+                <Height Km="2.7"/>
+                <Density Value="0.012"/>
+                <NoiseScale Km="2.3"/>
+                <EdgeSharpness Value="0.96"/>
+                <CloudShape InterpolateShapes="true">
+                    <ShapeCurve>
+                        <SplinePoint>
+                            <Key Value="0.0"/>
+                            <Value Value="0.0"/>
+                            <InTangent Value="1.633945"/>
+                            <OutTangent Value="1.633945"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.08695792"/>
+                            <Value Value="0.976166"/>
+                            <InTangent Value="0.06669102"/>
+                            <OutTangent Value="0.04846065"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.4343985"/>
+                            <Value Value="0.6765829"/>
+                            <InTangent Value="-1.224023"/>
+                            <OutTangent Value="-1.224023"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.8816288"/>
+                            <Value Value="0.3897246"/>
+                            <InTangent Value="-1.164106"/>
+                            <OutTangent Value="-1.164106"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0"/>
+                            <Value Value="0.0"/>
+                            <InTangent Value="-0.7966601"/>
+                            <OutTangent Value="-0.5550035"/>
+                        </SplinePoint>
+                    </ShapeCurve>
+                </CloudShape>
+            </CloudType>
+            <CloudType Name="Cumulus Congestus 2">
+                <StartAltitude Km="2.0"/>
+                <Height Km="4.7"/>
+                <Density Value="0.006"/>
+                <NoiseScale Km="2.3"/>
+                <EdgeSharpness Value="0.96"/>
+                <CloudShape InterpolateShapes="false">
+                    <ShapeCurve>
+                        <SplinePoint>
+                            <Key Value="0.0"/>
+                            <Value Value="0.0"/>
+                            <InTangent Value="1.633945"/>
+                            <OutTangent Value="1.633945"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.09431168"/>
+                            <Value Value="0.9640306"/>
+                            <InTangent Value="0.06669102"/>
+                            <OutTangent Value="-0.8954304"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.2904161"/>
+                            <Value Value="0.8003764"/>
+                            <InTangent Value="0.2357683"/>
+                            <OutTangent Value="0.2357683"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.59456"/>
+                            <Value Value="0.7429472"/>
+                            <InTangent Value="-0.001872113"/>
+                            <OutTangent Value="-0.001872113"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.734686"/>
+                            <Value Value="0.7428927"/>
+                            <InTangent Value="-3.4198"/>
+                            <OutTangent Value="-1.176937"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0"/>
+                            <Value Value="0.0"/>
+                            <InTangent Value="-0.8304251"/>
+                            <OutTangent Value="-0.5550035"/>
+                        </SplinePoint>
+                    </ShapeCurve>
+                </CloudShape>
+            </CloudType>
+            <CloudType Name="Cumulus Congestus 3">
+                <StartAltitude Km="2.0"/>
+                <Height Km="6.7"/>
+                <Density Value="0.006"/>
+                <NoiseScale Km="2.3"/>
+                <EdgeSharpness Value="0.96"/>
+                <CloudShape InterpolateShapes="false">
+                    <ShapeCurve>
+                        <SplinePoint>
+                            <Key Value="0.0"/>
+                            <Value Value="0.0"/>
+                            <InTangent Value="1.633945"/>
+                            <OutTangent Value="1.633945"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.09431168"/>
+                            <Value Value="0.9640306"/>
+                            <InTangent Value="0.06669102"/>
+                            <OutTangent Value="-0.8954304"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.2904161"/>
+                            <Value Value="0.8003764"/>
+                            <InTangent Value="0.2357683"/>
+                            <OutTangent Value="0.2357683"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.734686"/>
+                            <Value Value="0.7428927"/>
+                            <InTangent Value="-3.4198"/>
+                            <OutTangent Value="-1.176937"/>
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0"/>
+                            <Value Value="0.0"/>
+                            <InTangent Value="-0.8304251"/>
+                            <OutTangent Value="-0.5550035"/>
+                        </SplinePoint>
+                    </ShapeCurve>
+                </CloudShape>
+            </CloudType>
+        </Layer>
+        <Layer Id="EarthClouds2">
+            <RotationSpeed X="0" Y="0" Z="-30" />
+            <Texture Id="Textures/Clouds/compressed/Earth_clouds_placeholder_top_layer.dds" Path="Textures/Clouds/compressed/Earth_clouds_placeholder_top_layer.dds" Category="Terrain"/>
+                <Detail>
+                    <Texture Path="Textures/Clouds/compressed/CirroStratusDetail.dds" Category="Terrain"/>
+                    <Size Km ="400"/>
+                </Detail>
+                <Color R="1.0" G="1.0" B="1.0" />
+                <TwoDimensionalCloud>
+                    <Color R="1.0" G="1.0" B="1.0" />
+                    <Lambertian Value="0.65" />
+                    <UseAlphaOnly Value="true" />
+                </TwoDimensionalCloud>
+                <Raymarching>
+                    <Step Scale="0.0044">
+                        <Size Km="0.11"/>
+                        <MaxSize Km="4.5"/>
+                    </Step>
+                    <LightDistance Km="2.8"/>
+                    <LightSamples Value="4"/>
+                </Raymarching>
+                <Noise>
+                    <ScrollSpeed Value="5"/>
+                </Noise>
+                <CloudType Name="CirroStratus">
+                    <StartAltitude Km="11.0"/>
+                    <Height Km="0.6"/>
+                    <Density Value="0.001"/>
+                    <NoiseScale Km="4.0"/>
+                    <EdgeSharpness Value="0.5"/>
+                    <MultipleScatteringBrightness Value="0.7"/>
+                    <CloudShape InterpolateShapes="true">
+                        <ShapeCurve>
+                            <SplinePoint>
+                                <Key Value="0.0"/>
+                                <Value Value="0.0"/>
+                                <InTangent Value="2.0"/>
+                                <OutTangent Value="2.0"/>
+                            </SplinePoint>
+                            <SplinePoint>
+                                <Key Value="0.5"/>
+                                <Value Value="1.0"/>
+                                <InTangent Value="0.0"/>
+                                <OutTangent Value="0.0"/>
+                            </SplinePoint>
+                            <SplinePoint>
+                                <Key Value="1.0"/>
+                                <Value Value="0.0"/>
+                                <InTangent Value="-2.0"/>
+                                <OutTangent Value="-2.0"/>
+                            </SplinePoint>
+                        </ShapeCurve>
+                    </CloudShape>
+                </CloudType>
+            </Layer>
+        </Clouds>
         <MeanRadius Km="83.5" />
         <Mass Zg="0.025" />
         <Color R="0.26" G="0.55" B="0.62" />
