@@ -2016,20 +2016,20 @@
     </TerrestrialBody>
     <AtmosphericBody Id="Eve" Parent="Kerbol">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Au="0.72" />
+        <SemiMajorAxis Km="9832684.544" />
         <Inclination Degrees="3.39458" />
         <Eccentricity Value="0.0068" />
         <LongitudeOfAscendingNode Degrees="76.680" />
         <ArgumentOfPeriapsis Degrees="54.891" />
         <MeanAnomalyAtEpoch Degrees="181.97973" />
         <MeanRadius Km="6051.8" />
-        <Diffuse Id="EveDiffuse" Path="Textures/Eve_Color.dds" Category="Terrain"/>
+        <Diffuse Id="EveDiffuse" Path="Textures/Eve_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Eve_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Eve_Height.png" Category="Terrain">
-            <Maximum Km="40"/>
-            <Minimum Km="-2"/>
+            <Maximum Km="7.526"/>
+            <Minimum Km="-1.8768"/>
         </Height>
-        <Mass Earths="0.815" />
+        <Mass Kg="122439800000000000000000" />
         <Color R="1.0" G="0.87" B="0.68" />
         <Retrograde Value="true"/>
         <Period Days="243"/>
@@ -2042,7 +2042,7 @@
                 <Count Value="64" />  <!-- a bit high and slow, but detailed enough to test shading/geometry -->
                 <Length M="100" />
                 <Amplitude Value="0.01" />
-                <Speed Value="1" />
+                <Speed Value="2" />
                 <LengthPersistence Value="0.93" />
                 <AmplitudePersistence Value="0.975" />
                 <SpeedPersistence Value="1.01" />
@@ -2085,7 +2085,7 @@
         <MeanAnomalyAtEpoch Degrees="53.23" />
         <MeanRadius Km="6.2" />
         <Diffuse Id="GillyDiffuse" Path="Textures/Gilly_Color.dds" Category="Terrain"/>
-        <Normal Path="Textures/Gilly_Normal.dds" Category="Terrain"/>
+        <Normal Path="../Core/Textures/Phobos_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Gilly_Height.png" Category="Terrain">
             <Maximum Km="6"/>
             <Minimum Km="0"/>
