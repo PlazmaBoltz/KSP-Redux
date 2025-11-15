@@ -2315,7 +2315,7 @@
         <MeanAnomalyAtEpoch Degrees="5.7" />
         <MeanRadius Km="6000" />
         <Mass Kg="4233212700000000000000000" />
-        <Diffuse Id="JupiterDiffuse" Path="../Core/Textures/Jupiter_Diffuse.dds" Category="Terrain"/>
+        <Diffuse Id="JupiterDiffuse" Path="Textures/Jupiter_Diffuse.dds" Category="Terrain"/>
         <Color R="0.08" G="0.47" B="0.2" />
         <Period Hours="9" Minutes="55" Seconds="30"/>
         <AxialTilt Degrees="3.13" />
@@ -2335,19 +2335,19 @@
             <Physical>
                 <SeaLevelPressure Atm="1.0"/>
                 <SeaLevelDensity KgPerM3="0.16"/>
-                <ScaleHeight Km="150" />
+                <ScaleHeight Km="75" />
             </Physical>
         </Atmosphere>
 
         <Clouds>
             <OrbitTransitionStartAltitude Km="5000" />
-            <OrbitTransitionEndAltitude Km="9000" />
+            <OrbitTransitionEndAltitude Km="300000000" />
             <MaxShadowsAltitude Km="9000" />
             <VolumetricsFlickerReductionDistance Km="10000.0"/>
             <Layer Id="JupiterLowerClouds">
                 <RotationSpeed X="0" Y="0" Z="0" />
 
-                <Texture Id="JupiterLowerCloudsMask" Path="../Core/Textures/Clouds/Compressed/JupiterLowerCloudsMask.dds" Category="Terrain">
+                <Texture Id="JupiterLowerCloudsMask" Path="Textures/Clouds/Compressed/JupiterLowerCloudsMask.dds" Category="Terrain">
                     <IsVirtual>false</IsVirtual>
                     <Manifest>
                         <MaxSize>0</MaxSize>
@@ -2356,7 +2356,7 @@
                 </Texture>
 
                 <Detail>
-                    <Texture Path="../Core/Textures/Clouds/Compressed/JupiterLowerLayerDetail.dds" Category="Terrain">
+                    <Texture Path="Textures/Clouds/Compressed/JupiterLowerLayerDetail.dds" Category="Terrain">
                         <IsVirtual>false</IsVirtual>
                         <Manifest>
                             <MaxSize>0</MaxSize>
@@ -2558,7 +2558,7 @@
             
             <Layer Id="JupiterClouds">
                 <RotationSpeed X="0" Y="0" Z="0" />
-                <Texture Id="JupiterMask" Path="../Core/Textures/Clouds/Compressed/JupiterMask.dds" Category="Terrain">
+                <Texture Id="JupiterMask" Path="Textures/Clouds/Compressed/JupiterMask.dds" Category="Terrain">
                     <IsVirtual>false</IsVirtual>
                     <Manifest>
                         <MaxSize>0</MaxSize>
@@ -2567,7 +2567,7 @@
                 </Texture>
                 <Detail>
                     <!-- Jupiter detail texture is a "passthrough" to use tilemask diectly as cloud type map -->
-                    <Texture Id="JupiterDetail" Path="../Core/Textures/Clouds/JupiterDetail.png" Category="Terrain">
+                    <Texture Id="JupiterDetail" Path="Textures/Clouds/JupiterDetail.png" Category="Terrain">
                         <IsVirtual>false</IsVirtual>
                         <Manifest>
                             <MaxSize>0</MaxSize>
@@ -2582,7 +2582,7 @@
                     <Color R="1.0" G="1.0" B="1.0" />
                     <Lambertian Value="0.5" />
                     <FlowMap>
-                        <Texture Id="Jupiter2DFlowmap" Path="../Core/Textures/Clouds/Compressed/Jupiter2DFlowmap.dds" Category="Terrain">
+                        <Texture Id="Jupiter2DFlowmap" Path="Textures/Clouds/Compressed/Jupiter2DFlowmap.dds" Category="Terrain">
                             <IsVirtual>false</IsVirtual>
                             <Manifest>
                                 <MaxSize>0</MaxSize>
@@ -2597,7 +2597,7 @@
                 <Color R="1.0" G="1.0" B="1.0" />
                 <MatchGroundColor Value="false" />
                 <VolumetricsFlowMap>
-                    <Texture Id="JupiterFlowmap" Path="../Core/Textures/Clouds/Compressed/JupiterFlowmap.dds" Category="Terrain">
+                    <Texture Id="JupiterFlowmap" Path="Textures/Clouds/Compressed/JupiterFlowmap.dds" Category="Terrain">
                         <IsVirtual>false</IsVirtual>
                         <Manifest>
                             <MaxSize>0</MaxSize>
