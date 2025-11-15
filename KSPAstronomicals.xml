@@ -241,7 +241,7 @@
         <Color R="0.33" G="0.95" B="0" />
     </Vehicle>
 
-    <Vehicle Id="Rocket" Parent="Kerbin">
+    <Vehicle Id="OdyseeI" Parent="Kerbin">
         <Canvas Id="Navball"/>
         <Canvas Id="Altitude"/>
         <Canvas Id="GameTime"/>
@@ -429,7 +429,7 @@
 
         </RootPart>
 
-        <SemiMajorAxis Km="6578" />
+        <SemiMajorAxis Km="1000" />
         <Inclination Degrees="18.28" />
         <Eccentricity Value="0" />
         <LongitudeOfAscendingNode Degrees="90" />
@@ -460,7 +460,7 @@
         <RootPart Id="KittenBackPackPart">
         </RootPart>
 
-        <SemiMajorAxis Km="500" />
+        <SemiMajorAxis Km="1000" />
         <Inclination Degrees="28.87" />
         <Eccentricity Value="0.0077" />
         <LongitudeOfAscendingNode Degrees="60.48" />
@@ -484,9 +484,9 @@
         <ArgumentOfPeriapsis Degrees="114.207" />
         <Diffuse Path="Textures/Kerbin_Diffuse.dds" Category="Terrain"/>
         <Normal Path="Textures/Kerbin_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Kerbin_Height.ktx2" Category="Terrain">
-            <Minimum Km="-1.39"/>
-            <Maximum Km="6.761"/>
+        <Height Path="Textures/Kerbin_Height.png" Category="Terrain">
+            <Minimum Km="-1.4"/>
+            <Maximum Km="6.7674"/>
         </Height>
         <Terrain>
             <BiomeIDMap Id="EarthBiomeID" Path="Textures/Earth_Biome_ID.png"/>
@@ -1065,11 +1065,11 @@
         <LongitudeOfAscendingNode Degrees="90" />
         <ArgumentOfPeriapsis Degrees="318.15" />
         <Color R="0.33" G="0.33" B="0.33" /> <!-- used for the sprite and planetshine -->
-        <Diffuse Path="../Core/Textures/Luna_Diffuse.ktx2" Category="Terrain"/>
+        <Diffuse Path="Textures/Mun_Diffuse.png" Category="Terrain"/>
         <Normal Path="../Core/Textures/Luna_Normal.dds" Category="Terrain"/>
-        <Height Path="../Core/Textures/Luna_Height.ktx2" Category="Terrain">
-            <Maximum Km="10.785"/>
-            <Minimum Km="-9.129"/>
+        <Height Path="Textures/Mun_Height.png" Category="Terrain">
+            <Maximum Km="7.0611"/>
+            <Minimum Km="-0.2479"/>
         </Height>
         <Terrain>
             <!-- In progress... -->
@@ -1526,77 +1526,5 @@
         <TidallyLocked Value="true" />
         <AxialTilt Degrees="6.68" />
         <AxialAlignment Degrees="180" />
-        <Landmark Id="Apollo11">
-            <Latitude Degrees="0.67408" />
-            <Longitude Degrees="23.47297" />
-        </Landmark>
-        <Landmark Id="Apollo12">
-            <Latitude Degrees="-3.01239" />
-            <Longitude Degrees="-23.42157" />
-        </Landmark>
-        <Landmark Id="Apollo14">
-            <Latitude Degrees="-3.64530" />
-            <Longitude Degrees="-17.47136" />
-        </Landmark>
-        <Landmark Id="Apollo15">
-            <Latitude Degrees="26.13222" />
-            <Longitude Degrees="3.63397" />
-        </Landmark>
-        <Crater Id="Tycho">
-            <Latitude Degrees="-43.37" />
-            <Longitude Degrees="-11.16" />
-        </Crater>
-        <Crater Id="Copernicus">
-            <Latitude Degrees="9.68" />
-            <Longitude Degrees="-20.05" />
-        </Crater>
-        <Crater Id="Aristarchus">
-            <Latitude Degrees="23.7" />
-            <Longitude Degrees="-47.4" />
-        </Crater>
-        <Crater Id="Plato">
-            <Latitude Degrees="51.6" />
-            <Longitude Degrees="-9.4" />
-        </Crater>
-        <Crater Id="Archimedes">
-            <Latitude Degrees="29.7" />
-            <Longitude Degrees="-4.0" />
-        </Crater>
-        <Crater Id="Grimaldi">
-            <Latitude Degrees="-5.5" />
-            <Longitude Degrees="-68.6" />
-        </Crater>
-        <Crater Id="Ptolemaeus">
-            <Latitude Degrees="-9.4" />
-            <Longitude Degrees="-1.4" />
-        </Crater>
-        <Crater Id="Eratosthenes">
-            <Latitude Degrees="14.5" />
-            <Longitude Degrees="-11.3" />
-        </Crater>
-        <Crater Id="Gassendi">
-            <Latitude Degrees="-17.5" />
-            <Longitude Degrees="40.1" />
-        </Crater>
-        <Crater Id="Schickard">
-            <Latitude Degrees="-44.1" />
-            <Longitude Degrees="-55.0" />
-        </Crater>
-        <Crater Id="Clavius">
-            <Latitude Degrees="-58.8" />
-            <Longitude Degrees="-14.9" />
-        </Crater>
-        <Crater Id="Langrenus">
-            <Latitude Degrees="-8.9" />
-            <Longitude Degrees="60.2" />
-        </Crater>
-        <Crater Id="Petavius">
-            <Latitude Degrees="-25.0" />
-            <Longitude Degrees="60.4" />
-        </Crater>
-        <Crater Id="RupesAltai">
-            <Latitude Degrees="22.8" />
-            <Longitude Degrees="4.0" />
-        </Crater>
     </TerrestrialBody>
 </Assets>

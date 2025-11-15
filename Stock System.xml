@@ -28,7 +28,11 @@
 
     <LoadFromLibrary Id="Kerbin" Parent="Kerbol"/>
     <LoadFromLibrary Id="Mun" Parent="Kerbin"/>
-    <LoadFromLibrary Id="Rocket" Parent="Kerbin" />
+    <LoadFromLibrary Id="OdyseeI" Parent="Kerbin" />
     <LoadFromLibrary Id="Jeb" Parent="Kerbin" />
-
+    <LoadFromLibrary Id="Duna" Parent="Kerbol" />
+    <LoadFromLibrary Id="Ike" Parent="Duna" />
+    <LoadFromLibrary Id="Eve" Parent="Kerbol" />
+    <LoadFromLibrary Id="Gilly" Parent="Eve" />
+    <LoadFromLibrary Id="Moho" Parent="Kerbin" />
 </System>
