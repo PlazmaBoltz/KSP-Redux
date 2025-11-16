@@ -2952,22 +2952,37 @@
             <Maximum Km="2"/>
             <Minimum Km="-0.05"/>
         </Height>
-        <!-- <Ocean>
+      <Ocean>
             <Level Km="0" />
-            <MeshCollection Id="Optimized"/>
-            <Waves>
-                <Count Value="64" />
-                <Length M="100" />
-                <Amplitude Value="0.05" />
-                <Speed Value="1.5" />
+            <TransparencyDepth M = "1000"/>
+            <MeshCollection Id="LaytheOcean"/>
+            <WindWaves>
+                <!-- The WindTexture is used to adjust wind speed and fetch locally, lerping between min and max-->
+                <WindTexture Path="Textures/Laythe_Ocean_Wind.png" Category="Terrain"/>
+                <MinWindSpeed Value="2.0" />
+                <MinWindFetch Km="30.0"/>
+                <MaxWindSpeed Value="15.0" />
+                <MaxWindFetch Km="800.0"/>
+                <Directionality Value="1.0"/>
+                <FoamAmount Value="0.5"/>
+                <Depth Km="0.01"/>
+            </WindWaves>
+            <GerstnerWaves> <!-- leaving this in just for the cool factor of combining big gerstner waves with FFT -->
+                <Count Value="0" /> <!-- change to 1 for tsunami waves -->
+                <Length M="10000" />
+                <Amplitude Value="0.75" />
+                <Speed Value="1.0" />
                 <LengthPersistence Value="0.93" />
                 <AmplitudePersistence Value="0.975" />
                 <SpeedPersistence Value="1.01" />
-            </Waves>
-            <Color R="0.0901711" G="0.2208759" B="0.31672597" />
-            <TransparencyDepth M="1000" />
+            </GerstnerWaves>
+            
+            <!-- This color value and the colormap's content get multiplied -->
+            <Color R="0.588" G="0.588" B="0.588" />
+            <ColorTexture Path="Textures/Laythe_Ocean_Color_4096.dds" Category="Terrain"/>
+            
+            <TransparencyDepth M="100" />
         </Ocean>
-        -->
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -3087,8 +3102,8 @@
                 </CloudShape>
             </CloudType>
             <CloudType Name="Cumulus Congestus 1">
-                <StartAltitude Km="2.0"/>
-                <Height Km="2.7"/>
+                <StartAltitude Km="1.5"/>
+                <Height Km="2.0"/>
                 <Density Value="0.012"/>
                 <NoiseScale Km="2.3"/>
                 <EdgeSharpness Value="0.96"/>
@@ -3128,8 +3143,8 @@
                 </CloudShape>
             </CloudType>
             <CloudType Name="Cumulus Congestus 2">
-                <StartAltitude Km="2.0"/>
-                <Height Km="4.7"/>
+                <StartAltitude Km="1.5"/>
+                <Height Km="2.7"/>
                 <Density Value="0.006"/>
                 <NoiseScale Km="2.3"/>
                 <EdgeSharpness Value="0.96"/>
@@ -3175,8 +3190,8 @@
                 </CloudShape>
             </CloudType>
             <CloudType Name="Cumulus Congestus 3">
-                <StartAltitude Km="2.0"/>
-                <Height Km="6.7"/>
+                <StartAltitude Km="1.5"/>
+                <Height Km="3.7"/>
                 <Density Value="0.006"/>
                 <NoiseScale Km="2.3"/>
                 <EdgeSharpness Value="0.96"/>
@@ -3221,7 +3236,7 @@
             <Texture Id="Textures/Clouds/compressed/Earth_clouds_placeholder_top_layer.dds" Path="Textures/Clouds/compressed/Earth_clouds_placeholder_top_layer.dds" Category="Terrain"/>
                 <Detail>
                     <Texture Path="Textures/Clouds/compressed/CirroStratusDetail.dds" Category="Terrain"/>
-                    <Size Km ="400"/>
+                    <Size Km ="300"/>
                 </Detail>
                 <Color R="1.0" G="1.0" B="1.0" />
                 <TwoDimensionalCloud>
@@ -3241,7 +3256,7 @@
                     <ScrollSpeed Value="5"/>
                 </Noise>
                 <CloudType Name="CirroStratus">
-                    <StartAltitude Km="11.0"/>
+                    <StartAltitude Km="6.0"/>
                     <Height Km="0.6"/>
                     <Density Value="0.001"/>
                     <NoiseScale Km="4.0"/>
