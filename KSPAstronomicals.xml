@@ -1053,8 +1053,8 @@
             </Layer>
         </Clouds>
         <Landmark Id="KSC">
-            <Latitude Degrees="0" />
-            <Longitude Degrees="0" />
+            <Latitude Degrees="-0.25" />
+            <Longitude Degrees="-74.65" />
         </Landmark>
     </AtmosphericBody>   
 
@@ -2323,18 +2323,16 @@
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="40839348.203" />
         <Inclination Degrees="5" />
-        <Eccentricity Value="0.145" />
+        <Eccentricity Value=".145" />
         <LongitudeOfAscendingNode Degrees="280" />
         <ArgumentOfPeriapsis Degrees="90" />
-        <Period Hours="27" Minutes="40" Seconds="30"/>
         <Diffuse Path="Textures/Dres_Color.png" Category="Terrain"/>
         <Normal Path="Textures/Dres_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Dres_Height.png" Category="Terrain">
             <Maximum Km="5.6697"/>
             <Minimum Km="0.0254"/>
         </Height>
-        <MeanAnomalyAtEpoch Degrees="179" />
-        
+        <MeanAnomalyAtEpoch Degrees="180" />
         <MeanRadius Km="138" />
         <Mass kg="321909370000000000000" />
         <Color R="0.72" G="0.72" B="0.72" />
@@ -2862,7 +2860,7 @@
         </Clouds>
     </AtmosphericBody>
     <TerrestrialBody Id="Pol" Parent="Jool">
-        <MeshCollection Id="Asteroid"/>
+        <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="	179890" />
         <TidallyLocked Value="true" />
         <Inclination Degrees="4.25" />
@@ -3018,8 +3016,8 @@
             </Physical>
         </Atmosphere>
         <Clouds>
-            <OrbitTransitionStartAltitude Km="0" />
-            <OrbitTransitionEndAltitude Km="0" />
+            <OrbitTransitionStartAltitude Km="30" />
+            <OrbitTransitionEndAltitude Km="50" />
             <MaxShadowsAltitude Km="100" />
             <VolumetricsFlickerReductionDistance Km="0"/>
             <Layer Id="LaytheClouds">
