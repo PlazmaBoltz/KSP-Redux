@@ -49,4 +49,5 @@
     <LoadFromLibrary Id="Ovok" Parent="Sarnus" />
     <LoadFromLibrary Id="Slate" Parent="Sarnus" />
     <LoadFromLibrary Id="Tekto" Parent="Sarnus" />
+    <LoadFromLibrary Id="Urlum" Parent="Kerbol" />
 </System>
