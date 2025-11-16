@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlanetMeshCollection Id="LaytheOcean">
+    
+    <CubeMesh Id="Laythe1">
+        <Face Resolution="4" />
+        <Select Offset="6">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+    
+    <CubeMesh Id="Laythe2">
+        <Distance Km="100000" />
+        <Face Resolution="8" />
+        <Select Offset="12">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+    
+    <CubeMesh Id="Laythe3">
+        <Distance Km="65536" />
+        <Face Resolution="16" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+    
+    <CubeMesh Id="Laythe4">
+        <Distance Km="32768" />
+        <Face Resolution="16" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+    
+    <CubeMesh Id="Laythe6">
+        <Distance Km="16384" />
+        <Face Resolution="32" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+    
+    <CubeMesh Id="Laythe6">
+        <Distance Km="8192" />
+        <Face Resolution="32" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+    
+    <CubeMesh Id="Laythe7">
+        <Distance Km="4096" />
+        <Face Resolution="32" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+    
+    <CubeMesh Id="Laythe8">
+        <Distance Km="2048" />
+        <Face Resolution="32" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96" Snap="true">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+    
+    <CubeMesh Id="Laythe9">
+        <Distance Km="1024" />
+        <Face Resolution="32" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96" Snap="true">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+    
+    <CubeMesh Id="Laythe10">
+        <Distance Km="512" />
+        <Face Resolution="32" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96" Snap="true">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+    
+    <CubeMesh Id="Laythe11">
+        <Distance Km="256" />
+        <Face Resolution="32" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+
+    <CubeMesh Id="Laythe12">
+        <Distance Km="128" />
+        <Face Resolution="32" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96" Snap="true">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+
+    <CubeMesh Id="Laythe13">
+        <Distance Km="64" />
+        <Face Resolution="32" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96" Snap="true">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+    
+    <CubeMesh Id="Laythe14">
+        <Distance Km="32" />
+        <Face Resolution="32" />
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="96" Snap="true">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="64">
+            <Subdivide Ratio="2"/>
+        </Select>
+    </CubeMesh>
+
+    <CubeMesh Id="Laythe15">
+        <Distance Km="16" />
+        <Face Resolution="32" />
+        <Select Offset="8">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="8">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="8">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="8">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="8" >
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="8">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="8">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="8">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="8">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="8">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="8">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="16" >
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="16">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="16">
+            <Subdivide Ratio="2"/>
+        </Select>
+        <Select Offset="16" Snap="true">
+            <Subdivide Ratio="4"/>
+        </Select>
+    </CubeMesh>
+    
+</PlanetMeshCollection>
