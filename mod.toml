@@ -46,4 +46,4 @@ supportedKittenFurQuality = [
 ]
 
 assets = [ "KSPAstronomicals.xml", "DefaultAssets.xml" ]
-systems = ["Kerbol.xml", "StockSystem.xml" ]
+systems = ["Kerbol.xml", "StockSystem.xml", "OPM.xml" ]
