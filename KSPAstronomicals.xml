@@ -2038,7 +2038,7 @@
         <AxialTilt Degrees="177.4" />
         <AxialAlignment Degrees="0" />
 
-        <Ocean>
+  <Ocean>
             <Level Km="-0.250" />
             <TransparencyDepth M = "1000"/>
             <MeshCollection Id="EveOcean"/>
@@ -2069,7 +2069,7 @@
             
             <TransparencyDepth M="100" />
         </Ocean>
-        
+
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -2862,6 +2862,7 @@
     <TerrestrialBody Id="Pol" Parent="Jool">
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="	179890" />
+        <TidallyLocked Value="true" />
         <Inclination Degrees="4.25" />
         <Eccentricity Value="0.171" />
         <LongitudeOfAscendingNode Degrees="2" />
@@ -2881,6 +2882,7 @@
     <TerrestrialBody Id="Vall" Parent="Jool">
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="43152" />
+        <TidallyLocked Value="true" />
         <Inclination Degrees="0" />
         <Eccentricity Value="0" />
         <LongitudeOfAscendingNode Degrees="0" />
@@ -2902,6 +2904,7 @@
     <TerrestrialBody Id="Tylo" Parent="Jool">
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="68500" />
+        <TidallyLocked Value="true" />
         <Inclination Degrees="0.025" />
         <Eccentricity Value="0" />
         <LongitudeOfAscendingNode Degrees="0" />
@@ -2919,8 +2922,9 @@
         <Color R="0.66" G="0.59" B="0.38" />
     </TerrestrialBody>
     <TerrestrialBody Id="Bop" Parent="Jool">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="Asteroid"/>
         <SemiMajorAxis Km="	128500" />
+        <TidallyLocked Value="true" />
         <Inclination Degrees="15" />
         <Eccentricity Value="0.235" />
         <LongitudeOfAscendingNode Degrees="10" />
@@ -2943,6 +2947,7 @@
         <SemiMajorAxis Km="27184" />
         <Inclination Degrees="0.374" />
         <Eccentricity Value="0.0032" />
+        <TidallyLocked Value="true" />
         <LongitudeOfAscendingNode Degrees="85.1" />
         <ArgumentOfPeriapsis Degrees="54.1" />
         <MeanAnomalyAtEpoch Degrees="141.6" />
@@ -2952,7 +2957,8 @@
             <Maximum Km="2"/>
             <Minimum Km="-0.05"/>
         </Height>
-      <Ocean>
+
+    <Ocean>
             <Level Km="0" />
             <TransparencyDepth M = "1000"/>
             <MeshCollection Id="LaytheOcean"/>
@@ -2983,6 +2989,8 @@
             
             <TransparencyDepth M="100" />
         </Ocean>
+
+
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -3008,8 +3016,8 @@
             </Physical>
         </Atmosphere>
         <Clouds>
-            <OrbitTransitionStartAltitude Km="0" />
-            <OrbitTransitionEndAltitude Km="0" />
+            <OrbitTransitionStartAltitude Km="30" />
+            <OrbitTransitionEndAltitude Km="50" />
             <MaxShadowsAltitude Km="100" />
             <VolumetricsFlickerReductionDistance Km="0"/>
             <Layer Id="LaytheClouds">
@@ -3102,8 +3110,8 @@
                 </CloudShape>
             </CloudType>
             <CloudType Name="Cumulus Congestus 1">
-                <StartAltitude Km="1.5"/>
-                <Height Km="2.0"/>
+                <StartAltitude Km="2.0"/>
+                <Height Km="2.7"/>
                 <Density Value="0.012"/>
                 <NoiseScale Km="2.3"/>
                 <EdgeSharpness Value="0.96"/>
@@ -3143,8 +3151,8 @@
                 </CloudShape>
             </CloudType>
             <CloudType Name="Cumulus Congestus 2">
-                <StartAltitude Km="1.5"/>
-                <Height Km="2.7"/>
+                <StartAltitude Km="2.0"/>
+                <Height Km="4.7"/>
                 <Density Value="0.006"/>
                 <NoiseScale Km="2.3"/>
                 <EdgeSharpness Value="0.96"/>
@@ -3190,8 +3198,8 @@
                 </CloudShape>
             </CloudType>
             <CloudType Name="Cumulus Congestus 3">
-                <StartAltitude Km="1.5"/>
-                <Height Km="3.7"/>
+                <StartAltitude Km="2.0"/>
+                <Height Km="6.7"/>
                 <Density Value="0.006"/>
                 <NoiseScale Km="2.3"/>
                 <EdgeSharpness Value="0.96"/>
@@ -3236,7 +3244,7 @@
             <Texture Id="Textures/Clouds/compressed/Earth_clouds_placeholder_top_layer.dds" Path="Textures/Clouds/compressed/Earth_clouds_placeholder_top_layer.dds" Category="Terrain"/>
                 <Detail>
                     <Texture Path="Textures/Clouds/compressed/CirroStratusDetail.dds" Category="Terrain"/>
-                    <Size Km ="300"/>
+                    <Size Km ="400"/>
                 </Detail>
                 <Color R="1.0" G="1.0" B="1.0" />
                 <TwoDimensionalCloud>
@@ -3256,7 +3264,7 @@
                     <ScrollSpeed Value="5"/>
                 </Noise>
                 <CloudType Name="CirroStratus">
-                    <StartAltitude Km="6.0"/>
+                    <StartAltitude Km="11.0"/>
                     <Height Km="0.6"/>
                     <Density Value="0.001"/>
                     <NoiseScale Km="4.0"/>
@@ -3288,7 +3296,7 @@
             </Layer>
         </Clouds>
         <MeanRadius Km="83.5" />
-        <Mass Kg="29397311000000000000000" />
+        <Mass Zg="0.025" />
         <Color R="0.26" G="0.55" B="0.62" />
     </AtmosphericBody>
 
@@ -3311,6 +3319,13 @@
         <Color R="0.95" G="0.78" B="0.64" />
     </TerrestrialBody>
 
+
+
+
+
+
+
+    
 
     <!-- Outer Planets Mod -->
     <AtmosphericBody Id="Sarnus" Parent="Kerbol">	
