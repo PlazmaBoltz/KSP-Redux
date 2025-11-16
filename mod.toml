@@ -44,6 +44,6 @@ supportedKittenFurQuality = [
     { name = "Low", value = 8 },
     { name = "Very Low", value = 4 },
 ]
-
-assets = [ "KSPAstronomicals.xml", "DefaultAssets.xml", "KSPReduxMesh/EveOcean.xml","KSPReduxMesh/LaytheOcean.xml","KSPReduxMesh/TektoOcean.xml"]
+planetMeshes = ["KSPReduxMesh/EveOcean.xml","KSPReduxMesh/LaytheOcean.xml","KSPReduxMesh/TektoOcean.xml"]
+assets = [ "KSPAstronomicals.xml", "DefaultAssets.xml"]
 systems = ["Kerbol.xml", "StockSystem.xml", "OPM.xml" ]
