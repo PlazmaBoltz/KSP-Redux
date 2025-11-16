@@ -2037,6 +2037,39 @@
         <Period Days="243"/>
         <AxialTilt Degrees="177.4" />
         <AxialAlignment Degrees="0" />
+
+        <Ocean>
+            <Level Km="-0.250" />
+            <TransparencyDepth M = "1000"/>
+            <MeshCollection Id="EveOcean"/>
+            <WindWaves>
+                <!-- The WindTexture is used to adjust wind speed and fetch locally, lerping between min and max-->
+                <WindTexture Path="Textures/Eve_Ocean_Wind.png" Category="Terrain"/>
+                <MinWindSpeed Value="2.0" />
+                <MinWindFetch Km="30.0"/>
+                <MaxWindSpeed Value="15.0" />
+                <MaxWindFetch Km="800.0"/>
+                <Directionality Value="1.0"/>
+                <FoamAmount Value="0.5"/>
+                <Depth Km="0.01"/>
+            </WindWaves>
+            <GerstnerWaves> <!-- leaving this in just for the cool factor of combining big gerstner waves with FFT -->
+                <Count Value="0" /> <!-- change to 1 for tsunami waves -->
+                <Length M="10000" />
+                <Amplitude Value="0.75" />
+                <Speed Value="1.0" />
+                <LengthPersistence Value="0.93" />
+                <AmplitudePersistence Value="0.975" />
+                <SpeedPersistence Value="1.01" />
+            </GerstnerWaves>
+            
+            <!-- This color value and the colormap's content get multiplied -->
+            <Color R="0.588" G="0.588" B="0.588" />
+            <ColorTexture Path="Textures/Eve_Ocean_Color_4096.jpg" Category="Terrain"/>
+            
+            <TransparencyDepth M="100" />
+        </Ocean>
+        
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
