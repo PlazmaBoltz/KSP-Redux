@@ -50,4 +50,13 @@
     <LoadFromLibrary Id="Slate" Parent="Sarnus" />
     <LoadFromLibrary Id="Tekto" Parent="Sarnus" />
     <LoadFromLibrary Id="Urlum" Parent="Kerbol" />
+    <LoadFromLibrary Id="Polta" Parent="Urlum" />
+    <LoadFromLibrary Id="Priax" Parent="Urlum" />
+    <LoadFromLibrary Id="Tal" Parent="Wal" />
+    <LoadFromLibrary Id="Wal" Parent="Urlum" />
+    <LoadFromLibrary Id="Neidon" Parent="Kerbol" />
+    <LoadFromLibrary Id="Thatmo" Parent="Neidon" />
+    <LoadFromLibrary Id="Nissee" Parent="Neidon" />
+    <LoadFromLibrary Id="Plock" Parent="Kerbol" />
+    <LoadFromLibrary Id="Karen" Parent="Plock" />
 </System>
