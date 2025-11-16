@@ -3016,8 +3016,8 @@
             </Physical>
         </Atmosphere>
         <Clouds>
-            <OrbitTransitionStartAltitude Km="30" />
-            <OrbitTransitionEndAltitude Km="50" />
+            <OrbitTransitionStartAltitude Km="0" />
+            <OrbitTransitionEndAltitude Km="0" />
             <MaxShadowsAltitude Km="100" />
             <VolumetricsFlickerReductionDistance Km="0"/>
             <Layer Id="LaytheClouds">
