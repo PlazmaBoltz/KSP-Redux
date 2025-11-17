@@ -3,7 +3,7 @@
     <StellarBody Id="Kerbol">
         <MeanRadius Km="261600" />
         <Mass Suns="0.00087827295" />
-        <Diffuse Path="Textures/Sol_Diffuse.jpg" Category="Terrain"/>
+        <Diffuse Path="Textures/PlanetTextures/Kerbol/Sol_Diffuse.jpg" Category="Terrain"/>
         <Color R="1" G="1" B="1" />
         <Sunlight R="9" G="9" B="9" />
     </StellarBody>
@@ -482,9 +482,9 @@
         <Eccentricity Value="0" />
         <LongitudeOfAscendingNode Degrees="3.14" />
         <ArgumentOfPeriapsis Degrees="114.207" />
-        <Diffuse Path="Textures/Kerbin_Diffuse.dds" Category="Terrain"/>
-        <Normal Path="Textures/Kerbin_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Kerbin_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Kerbin/Kerbin_Diffuse.dds" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Kerbin/Kerbin_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Kerbin/Kerbin_Height.png" Category="Terrain">
             <Minimum Km="-1.4"/>
             <Maximum Km="6.7674"/>
         </Height>
@@ -1066,9 +1066,9 @@
         <LongitudeOfAscendingNode Degrees="0" />
         <ArgumentOfPeriapsis Degrees="318.15" />
         <Color R="0.33" G="0.33" B="0.33" /> <!-- used for the sprite and planetshine -->
-        <Diffuse Path="Textures/Mun_Diffuse.png" Category="Terrain"/>
-        <Normal Path="../Core/Textures/Luna_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Mun_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Kerbin/Mun/Mun_Color.png" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Kerbin/Mun/Mun_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Kerbin/Mun/Mun_Height.png" Category="Terrain">
             <Maximum Km="7.0611"/>
             <Minimum Km="-0.2479"/>
         </Height>
@@ -1537,9 +1537,9 @@
         <LongitudeOfAscendingNode Degrees="78" />
         <ArgumentOfPeriapsis Degrees="38" />
         <Color R="0.33" G="0.43" B="0.43" /> <!-- used for the sprite and planetshine -->
-        <Diffuse Path="Textures/Minmus_Color.png" Category="Terrain"/>
+        <Diffuse Path="Textures/PlanetTextures/Kerbin/Minmus/Minmus_Color.png" Category="Terrain"/>
         <Normal Path="../Core/Textures/Luna_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Minmus_Height.png" Category="Terrain">
+        <Height Path="Textures/PlanetTextures/Kerbin/Minmus/Minmus_Height.png" Category="Terrain">
             <Maximum Km="5.7246"/>
             <Minimum Km="0"/>
         </Height>
@@ -2004,13 +2004,13 @@
         <ArgumentOfPeriapsis Degrees="15" />
         <MeanAnomalyAtEpoch Degrees="180" />
         <MeanRadius Km="250" />
-        <Diffuse Path="Textures/Moho_Color.dds" Category="Terrain"/>
-        <Normal Path="Textures/Moho_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Moho_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Moho/Moho_Color.dds" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Moho/Moho_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Moho/Moho_Height.png" Category="Terrain">
             <Maximum Km="6.8173"/>
             <Maximum Km="0.028"/>
         </Height>
-        <Mass Zg="330.11" />
+        <Mass Kg="2526331400000000000000" />
         <Color R="1" G="1" B="1" />
         <Period Days="58" Hours="15" Minutes="30" Seconds="14"/>
     </TerrestrialBody>
@@ -2023,9 +2023,9 @@
         <ArgumentOfPeriapsis Degrees="54.891" />
         <MeanAnomalyAtEpoch Degrees="181.97973" />
         <MeanRadius Km="700" />
-        <Diffuse Path="Textures/Eve_Color.dds" Category="Terrain"/>
-        <Normal Path="Textures/Eve_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Eve_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Eve/Eve_Color.dds" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Eve/Eve_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Eve/Eve_Height.png" Category="Terrain">
             <Maximum Km="7.526"/>
             <Minimum Km="-1.8768"/>
         </Height>
@@ -2102,9 +2102,9 @@
         <ArgumentOfPeriapsis Degrees="10" />
         <MeanAnomalyAtEpoch Degrees="51.5662" />
         <MeanRadius Km="6.2" />
-        <Diffuse Path="Textures/Gilly_Color.png" Category="Terrain"/>
+        <Diffuse Path="Textures/PlanetTextures/Eve/Gilly/Gilly_Color.png" Category="Terrain"/>
         <Normal Path="../Core/Textures/Phobos_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Gilly_Height.png" Category="Terrain">
+        <Height Path="Textures/PlanetTextures/Eve/Gilly/Gilly_Height.png" Category="Terrain">
             <Maximum Km="6.4006"/>
             <Minimum Km="1.4932"/>
         </Height>
@@ -2117,9 +2117,9 @@
         <Eccentricity Value="0.051" />
         <LongitudeOfAscendingNode Degrees="135.5" />
         <ArgumentOfPeriapsis Degrees="0" />
-        <Diffuse Path="Textures/Duna_Diffuse.png" Category="Terrain"/>
-        <Normal Path="Textures/Duna_Normal.dds" Power="0.1" Category="Terrain"/>
-        <Height Path="Textures/Duna_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Duna/Duna_Diffuse.png" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Duna/Duna_Normal.dds" Power="0.1" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Duna/Duna_Height.png" Category="Terrain">
             <Maximum Km="8.2643"/>
             <Minimum Km="0.1245"/>
         </Height>
@@ -2307,9 +2307,9 @@
         <Eccentricity Value="0.03" />
         <LongitudeOfAscendingNode Degrees="0" />
         <ArgumentOfPeriapsis Degrees="0" />
-        <Diffuse Path="Textures/Ike_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/Ike_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Ike_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Duna/Ike/Ike_Color.png" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Duna/Ike/Ike_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Duna/Ike/Ike_Height.png" Category="Terrain">
             <Maximum Km="12.7351"/>
             <Minimum Km="0.0731"/>
         </Height>
@@ -2324,9 +2324,9 @@
         <Eccentricity Value=".145" />
         <LongitudeOfAscendingNode Degrees="280" />
         <ArgumentOfPeriapsis Degrees="90" />
-        <Diffuse Path="Textures/Dres_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/Dres_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Dres_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Dres/Dres_Color.png" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Dres/Dres_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Dres/Dres_Height.png" Category="Terrain">
             <Maximum Km="5.6697"/>
             <Minimum Km="0.0254"/>
         </Height>
@@ -2346,7 +2346,7 @@
         <MeanAnomalyAtEpoch Degrees="5.7" />
         <MeanRadius Km="6000" />
         <Mass Kg="4233212700000000000000000" />
-        <Diffuse Id="JupiterDiffuse" Path="Textures/Jupiter_Diffuse.dds" Category="Terrain"/>
+        <Diffuse Id="JoolDiffuse" Path="Textures/PlanetTextures/Jool/Jool_Diffuse.dds" Category="Terrain"/>
         <Color R="0.08" G="0.47" B="0.2" />
         <Period Hours="9" Minutes="55" Seconds="30"/>
         <AxialTilt Degrees="3.13" />
@@ -2375,10 +2375,10 @@
             <OrbitTransitionEndAltitude Km="3000000000" />
             <MaxShadowsAltitude Km="9000" />
             <VolumetricsFlickerReductionDistance Km="10000.0"/>
-            <Layer Id="JupiterLowerClouds">
+            <Layer Id="JoolLowerClouds">
                 <RotationSpeed X="0" Y="0" Z="0" />
 
-                <Texture Id="JupiterLowerCloudsMask" Path="Textures/Clouds/Compressed/JupiterLowerCloudsMask.dds" Category="Terrain">
+                <Texture Id="JoolLowerCloudsMask" Path="Textures/Clouds/Compressed/JoolLowerCloudsMask.dds" Category="Terrain">
                     <IsVirtual>false</IsVirtual>
                     <Manifest>
                         <MaxSize>0</MaxSize>
@@ -2387,7 +2387,7 @@
                 </Texture>
 
                 <Detail>
-                    <Texture Path="Textures/Clouds/Compressed/JupiterLowerLayerDetail.dds" Category="Terrain">
+                    <Texture Path="Textures/Clouds/Compressed/JoolLowerLayerDetail.dds" Category="Terrain">
                         <IsVirtual>false</IsVirtual>
                         <Manifest>
                             <MaxSize>0</MaxSize>
@@ -2398,7 +2398,7 @@
                 </Detail>
 
                 <TwoDimensionalCloud>
-                    <Texture Id="JupiterDiffuse"/>
+                    <Texture Id="JoolDiffuse"/>
                     <UseAlphaOnly Value="false" />
                     <Color R="1.0" G="1.0" B="1.0" />
                     <Lambertian Value="0.5" />
@@ -2406,11 +2406,11 @@
                 <Color R="0.29537368" G="0.29537368" B="0.29537368" />
                 <MatchGroundColor Value="false" />
                 <VolumetricsFlowMap>
-                    <Texture Id="JupiterFlowmap" Category="Terrain"/>
+                    <Texture Id="JoolFlowmap" Category="Terrain"/>
                     <Displacement Km="1840.0"/>
                     <LoopDuration Hours="0.5"/>
                 </VolumetricsFlowMap>
-                <VolumetricsColorMap Id="JupiterDiffuse"/>
+                <VolumetricsColorMap Id="JoolDiffuse"/>
                 <Raymarching>
                     <Step Scale="0.00275">
                         <Size M="10000" />
@@ -2587,9 +2587,9 @@
 
             </Layer>
             
-            <Layer Id="JupiterClouds">
+            <Layer Id="JoolClouds">
                 <RotationSpeed X="0" Y="0" Z="0" />
-                <Texture Id="JupiterMask" Path="Textures/Clouds/Compressed/JupiterMask.dds" Category="Terrain">
+                <Texture Id="JoolMask" Path="Textures/Clouds/Compressed/JoolMask.dds" Category="Terrain">
                     <IsVirtual>false</IsVirtual>
                     <Manifest>
                         <MaxSize>0</MaxSize>
@@ -2597,8 +2597,8 @@
                     </Manifest>
                 </Texture>
                 <Detail>
-                    <!-- Jupiter detail texture is a "passthrough" to use tilemask diectly as cloud type map -->
-                    <Texture Id="JupiterDetail" Path="Textures/Clouds/JupiterDetail.png" Category="Terrain">
+                    <!-- Jool detail texture is a "passthrough" to use tilemask diectly as cloud type map -->
+                    <Texture Id="JoolDetail" Path="Textures/Clouds/JoolDetail.png" Category="Terrain">
                         <IsVirtual>false</IsVirtual>
                         <Manifest>
                             <MaxSize>0</MaxSize>
@@ -2608,12 +2608,12 @@
                     <Size Km="400" />
                 </Detail>
                 <TwoDimensionalCloud>
-                    <Texture Id="JupiterDiffuse"/>
+                    <Texture Id="JoolDiffuse"/>
                     <UseAlphaOnly Value="false" />
                     <Color R="1.0" G="1.0" B="1.0" />
                     <Lambertian Value="0.5" />
                     <FlowMap>
-                        <Texture Id="Jupiter2DFlowmap" Path="Textures/Clouds/Compressed/Jupiter2DFlowmap.dds" Category="Terrain">
+                        <Texture Id="Jool2DFlowmap" Path="Textures/Clouds/Compressed/Jool2DFlowmap.dds" Category="Terrain">
                             <IsVirtual>false</IsVirtual>
                             <Manifest>
                                 <MaxSize>0</MaxSize>
@@ -2628,7 +2628,7 @@
                 <Color R="1.0" G="1.0" B="1.0" />
                 <MatchGroundColor Value="false" />
                 <VolumetricsFlowMap>
-                    <Texture Id="JupiterFlowmap" Path="Textures/Clouds/Compressed/JupiterFlowmap.dds" Category="Terrain">
+                    <Texture Id="JoolFlowmap" Path="Textures/Clouds/Compressed/JoolFlowmap.dds" Category="Terrain">
                         <IsVirtual>false</IsVirtual>
                         <Manifest>
                             <MaxSize>0</MaxSize>
@@ -2638,7 +2638,7 @@
                     <Displacement Km="1240.0"/>
                     <LoopDuration Hours="1.0"/>
                 </VolumetricsFlowMap>
-                <VolumetricsColorMap Id="JupiterDiffuse"/>
+                <VolumetricsColorMap Id="JoolDiffuse"/>
                 <Raymarching>
                     <Step Scale="0.00275">
                         <Size M="10000" />
@@ -2866,9 +2866,9 @@
         <LongitudeOfAscendingNode Degrees="2" />
         <ArgumentOfPeriapsis Degrees="15" />
         <MeanAnomalyAtEpoch Degrees="51.5" />
-        <Diffuse Path="Textures/Pol_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/Pol_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Pol_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Jool/Pol/Pol_Color.png" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Jool/Pol/Pol_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Jool/Pol/Pol_Height.png" Category="Terrain">
             <Maximum Km="5.5902"/>
             <Minimum Km="0.7835"/>
         </Height>
@@ -2886,9 +2886,9 @@
         <LongitudeOfAscendingNode Degrees="0" />
         <ArgumentOfPeriapsis Degrees="0" />
         <MeanAnomalyAtEpoch Degrees="51.5" />
-        <Diffuse Path="Textures/Vall_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/Vall_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Vall_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Jool/Vall/Vall_Color.png" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Jool/Vall/Vall_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Jool/Vall/Vall_Height.png" Category="Terrain">
             <Maximum Km="7.9891"/>
             <Minimum Km="-0.3943"/>
         </Height>
@@ -2907,9 +2907,9 @@
         <Eccentricity Value="0" />
         <LongitudeOfAscendingNode Degrees="0" />
         <ArgumentOfPeriapsis Degrees="0" />
-        <Diffuse Path="Textures/Tylo_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/Tylo_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Tylo_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Color.png" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Height.png" Category="Terrain">
             <Maximum Km="11.2825"/>
             <Minimum Km="0"/>
         </Height>
@@ -2928,9 +2928,9 @@
         <LongitudeOfAscendingNode Degrees="10" />
         <ArgumentOfPeriapsis Degrees="25" />
         <MeanAnomalyAtEpoch Degrees="51.56" />
-        <Diffuse Path="Textures/Bop_Diffuse.png" Category="Terrain"/>
-        <Normal Path="Textures/Bop_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Bop_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Jool/Bop/Bop_Diffuse.png" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Jool/Bop/Bop_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Jool/Bop/Bop_Height.png" Category="Terrain">
             <Maximum Km="21.754"/>
             <Minimum Km="2.0032"/>
         </Height>
@@ -2949,9 +2949,9 @@
         <LongitudeOfAscendingNode Degrees="85.1" />
         <ArgumentOfPeriapsis Degrees="54.1" />
         <MeanAnomalyAtEpoch Degrees="141.6" />
-        <Diffuse Path="Textures/Laythe_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/Laythe_Normal.dds" Power="0.4" Category="Terrain"/>
-        <Height Path="Textures/Laythe_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Color.png" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Normal.dds" Power="0.4" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Height.png" Category="Terrain">
             <Maximum Km="2"/>
             <Minimum Km="-0.05"/>
         </Height>
@@ -3305,9 +3305,9 @@
         <ArgumentOfPeriapsis Degrees="260" />
         <MeanAnomalyAtEpoch Degrees="180" />
         <MeanRadius Km="210" />
-        <Diffuse Path="Textures/Eeloo_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/Eeloo_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Eeloo_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Eeloo/Eeloo_Color.png" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Eeloo/Eeloo_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Eeloo/Eeloo_Height.png" Category="Terrain">
             <Maximum Km="3.8734"/>
             <Minimum Km="-0.3869"/>
         </Height>
@@ -3858,7 +3858,7 @@
         <Color R="0.941176" G="0.901961" B="0.54902" />
         <Diffuse Path="Textures/Hale_Color.dds" Category="Terrain"/>
         <Normal Path="Textures/Hale_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Gilly_Height.png" Category="Terrain">
+        <Height Path="Textures/PlanetTextures/Eve/Gilly/Gilly_Height.png" Category="Terrain">
             <Maximum Km="3.8734"/>
             <Minimum Km="-0.3869"/>
         </Height>
@@ -3890,9 +3890,9 @@
         <ArgumentOfPeriapsis Degrees="0" />
         <MeanAnomalyAtEpoch Degrees="0" />
         <MeanRadius Km="210" />
-        <Diffuse Path="Textures/Eeloo_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/Eeloo_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/Eeloo_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Eeloo/Eeloo_Color.png" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Eeloo/Eeloo_Normal.dds" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Eeloo/Eeloo_Height.png" Category="Terrain">
             <Maximum Km="3.8734"/>
             <Minimum Km="-0.3869"/>
         </Height>
