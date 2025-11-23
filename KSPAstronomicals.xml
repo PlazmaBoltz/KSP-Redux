@@ -446,7 +446,7 @@
 
     <KittenEva Id="Jeb" Parent="Kerbin">
         
-        <Character Id="TestKitty"/>
+        <Character Id="HunterKitten"/>
         
         <Canvas Id="Navball"/>
         <Canvas Id="Altitude"/>
