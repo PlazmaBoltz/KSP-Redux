@@ -1497,17 +1497,9 @@
             </Group>
         </GroundClutter>
         -->
-        
         <MeanAnomalyAtEpoch Degrees="0" />
         <MeanRadius Km="200" />
         <Mass Kg="975990660000000000000" />
-        <Rotation DefinitionFrame="Ecliptic">
-            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
-            <IsTidallyLocked Value="true" />
-            <Tilt Degrees="1.528734" />
-            <Azimuth Degrees="-15.3758" />
-            <InitialParentFacingLongitude Degrees="352.990171" />
-        </Rotation>
     </TerrestrialBody> 
 
     <TerrestrialBody Id="Minmus" Parent="Kerbin">   
@@ -1974,13 +1966,6 @@
         <MeanAnomalyAtEpoch Degrees="5.566" />
         <MeanRadius Km="60" />
         <Mass Kg="26457580000000000000" />
-        <Rotation DefinitionFrame="Ecliptic">
-            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
-            <IsTidallyLocked Value="true" />
-            <Tilt Degrees="1.528734" />
-            <Azimuth Degrees="-15.3758" />
-            <InitialParentFacingLongitude Degrees="352.990171" />
-        </Rotation>
         <AxialAlignment Degrees="180" />
     </TerrestrialBody> 
     <TerrestrialBody Id="Moho" Parent="Kerbol">
@@ -2107,9 +2092,6 @@
             <Minimum Km="1.4932"/>
         </Height>
         <Mass Kg="124203630000000000" />
-        <Rotation DefinitionFrame="Ecliptic">
-            <IsTidallyLocked Value="true" />
-        <Rotation>
     </TerrestrialBody>
     <AtmosphericBody Id="Duna" Parent="Kerbol">
         <MeshCollection Id="Default"/>
