@@ -9,198 +9,185 @@
     </StellarBody>
 
     <Vehicle Id="Gemini7" Parent="Kerbin">
-        <Canvas Id="Navball"/>
-        <Canvas Id="Altitude"/>
-        <Canvas Id="GameTime"/>
-        <Canvas Id="PitchYawRoll"/>
-        <Canvas Id="AutopilotSettings"/>
-        <Canvas Id="Telemetry"/>
-        <Canvas Id="EngineControl"/>
-        <Canvas Id="BurnControl"/>
-        <Canvas Id="RendezvousControl"/>
-        <WindSound SoundId="AtmosphericMovement"/>
 
-        <RootPart Id="SetA_Capsule_Medium">
+        <PartRef InstanceOf="Core_Command_A_Prefab_MediumCapsule_VariantA">
 
-            <Part Id="SetA_ServiceModule_Medium">
+            <PartRef InstanceOf="Core_ServiceModule_A_Prefab_MediumServiceModuleA">
                 <Transform>
                     <Position X="-2.1748"/>
                 </Transform>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Y="-1.3013" Z="0"/>
                         <Rotation X="1.57" Z="-3.03687"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Z="-1.3013"/>
                         <Rotation Y="0.10472" Z="3.14"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Y="1.3013"/>
                         <Rotation X="1.57" Y="-3.14" Z="-0.10472"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Z="1.3013"/>
                         <Rotation Y="3.24631"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="SetA_FuelTank_Half">
-                    <Transform>
-                        <Position X="-2.8665"/>
-                        <Rotation Y="3.14"/>
-                    </Transform>
-                </Part>
-
-                <Part Id="SetA_FuelTank3W3HA">
+                <PartRef InstanceOf="FuelTank_3W3HA">
                     <Transform>
                         <Position X="-4.7768"/>
                         <Rotation Z="3.14"/>
                     </Transform>
 
-                    <Part Id="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
                         <Transform>
                             <Position X="-3.75" Y="-1.6915" Z="0.0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
                         <Transform>
                             <Position X="-3.75" Y="1.6915" Z="0.0"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Y="-1.5084" Z="0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Y="1.5084" Z="0"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Z="-1.5084"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Z="1.5084"/>
                             <Rotation X="3.14"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Y="1.5078"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Y="-1.5078"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Z="-1.5078"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Z="1.5078"/>
                             <Rotation X="3.14"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="SetA_EngineA">
+                    <PartRef InstanceOf="Core_Propulsion_A_Prefab_EngineA1">
                         <Transform>
                             <Position X="-7.5389"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                </Part>
+                </PartRef>
 
-            </Part>
+            </PartRef>
 
-            <Part Id="SetA_FuelTank_Half">
+            <PartRef InstanceOf="MonoTank_HalfB">
                 <Transform>
                     <Position X="1.2825"/>
                 </Transform>
 
-                <Part Id="SetA_FuelMono">
+                <PartRef InstanceOf="FuelMono">
                     <Transform>
                         <Position X="0.9748" Y="-0.765"/>
                         <Rotation X="-1.57"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="SetA_FuelMono">
+                <PartRef InstanceOf="FuelMono">
                     <Transform>
                         <Position X="0.9748" Y="0.765"/>
                         <Rotation X="1.57"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="SetA_FuelMonoMini">
+                <PartRef InstanceOf="FuelMonoMini">
                     <Transform>
                         <Position X="0.9685" Z="-0.6381"/>
                     </Transform>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="1.0474" Z="-0.6446"/>
                             <Rotation Z="3.14"/>
                         </Transform>
-                    </Part>
-                </Part>
+                    </PartRef>
+                </PartRef>
 
-                <Part Id="SetA_FuelMonoMini">
+                <PartRef InstanceOf="FuelMonoMini">
                     <Transform>
                         <Position X="0.9685" Z="0.6381"/>
                         <Rotation X="3.14"/>
                     </Transform>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="1.0474" Z="0.6446"/>
                             <Rotation Y="3.14"/>
                         </Transform>
-                    </Part>
-                </Part>
+                    </PartRef>
+                </PartRef>
 
-            </Part>
+            </PartRef>
 
-        </RootPart>
+        </PartRef>
 
-        <SemiMajorAxis Km="6713" />
-        <Inclination Degrees="28.87" />
-        <Eccentricity Value="0.0077" />
-        <LongitudeOfAscendingNode Degrees="60.48" />
-        <ArgumentOfPeriapsis Degrees="30.0015" />
+        <Orbit>
+            <SemiMajorAxis Km="6713" />
+            <Inclination Degrees="28.87" />
+            <Eccentricity Value="0.0077" />
+            <LongitudeOfAscendingNode Degrees="60.48" />
+            <ArgumentOfPeriapsis Degrees="30.0015" />
+            <TimeAtPeriapsis Minutes="-20" />
+        </Orbit>
+
         <MeanRadius M="1.5" />
         <MassSpecificPMI X="1.13" Y="2.83" Z="2.83" />
         <Mass Kg="3396" />
@@ -242,200 +229,185 @@
     </Vehicle>
 
     <Vehicle Id="Rocket" Parent="Kerbin">
-        <Canvas Id="Navball"/>
-        <Canvas Id="Altitude"/>
-        <Canvas Id="GameTime"/>
-        <Canvas Id="PitchYawRoll"/>
-        <Canvas Id="AutopilotSettings"/>
-        <Canvas Id="BurnControl"/>
-        <Canvas Id="RendezvousControl"/>
-        <Canvas Id="EngineControl"/>
-        <Canvas Id="Telemetry"/>
-        <WindSound SoundId="AtmosphericMovement"/>
 
-        <RootPart Id="SetA_Capsule_Medium">
+        <PartRef InstanceOf="Core_Command_A_Prefab_MediumCapsule_VariantA">
 
-            <Part Id="SetA_ServiceModule_Medium">
+            <PartRef InstanceOf="Core_ServiceModule_A_Prefab_MediumServiceModuleA">
                 <Transform>
                     <Position X="-2.1748"/>
                 </Transform>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Y="-1.3013" Z="0"/>
                         <Rotation X="1.57" Z="-3.03687"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Z="-1.3013"/>
                         <Rotation Y="0.10472" Z="3.14"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Y="1.3013"/>
                         <Rotation X="1.57" Y="-3.14" Z="-0.10472"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Z="1.3013"/>
                         <Rotation Y="3.24631"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="SetA_FuelTank_Half">
-                    <Transform>
-                        <Position X="-2.8665"/>
-                        <Rotation Y="3.14"/>
-                    </Transform>
-                </Part>
-
-                <Part Id="SetA_FuelTank3W3HA">
+                <PartRef InstanceOf="FuelTank_3W3HA">
                     <Transform>
                         <Position X="-4.7768"/>
                         <Rotation Z="3.14"/>
                     </Transform>
 
-                    <Part Id="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
                         <Transform>
                             <Position X="-3.75" Y="-1.6915" Z="0.0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
                         <Transform>
                             <Position X="-3.75" Y="1.6915" Z="0.0"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Y="-1.5084" Z="0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Y="1.5084" Z="0"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Z="-1.5084"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Z="1.5084"/>
                             <Rotation X="3.14"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Y="1.5078"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Y="-1.5078"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Z="-1.5078"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Z="1.5078"/>
                             <Rotation X="3.14"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="SetA_EngineA">
+                    <PartRef InstanceOf="Core_Propulsion_A_Prefab_EngineA1">
                         <Transform>
                             <Position X="-7.5389"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                </Part>
+                </PartRef>
 
-            </Part>
+            </PartRef>
 
-            <Part Id="SetA_FuelTank_Half">
+            <PartRef InstanceOf="MonoTank_HalfB">
                 <Transform>
                     <Position X="1.2825"/>
                 </Transform>
 
-                <Part Id="SetA_FuelMono">
+                <PartRef InstanceOf="FuelMono">
                     <Transform>
                         <Position X="0.9748" Y="-0.765"/>
                         <Rotation X="-1.57"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="SetA_FuelMono">
+                <PartRef InstanceOf="FuelMono">
                     <Transform>
                         <Position X="0.9748" Y="0.765"/>
                         <Rotation X="1.57"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="SetA_FuelMonoMini">
+                <PartRef InstanceOf="FuelMonoMini">
                     <Transform>
                         <Position X="0.9685" Z="-0.6381"/>
                     </Transform>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="1.0474" Z="-0.6446"/>
                             <Rotation Z="3.14"/>
                         </Transform>
-                    </Part>
-                </Part>
+                    </PartRef>
+                </PartRef>
 
-                <Part Id="SetA_FuelMonoMini">
+                <PartRef InstanceOf="FuelMonoMini">
                     <Transform>
                         <Position X="0.9685" Z="0.6381"/>
                         <Rotation X="3.14"/>
                     </Transform>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="1.0474" Z="0.6446"/>
                             <Rotation Y="3.14"/>
                         </Transform>
-                    </Part>
-                </Part>
+                    </PartRef>
+                </PartRef>
 
-            </Part>
+            </PartRef>
 
-        </RootPart>
+        </PartRef>
 
-        <SemiMajorAxis Km="1000" />
-        <Inclination Degrees="18.28" />
-        <Eccentricity Value="0" />
-        <LongitudeOfAscendingNode Degrees="90" />
-        <ArgumentOfPeriapsis Degrees="0" />
-        <MeanAnomalyAtEpoch Degrees="63" />
-        <TimeAtPeriapsis Minutes="-36"/>
+        <Orbit DefinitionFrame="Ecliptic">
+            <SemiMajorAxis Km="6578" />
+            <Inclination Degrees="5.027765739305488E+00" />
+            <Eccentricity Value="0" />
+            <LongitudeOfAscendingNode Degrees="3.439586928342719E+02" />
+            <ArgumentOfPeriapsis Degrees="9.095632163367938E+01" />
+            <TimeAtPeriapsis Minutes="-46"/>
+        </Orbit>
+
         <MeanRadius M="20" />
         <MassSpecificPMI X="2.409102" Y="6.951899552083333" Z="6.951899552083333" />
         <Mass Kg="6110" />
@@ -447,26 +419,20 @@
     <KittenEva Id="Jeb" Parent="Kerbin">
         
         <Character Id="HunterKitten"/>
-        
-        <Canvas Id="Navball"/>
-        <Canvas Id="Altitude"/>
-        <Canvas Id="GameTime"/>
-        <Canvas Id="PitchYawRoll"/>
-        <Canvas Id="AutopilotSettings"/>
-        <Canvas Id="RendezvousControl"/>        
-        <Canvas Id="Telemetry"/>
-        <WindSound SoundId="AtmosphericMovement"/>
+        <PartRef InstanceOf="KittenBackPackPart">
+        </PartRef>
 
-        <RootPart Id="KittenBackPackPart">
-        </RootPart>
+        <Orbit>
+            <SemiMajorAxis Km="6713" />
+            <Inclination Degrees="28.87" />
+            <Eccentricity Value="0.0077" />
+            <LongitudeOfAscendingNode Degrees="60.48" />
+            <ArgumentOfPeriapsis Degrees="30.003" />
+            <TimeAtPeriapsis Minutes="-20" />
+        </Orbit>
 
-        <SemiMajorAxis Km="1000" />
-        <Inclination Degrees="28.87" />
-        <Eccentricity Value="0.0077" />
-        <LongitudeOfAscendingNode Degrees="60.48" />
-        <ArgumentOfPeriapsis Degrees="30.003" />
         <MeanRadius M="1.5" />
-        <MassSpecificPMI X="1.13" Y="2.83" Z="2.83" />
+        <MassSpecificPMI X="0.5" Y="0.5" Z="0.25" />
         <Mass Kg="50" />
         <PropellantMass Kg="20" />
         <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
@@ -476,12 +442,21 @@
     </KittenEva>
     
     <AtmosphericBody Id="Kerbin" Parent="Kerbol"> 
+        <Orbit>
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="13599840.256" />
+            <Inclination Degrees="0" />
+            <Eccentricity Value="0" />
+            <LongitudeOfAscendingNode Degrees="3.14" />
+            <ArgumentOfPeriapsis Degrees="114.207" />
+        </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <SiderealPeriod Hours="23.9344695944"/>
+            <Tilt Degrees="23.441522" />
+            <Azimuth Degrees="-0.363633" />
+            <InitialParentFacingLongitude Degrees="-118" />
+        </Rotation>
         <MeshCollection Id="EarthScale"/>
-        <SemiMajorAxis Km="13599840.256" />
-        <Inclination Degrees="0" />
-        <Eccentricity Value="0" />
-        <LongitudeOfAscendingNode Degrees="3.14" />
-        <ArgumentOfPeriapsis Degrees="114.207" />
         <Diffuse Path="Textures/PlanetTextures/Kerbin/Kerbin_Diffuse.dds" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Kerbin/Kerbin_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/PlanetTextures/Kerbin/Kerbin_Height.png" Category="Terrain">
@@ -1060,11 +1035,13 @@
 
     <TerrestrialBody Id="Mun" Parent="Kerbin">  
         <MeshCollection Id="Asteroid"/>
-        <SemiMajorAxis Km="12000" />
-        <Inclination Degrees="0" />
-        <Eccentricity Value="0" />
-        <LongitudeOfAscendingNode Degrees="0" />
-        <ArgumentOfPeriapsis Degrees="318.15" />
+        <Orbit>
+            <SemiMajorAxis Km="12000" />
+            <Inclination Degrees="0" />
+            <Eccentricity Value="0" />
+            <LongitudeOfAscendingNode Degrees="0" />
+            <ArgumentOfPeriapsis Degrees="318.15" />
+        </Orbit>
         <Color R="0.33" G="0.33" B="0.33" /> <!-- used for the sprite and planetshine -->
         <Diffuse Path="Textures/PlanetTextures/Kerbin/Mun/Mun_Color.png" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Kerbin/Mun/Mun_Normal.dds" Category="Terrain"/>
@@ -1524,18 +1501,24 @@
         <MeanAnomalyAtEpoch Degrees="0" />
         <MeanRadius Km="200" />
         <Mass Kg="975990660000000000000" />
-        <TidallyLocked Value="true" />
-        <AxialTilt Degrees="6.68" />
-        <AxialAlignment Degrees="180" />
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <IsTidallyLocked Value="true" />
+            <Tilt Degrees="1.528734" />
+            <Azimuth Degrees="-15.3758" />
+            <InitialParentFacingLongitude Degrees="352.990171" />
+        </Rotation>
     </TerrestrialBody> 
 
     <TerrestrialBody Id="Minmus" Parent="Kerbin">   
         <MeshCollection Id= "Asteroid"/>
-        <SemiMajorAxis Km="47000" />
-        <Inclination Degrees="6.0" />
-        <Eccentricity Value="0" />
-        <LongitudeOfAscendingNode Degrees="78" />
-        <ArgumentOfPeriapsis Degrees="38" />
+        <Orbit>
+            <SemiMajorAxis Km="47000" />
+            <Inclination Degrees="6.0" />
+            <Eccentricity Value="0" />
+            <LongitudeOfAscendingNode Degrees="78" />
+            <ArgumentOfPeriapsis Degrees="38" />
+        </Orbit>
         <Color R="0.33" G="0.43" B="0.43" /> <!-- used for the sprite and planetshine -->
         <Diffuse Path="Textures/PlanetTextures/Kerbin/Minmus/Minmus_Color.png" Category="Terrain"/>
         <Normal Path="../Core/Textures/Luna_Normal.dds" Category="Terrain"/>
@@ -1991,18 +1974,25 @@
         <MeanAnomalyAtEpoch Degrees="5.566" />
         <MeanRadius Km="60" />
         <Mass Kg="26457580000000000000" />
-        <TidallyLocked Value="true" />
-        <AxialTilt Degrees="0" />
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <IsTidallyLocked Value="true" />
+            <Tilt Degrees="1.528734" />
+            <Azimuth Degrees="-15.3758" />
+            <InitialParentFacingLongitude Degrees="352.990171" />
+        </Rotation>
         <AxialAlignment Degrees="180" />
     </TerrestrialBody> 
     <TerrestrialBody Id="Moho" Parent="Kerbol">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="5263138.304" />
-        <Inclination Degrees="7" />
-        <Eccentricity Value="0.2" />
-        <LongitudeOfAscendingNode Degrees="70" />
-        <ArgumentOfPeriapsis Degrees="15" />
-        <MeanAnomalyAtEpoch Degrees="180" />
+        <Orbit>
+            <SemiMajorAxis Km="5263138.304" />
+            <Inclination Degrees="7" />
+            <Eccentricity Value="0.2" />
+            <LongitudeOfAscendingNode Degrees="70" />
+            <ArgumentOfPeriapsis Degrees="15" />
+            <MeanAnomalyAtEpoch Degrees="180" />
+        </Orbit>
         <MeanRadius Km="250" />
         <Diffuse Path="Textures/PlanetTextures/Moho/Moho_Color.dds" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Moho/Moho_Normal.dds" Category="Terrain"/>
@@ -2012,16 +2002,20 @@
         </Height>
         <Mass Kg="2526331400000000000000" />
         <Color R="1" G="1" B="1" />
-        <Period Days="58" Hours="15" Minutes="30" Seconds="14"/>
+        <Rotation DefinitionFrame="Ecliptic">
+            <SiderealPeriod Days="58" Hours="15" Minutes="30" Seconds="14"/>
+        </Rotation>
     </TerrestrialBody>
     <AtmosphericBody Id="Eve" Parent="Kerbol">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="9832684.544" />
-        <Inclination Degrees="3.39458" />
-        <Eccentricity Value="0.0068" />
-        <LongitudeOfAscendingNode Degrees="76.680" />
-        <ArgumentOfPeriapsis Degrees="54.891" />
-        <MeanAnomalyAtEpoch Degrees="181.97973" />
+        <Orbit>
+            <SemiMajorAxis Km="9832684.544" />
+            <Inclination Degrees="3.39458" />
+            <Eccentricity Value="0.0068" />
+            <LongitudeOfAscendingNode Degrees="76.680" />
+            <ArgumentOfPeriapsis Degrees="54.891" />
+            <MeanAnomalyAtEpoch Degrees="181.97973" />
+        </Orbit>
         <MeanRadius Km="700" />
         <Diffuse Path="Textures/PlanetTextures/Eve/Eve_Color.dds" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Eve/Eve_Normal.dds" Category="Terrain"/>
@@ -2033,10 +2027,12 @@
         </Terrain>
         <Mass Kg="122439800000000000000000" />
         <Color R="0.9" G="0.1" B="0.9" />
-        <Retrograde Value="true"/>
-        <Period Days="243"/>
-        <AxialTilt Degrees="177.4" />
-        <AxialAlignment Degrees="0" />
+        <Rotation DefinitionFrame="Ecliptic">
+            <Retrograde Value="true"/>
+            <SiderealPeriod Days="243"/>
+            <AxialTilt Degrees="177.4" />
+            <AxialAlignment Degrees="0" />
+        </Rotation>
 
         <Ocean>
             <Level Km="-0.250" />
@@ -2095,11 +2091,13 @@
     </AtmosphericBody>
     <TerrestrialBody Id="Gilly" Parent="Eve">
         <MeshCollection Id="Asteroid"/>
-        <SemiMajorAxis Km="31500" />
-        <Inclination Degrees="12" />
-        <Eccentricity Value="0.55" />
-        <LongitudeOfAscendingNode Degrees="80" />
-        <ArgumentOfPeriapsis Degrees="10" />
+        <Orbit>
+            <SemiMajorAxis Km="31500" />
+            <Inclination Degrees="12" />
+            <Eccentricity Value="0.55" />
+            <LongitudeOfAscendingNode Degrees="80" />
+            <ArgumentOfPeriapsis Degrees="10" />
+        </Orbit>
         <MeanAnomalyAtEpoch Degrees="51.5662" />
         <MeanRadius Km="6.2" />
         <Diffuse Path="Textures/PlanetTextures/Eve/Gilly/Gilly_Color.png" Category="Terrain"/>
@@ -2109,14 +2107,19 @@
             <Minimum Km="1.4932"/>
         </Height>
         <Mass Kg="124203630000000000" />
+        <Rotation DefinitionFrame="Ecliptic">
+            <IsTidallyLocked Value="true" />
+        <Rotation>
     </TerrestrialBody>
     <AtmosphericBody Id="Duna" Parent="Kerbol">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="	20726155.264" />
-        <Inclination Degrees="0.06" />
-        <Eccentricity Value="0.051" />
-        <LongitudeOfAscendingNode Degrees="135.5" />
-        <ArgumentOfPeriapsis Degrees="0" />
+        <Orbit>
+            <SemiMajorAxis Km="	20726155.264" />
+            <Inclination Degrees="0.06" />
+            <Eccentricity Value="0.051" />
+            <LongitudeOfAscendingNode Degrees="135.5" />
+            <ArgumentOfPeriapsis Degrees="0" />
+        </Orbit>
         <Diffuse Path="Textures/PlanetTextures/Duna/Duna_Diffuse.png" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Duna/Duna_Normal.dds" Power="0.1" Category="Terrain"/>
         <Height Path="Textures/PlanetTextures/Duna/Duna_Height.png" Category="Terrain">
@@ -2127,9 +2130,11 @@
         <MeanRadius Km="320" />
         <Mass Kg="4515427000000000000000" />
         <Color R="1.0" G="0.27" B="0.0" />
-        <Period Days="3" Minutes="11" Seconds="22"/>
-        <AxialTilt Degrees="25.19" />
-        <AxialAlignment Degrees="0" />
+        <Rotation DefinitionFrame="Ecliptic">
+            <SiderealPeriod Days="3" Minutes="11" Seconds="22"/>
+            <AxialTilt Degrees="25.19" />
+            <AxialAlignment Degrees="0" />
+        </Rotation>
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -2302,28 +2307,42 @@
     </AtmosphericBody>
     <TerrestrialBody Id="Ike" Parent="Duna">
         <MeshCollection Id="Asteroid"/>
-        <SemiMajorAxis Km="3200" />
-        <Inclination Degrees="0.2" />
-        <Eccentricity Value="0.03" />
-        <LongitudeOfAscendingNode Degrees="0" />
-        <ArgumentOfPeriapsis Degrees="0" />
+        <Orbit>
+            <SemiMajorAxis Km="3200" />
+            <Inclination Degrees="0.2" />
+            <Eccentricity Value="0.03" />
+            <LongitudeOfAscendingNode Degrees="0" />
+            <ArgumentOfPeriapsis Degrees="0" />
+        </Orbit>
         <Diffuse Path="Textures/PlanetTextures/Duna/Ike/Ike_Color.png" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Duna/Ike/Ike_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/PlanetTextures/Duna/Ike/Ike_Height.png" Category="Terrain">
             <Maximum Km="12.7351"/>
             <Minimum Km="0.0731"/>
         </Height>
+        <Rotation DefinitionFrame="Ecliptic">
+            <SiderealPeriod Days="3" Minutes="11" Seconds="22"/>
+            <AxialTilt Degrees="25.19" />
+            <AxialAlignment Degrees="0" />
+        </Rotation>
         <MeanAnomalyAtEpoch Degrees="97" />
         <MeanRadius Km="130" />
         <Mass Kg="278216150000000000000" />
     </TerrestrialBody>
     <TerrestrialBody Id="Dres" Parent="Kerbol">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="40839348.203" />
-        <Inclination Degrees="5" />
-        <Eccentricity Value=".145" />
-        <LongitudeOfAscendingNode Degrees="280" />
-        <ArgumentOfPeriapsis Degrees="90" />
+        <Orbit>
+            <SemiMajorAxis Km="40839348.203" />
+            <Inclination Degrees="5" />
+            <Eccentricity Value=".145" />
+            <LongitudeOfAscendingNode Degrees="280" />
+            <ArgumentOfPeriapsis Degrees="90" />
+        </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <SiderealPeriod Days="3" Minutes="11" Seconds="22"/>
+            <AxialTilt Degrees="25.19" />
+            <AxialAlignment Degrees="0" />
+        </Rotation>
         <Diffuse Path="Textures/PlanetTextures/Dres/Dres_Color.png" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Dres/Dres_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/PlanetTextures/Dres/Dres_Height.png" Category="Terrain">
@@ -2338,19 +2357,23 @@
 
     <AtmosphericBody Id="Jool" Parent="Kerbol">	
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="	68773560.32" />
-        <Inclination Degrees="1.304" />
-        <Eccentricity Value="0.05" />
-        <LongitudeOfAscendingNode Degrees="52" />
-        <ArgumentOfPeriapsis Degrees="0.01" />
+        <Orbit>
+            <SemiMajorAxis Km="	68773560.32" />
+            <Inclination Degrees="1.304" />
+            <Eccentricity Value="0.05" />
+            <LongitudeOfAscendingNode Degrees="52" />
+            <ArgumentOfPeriapsis Degrees="0.01" />
+        </Orbit>
         <MeanAnomalyAtEpoch Degrees="5.7" />
         <MeanRadius Km="6000" />
         <Mass Kg="4233212700000000000000000" />
         <Diffuse Id="JoolDiffuse" Path="Textures/PlanetTextures/Jool/Jool_Diffuse.dds" Category="Terrain"/>
         <Color R="0.08" G="0.47" B="0.2" />
-        <Period Hours="9" Minutes="55" Seconds="30"/>
-        <AxialTilt Degrees="3.13" />
-        <AxialAlignment Degrees="0" />
+        <Rotation DefinitionFrame="Ecliptic">
+            <SiderealPeriod Hours="9" Minutes="55" Seconds="30"/>
+            <AxialTilt Degrees="3.13" />
+            <AxialAlignment Degrees="0" />
+        <Rotation>
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -2859,12 +2882,13 @@
     </AtmosphericBody>
     <TerrestrialBody Id="Pol" Parent="Jool">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="	179890" />
-        <TidallyLocked Value="true" />
-        <Inclination Degrees="4.25" />
-        <Eccentricity Value="0.171" />
-        <LongitudeOfAscendingNode Degrees="2" />
-        <ArgumentOfPeriapsis Degrees="15" />
+        <Orbit>
+            <SemiMajorAxis Km="	179890" />
+            <Inclination Degrees="4.25" />
+            <Eccentricity Value="0.171" />
+            <LongitudeOfAscendingNode Degrees="2" />
+            <ArgumentOfPeriapsis Degrees="15" />
+        </Orbit>
         <MeanAnomalyAtEpoch Degrees="51.5" />
         <Diffuse Path="Textures/PlanetTextures/Jool/Pol/Pol_Color.png" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Jool/Pol/Pol_Normal.dds" Category="Terrain"/>
@@ -2874,13 +2898,14 @@
         </Height>
         <MeanRadius Km="44" />
         <Mass Kg="10813507000000000000" />
-        <Period Days="1" Hours="18" Minutes="27" Seconds="21"/>
+        <Rotation DefinitionFrame="Ecliptic">
+            <SiderealPeriod Days="1" Hours="18" Minutes="27" Seconds="21"/>
+        </Rotation>
         <Color R="0.8" G="0.75" B="0.57" />
     </TerrestrialBody>
     <TerrestrialBody Id="Vall" Parent="Jool">
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="43152" />
-        <TidallyLocked Value="true" />
         <Inclination Degrees="0" />
         <Eccentricity Value="0" />
         <LongitudeOfAscendingNode Degrees="0" />
@@ -2894,19 +2919,28 @@
         </Height>
         <MeanRadius Km="300" />
         <Mass Kg="3108765500000000000000" />
-        <Period Days="3" Hours="13" Minutes="13" Seconds="26"/>
-        <AxialTilt Degrees="0.1" />
-        <AxialAlignment Degrees="0" />
+        <Rotation DefinitionFrame="Ecliptic">
+            <Period Days="3" Hours="13" Minutes="13" Seconds="26"/>
+            <AxialTilt Degrees="0.1" />
+            <AxialAlignment Degrees="0" />
+        </Rotation>
         <Color R="0.95" G="0.78" B="0.64" />
     </TerrestrialBody>
     <TerrestrialBody Id="Tylo" Parent="Jool">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="68500" />
-        <TidallyLocked Value="true" />
-        <Inclination Degrees="0.025" />
-        <Eccentricity Value="0" />
-        <LongitudeOfAscendingNode Degrees="0" />
-        <ArgumentOfPeriapsis Degrees="0" />
+        <Orbit>
+            <SemiMajorAxis Km="68500" />
+            <Inclination Degrees="0.025" />
+            <Eccentricity Value="0" />
+            <LongitudeOfAscendingNode Degrees="0" />
+            <ArgumentOfPeriapsis Degrees="0" />
+        </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <Tilt Degrees="1.528734" />
+            <Azimuth Degrees="-15.3758" />
+            <InitialParentFacingLongitude Degrees="352.990171" />
+            <SiderealPeriod Days="7" Hours="3" Minutes="43" Seconds="12"/>
+        </Rotation>
         <Diffuse Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Color.png" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Height.png" Category="Terrain">
@@ -2916,18 +2950,18 @@
         <MeanAnomalyAtEpoch Degrees="180" />
         <MeanRadius Km="600" />
         <Mass Kg="42332127000000000000000" />
-        <Period Days="7" Hours="3" Minutes="43" Seconds="12"/>
         <Color R="0.66" G="0.59" B="0.38" />
     </TerrestrialBody>
     <TerrestrialBody Id="Bop" Parent="Jool">
         <MeshCollection Id="Asteroid"/>
-        <SemiMajorAxis Km="	128500" />
-        <TidallyLocked Value="true" />
-        <Inclination Degrees="15" />
-        <Eccentricity Value="0.235" />
-        <LongitudeOfAscendingNode Degrees="10" />
-        <ArgumentOfPeriapsis Degrees="25" />
-        <MeanAnomalyAtEpoch Degrees="51.56" />
+        <Orbit>
+            <SemiMajorAxis Km="	128500" />
+            <Inclination Degrees="15" />
+            <Eccentricity Value="0.235" />
+            <LongitudeOfAscendingNode Degrees="10" />
+            <ArgumentOfPeriapsis Degrees="25" />
+            <MeanAnomalyAtEpoch Degrees="51.56" />
+        </Orbit>
         <Diffuse Path="Textures/PlanetTextures/Jool/Bop/Bop_Diffuse.png" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Jool/Bop/Bop_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/PlanetTextures/Jool/Bop/Bop_Height.png" Category="Terrain">
@@ -2936,25 +2970,33 @@
         </Height>
         <MeanRadius Km="65" />
         <Mass Kg="37261090000000000000" />
-        <Period Days="16" Hours="16" Minutes="32" Seconds="10"/>
+        <Rotation DefinitionFrame="Ecliptic">
+            <Period Days="16" Hours="16" Minutes="32" Seconds="10"/>
+        </Rotation>
         <Color R="0.66" G="0.59" B="0.38" />
     </TerrestrialBody>
 
     <AtmosphericBody Id="Laythe" Parent="Jool">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="27184" />
-        <Inclination Degrees="0.374" />
-        <Eccentricity Value="0.0032" />
-        <TidallyLocked Value="true" />
-        <LongitudeOfAscendingNode Degrees="85.1" />
-        <ArgumentOfPeriapsis Degrees="54.1" />
-        <MeanAnomalyAtEpoch Degrees="141.6" />
+        <Orbit>
+            <SemiMajorAxis Km="27184" />
+            <Inclination Degrees="0.374" />
+            <Eccentricity Value="0.0032" />
+            <LongitudeOfAscendingNode Degrees="85.1" />
+            <ArgumentOfPeriapsis Degrees="54.1" />
+            <MeanAnomalyAtEpoch Degrees="141.6" />
+        </Orbit>
         <Diffuse Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Color.png" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Normal.dds" Power="0.4" Category="Terrain"/>
         <Height Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Height.png" Category="Terrain">
             <Maximum Km="2"/>
             <Minimum Km="-0.05"/>
         </Height>
+        <Rotation DefinitionFrame="Ecliptic">
+            <SiderealPeriod Days="3" Minutes="11" Seconds="22"/>
+            <AxialTilt Degrees="25.19" />
+            <AxialAlignment Degrees="0" />
+        </Rotation>
 
         <Ocean>
             <Level Km="0" />
@@ -3298,12 +3340,19 @@
 
     <TerrestrialBody Id="Eeloo" Parent="Kerbol">
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="	90118820" />
-        <Inclination Degrees="6.15" />
-        <Eccentricity Value="0.26" />
-        <LongitudeOfAscendingNode Degrees="50" />
-        <ArgumentOfPeriapsis Degrees="260" />
-        <MeanAnomalyAtEpoch Degrees="180" />
+        <Orbit>
+            <SemiMajorAxis Km="	90118820" />
+            <Inclination Degrees="6.15" />
+            <Eccentricity Value="0.26" />
+            <LongitudeOfAscendingNode Degrees="50" />
+            <ArgumentOfPeriapsis Degrees="260" />
+            <MeanAnomalyAtEpoch Degrees="180" />
+        </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <SiderealPeriod Days="3" Minutes="11" Seconds="22"/>
+            <AxialTilt Degrees="25.19" />
+            <AxialAlignment Degrees="0" />
+        </Rotation>s
         <MeanRadius Km="210" />
         <Diffuse Path="Textures/PlanetTextures/Eeloo/Eeloo_Color.png" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Eeloo/Eeloo_Normal.dds" Category="Terrain"/>
