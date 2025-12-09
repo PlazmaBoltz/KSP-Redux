@@ -32,4 +32,9 @@
     <LoadFromLibrary Id="Rocket" Parent="Kerbin" />
     <LoadFromLibrary Id="Jeb" Parent="Kerbin" />
 
+    <!-- POIs
+    <LoadFromLibrary Id="KSC" Parent="Kerbin Core"/>
+    <LoadFromLibrary Id="Kerbin Core" Parent="Kerbin"/>
+    -->
+
 </System>

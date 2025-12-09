@@ -449,26 +449,12 @@
             <ArgumentOfPeriapsis Degrees="114.207" />
         </Orbit>
         <Rotation DefinitionFrame="Ecliptic">
-            <SiderealPeriod Hours="23.9344695944"/>
+            <SiderealPeriod Hours="24"/>
             <Tilt Degrees="23.441522" />
             <Azimuth Degrees="-0.363633" />
             <InitialParentFacingLongitude Degrees="-118" />
         </Rotation>
         <MeshCollection Id="EarthScale"/>
-        <Orbit>
-            <SemiMajorAxis Km="13599840.256" />
-            <Inclination Degrees="0" />
-            <Eccentricity Value="0" />
-            <LongitudeOfAscendingNode Degrees="3.14" />
-            <ArgumentOfPeriapsis Degrees="114.207" />
-            <TimeAtPeriapsis Seconds="0" />
-        </Orbit>
-        <Rotation DefinitionFrame="Ecliptic">
-            <SiderealPeriod Hours="23.9344695944"/>
-            <Tilt Degrees="0" />
-            <Azimuth Degrees="0" />
-            <InitialParentFacingLongitude Degrees="0" />
-        </Rotation>
         <Diffuse Path="Textures/PlanetTextures/Kerbin/Kerbin_Diffuse.dds" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Kerbin/Kerbin_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/PlanetTextures/Kerbin/Kerbin_Height.png" Category="Terrain">
@@ -2538,5 +2524,49 @@
         </Height>
         <Mass Kg="1114922400000000000000" />
         <Color R="0.95" G="0.78" B="0.64" />
+    </TerrestrialBody>
+
+
+    <!-- POIs -->
+    <TerrestrialBody Id="Kerbin Core" Parent="Kerbin">
+        <MeshCollection Id="Default"/>
+        <Orbit>
+            <SemiMajorAxis M="01" />
+            <Inclination Degrees="0" />
+            <Eccentricity Value="0" />
+            <LongitudeOfAscendingNode Degrees="0" />
+            <ArgumentOfPeriapsis Degrees="0" />
+            <TimeAtPeriapsis Seconds="0" />
+        </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <IsTidallyLocked Value="false" />
+            <SiderealPeriod Days="2" Hours="16" Minutes="32" Seconds="10"/>
+            <Tilt Degrees="0" />
+            <Azimuth Degrees="0" />
+            <InitialParentFacingLongitude Degrees="0" />
+        </Rotation>
+        <MeanRadius M="1" />
+        <Mass Kg="1.7116e+19" />
+        <Color R="0" G="0" B="0" />
+    </TerrestrialBody>
+    <TerrestrialBody Id="KSC" Parent="Kerbin Core">
+        <MeshCollection Id="Default"/>
+        <Orbit>
+            <SemiMajorAxis Km="600" />
+            <Inclination Degrees="-23.5" />
+            <Eccentricity Value="0" />
+            <LongitudeOfAscendingNode Degrees="0" />
+            <ArgumentOfPeriapsis Degrees="0" />
+            <TimeAtPeriapsis Seconds="4200" />
+        </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <IsTidallyLocked Value="true" />
+            <Tilt Degrees="0" />
+            <Azimuth Degrees="0" />
+            <InitialParentFacingLongitude Degrees="0" />
+        </Rotation>
+        <MeanRadius M="100" />
+        <Mass Kg="1" />
+        <Color R="0" G="0" B="0" />
     </TerrestrialBody>
 </Assets>
