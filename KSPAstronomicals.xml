@@ -415,24 +415,33 @@
         <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
     </Vehicle>
 
-    <KittenEva Id="Jeb" Parent="Kerbin">
+    <KittenEva Id="Hunter" Parent="Earth">
         <Character Id="HunterKitten"/>
         <PartRef InstanceOf="KittenBackPackPart">
         </PartRef>
+        <SituationRef InstanceOf="HunterStartingSituation"/>        
+        <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
+        <BodyRates X="0" Y="-0.0011657209075534262" Z="0" />
+        <Color R="0.37" G="0.85" B="0" />
+        <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
+    </KittenEva>
 
-        <Orbit>
-            <SemiMajorAxis Km="6713" />
-            <Inclination Degrees="28.87" />
-            <Eccentricity Value="0.0077" />
-            <LongitudeOfAscendingNode Degrees="60.48" />
-            <ArgumentOfPeriapsis Degrees="30.003" />
-            <TimeAtPeriapsis Minutes="-20" />
-        </Orbit>
+    <KittenEva Id="Banjo" Parent="Earth">
+        <Character Id="BanjoKitten"/>
+        <PartRef InstanceOf="KittenBackPackPart">
+        </PartRef>
+        <SituationRef InstanceOf="BanjoStartingSituation"/>        
+        <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
+        <BodyRates X="0" Y="-0.0011657209075534262" Z="0" />
+        <Color R="0.37" G="0.85" B="0" />
+        <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
+    </KittenEva>
 
-        <MeanRadius M="1.5" />
-        <MassSpecificPMI X="0.5" Y="0.5" Z="0.25" />
-        <Mass Kg="50" />
-        <PropellantMass Kg="20" />
+    <KittenEva Id="Polaris" Parent="Earth">
+        <Character Id="PolarisKitten"/>
+        <PartRef InstanceOf="KittenBackPackPart">
+        </PartRef>
+        <SituationRef InstanceOf="PolarisStartingSituation"/>
         <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
         <BodyRates X="0" Y="-0.0011657209075534262" Z="0" />
         <Color R="0.37" G="0.85" B="0" />
