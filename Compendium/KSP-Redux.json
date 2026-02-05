@@ -1,0 +1,227 @@
+{
+    "CompendiumJson": "True",
+    "Compendium": {
+        "ListGroupsData": {
+            "Moons-Kerbin": {
+                "CatText": "Moons that orbit Kerbin",
+                "CatWikipediaUrl": "Kerbal_Space_Program"
+            },
+            "Moons-Duna": {
+                "CatText": "Moons that orbit Duna",
+                "CatWikipediaUrl": "Kerbal_Space_Program"
+            },
+            "Moons-Neidon": {
+                "CatText": "Moons that orbit Neidon",
+                "CatWikipediaUrl": "Kerbal_Space_Program"
+            },
+            "Moons-Urlum": {
+                "CatText": "Moons that orbit Urlum",
+                "CatWikipediaUrl": "Kerbal_Space_Program"
+            },
+            "Moons-Sarnus": {
+                "CatText": "Moons that orbit Sarnus",
+                "CatWikipediaUrl": "Kerbal_Space_Program"
+            },
+            "Moons-Jool": {
+                "CatText": "Moons that orbit Jool",
+                "CatWikipediaUrl": "Kerbal_Space_Program"
+            },
+            "Moons-Eve": {
+                "CatText": "Moons that orbit Eve. So really just Gilly.",
+                "CatWikipediaUrl": "Kerbal_Space_Program"
+            }
+        },
+        "Moho": {
+            "ListGroups": [ "Planets" ],
+            "OrbitLineGroup": "Planets",
+            "Text": "Moho figures in Kerbal mythology as a fiery place with oceans of flowing lava. In reality however, it's much less interesting. Scientists speculate about possible ways to make it ''awesome like in the stories''. Some of those ideas have led to new breakthroughs in aerospace technology.",
+            "Factoids": [ "Moho has a deep hole exactly on the north pole." ]
+        },
+        "Eve": {
+            "ListGroups": [ "Planets" ],
+            "OrbitLineGroup": "Planets",
+            "Text": "Eve is certainly the purplest object in the solar system. It’s one of the larger, most visible objects, mainly because of its very, very purple tint.",
+            "Factoids": [ "Eve has an incredibly thick atmopshere, being infamous for difficult landings and launches." ]
+        },
+        "Gilly": {
+            "ListGroups": [ "Moons-Eve" ],
+            "OrbitLineGroup": "Moons-Eve",
+            "Text": "Gilly is a lumpy rock wandering around the orbit of Eve. It’s by far the smallest natural satellite that the Kerbal Astronomical Society has discovered.",
+            "Factoids": [ "Gilly is the smallest object in the system." ]
+        },
+        "Kerbin": {
+            "ListGroups": [ "Planets" ],
+            "OrbitLineGroup": "Planets",
+            "Text": "A unique world, Kerbin has flat plains, soaring mountains and wide, blue oceans. Home to the Kerbals, it has just the right conditions to support a vast, seemingly undepletable population of the eager green creatures.",
+            "Factoids": [ "" ]
+        },
+        "Mun": {
+            "ListGroups": [ "Moons-Kerbin" ],
+            "OrbitLineGroup": "Moons-Kerbin",
+            "Text": "The Mun, is a large satellite orbiting Kerbin. It is mostly gray in appearance, with craters of various sizes dotting its otherwise smooth surface.",
+            "Factoids": [ "" ]
+        },
+        "Minmus": {
+            "ListGroups": [ "Moons-Kerbin" ],
+            "OrbitLineGroup": "Moons-Kerbin",
+            "Text": "Minmus is the smallest moon orbiting Kerbin. From the surface of Kerbin, it can be seen on clear days as a tiny blue speck in the sky.",
+            "Factoids": [ "" ]
+        },
+        "Duna": {
+            "ListGroups": [ "Planets" ],
+            "OrbitLineGroup": "Planets",
+            "Text": "Also known as the red dot that you can see if you squint at it really hard, Duna has long been a wonder to Kerbalkind. The planet has been held in much awe, due to its striking red color and stark contrast to the color green.",
+            "Factoids": [ "" ]
+        },
+        "Ike": {
+            "ListGroups": [ "Moons-Duna" ],
+            "OrbitLineGroup": "Moons-Duna",
+            "Text": "Ike is a relatively large, grey object occasionally seen orbiting Duna. Scientists have postulated that Ike is seemingly perfectly positioned to sneakily interfere with any object that presumes to come orbiting near its parent.",
+            "Factoids": [ "" ]
+        },
+        "Dres": {
+            "ListGroups": [ "Dwarf Planets" ],
+            "OrbitLineGroup": "Dwarf Planets",
+            "Text": "Dres is a very small planet. It was the first planet considered to be a dwarf. It’s orbit is highly irregular and together with it’s size it took a long time to discover since half the time it was not where scientists expected to find a planet.",
+            "Factoids": [ "There is a movement on Kerbin to destroy Dres. When the head of the Kerbal Space Program was asked about it, he simply responds ''What's Dres?''" ]
+        },
+        "Jool": {
+            "ListGroups": [ "Planets", "Gas Giants" ],
+            "OrbitLineGroup": "Planets",
+            "Text": "Jool is particularly known for being a rather large, predominantly green planet. Kerbalkind has longed to visit it since it was first spotted in the sky. Philosophers reason that the swirling green planet must be a really nice place to visit, on account of its wholesome coloration.",
+            "Factoids": [ "" ]
+        },
+        "Laythe": {
+            "ListGroups": [ "Moons-Jool" ],
+            "OrbitLineGroup": "Moons-Jool",
+            "Text": "When Laythe was first discovered, it was not entered in the records because the scientist in charge thought he was looking at Kerbin. Luckily this error was corrected when a plucky intern informed him that ''telescopes don’t work that way.'' The intern was shortly afterwards ''promoted'' and moved to the experimental rocket testing program.",
+            "Factoids": [ "" ]
+        },
+        "Vall": {
+            "ListGroups": [ "Moons-Jool" ],
+            "OrbitLineGroup": "Moons-Jool",
+            "Text": "Vall was one of the last Moons of Jool to be discovered. Frustrated scientists kept attempting to wipe it off the lenses of their telescopes. Eventually after a rash of returned telescopes, Advanced Optics Co. finally decided to just tell them it was an actual object in the sky.",
+            "Factoids": [ "" ]
+        },
+        "Tylo": {
+            "ListGroups": [ "Moons-Jool" ],
+            "OrbitLineGroup": "Moons-Jool",
+            "Text": "Tylo was the first moon of Jool to be discovered by the Kerbal Astronomical Society. After many failed attempts to take a flawless picture of Jool to hang on the office walls, it was finally discovered that the wandering white smear was indeed a moon.",
+            "Factoids": [ "" ]
+        },
+        "Bop": {
+            "ListGroups": [ "Moons-Jool" ],
+            "OrbitLineGroup": "Moons-Jool",
+            "Text": "Bop is a small moon in the vicinity of Jool. In Kerbal mythology, Bop is believed to be the home of the Kraken, a mischievous creature said to play with the ships of hapless explorers, by spinning them out of control until torn asunder, then casting them into oblivion.",
+            "Factoids": [ "" ]
+        },
+        "Pol": {
+            "ListGroups": [ "Moons-Jool" ],
+            "OrbitLineGroup": "Moons-Jool",
+            "Text": "This moon was especially hard to spot, as it looks just like a pollen grain, particularly when observed through telescopes based near dusty fields.",
+            "Factoids": [ "" ]
+        },
+        "Eeloo": {
+            "ListGroups": [ "Dwarf Planets" ],
+            "OrbitLineGroup": "Dwarf Planets",
+            "Text": "There’s been a considerable amount of controversy around the status of Eeloo as being a proper planet or a just “lump of ice going around the Sun”. The debate is still ongoing, since most academic summits held to address the issue have devolved into, on good days, petty name calling, and on worse ones, all-out brawls.",
+            "Factoids": [ "Eeloo is made of mostly ice." ]
+        },
+        "Sarnus": {
+            "ListGroups": [ "Planets", "Gas Giants" ],
+            "OrbitLineGroup": "Planets",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Hale": {
+            "ListGroups": [ "Moons-Sarnus" ],
+            "OrbitLineGroup": "Moons-Sarnus",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Ovok": {
+            "ListGroups": [ "Moons-Sarnus" ],
+            "OrbitLineGroup": "Moons-Sarnus",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Eeloo ": {
+            "ListGroups": [ "Moons-Sarnus" ],
+            "OrbitLineGroup": "Moons-Sarnus",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Slate": {
+            "ListGroups": [ "Moons-Sarnus" ],
+            "OrbitLineGroup": "Moons-Sarnus",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Tekto": {
+            "ListGroups": [ "Moons-Sarnus" ],
+            "OrbitLineGroup": "Moons-Sarnus",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Urlum": {
+            "ListGroups": [ "Planets", "Gas Giants" ],
+            "OrbitLineGroup": "Planets",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Priax": {
+            "ListGroups": [ "Moons-Urlum" ],
+            "OrbitLineGroup": "Moons-Urlum",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Polta": {
+            "ListGroups": [ "Moons-Urlum" ],
+            "OrbitLineGroup": "Moons-Urlum",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Wal": {
+            "ListGroups": [ "Moons-Urlum" ],
+            "OrbitLineGroup": "Moons-Urlum",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Tal": {
+            "ListGroups": [ "Moons-Urlum" ],
+            "OrbitLineGroup": "Moons-Urlum",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Neidon": {
+            "ListGroups": [ "Planets", "Gas Giants" ],
+            "OrbitLineGroup": "Planets",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Thatmo": {
+            "ListGroups": [ "Moons-Neidon" ],
+            "OrbitLineGroup": "Moons-Neidon",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Nissee": {
+            "ListGroups": [ "Moons-Neidon" ],
+            "OrbitLineGroup": "Moons-Neidon",
+            "Text": "tba",
+            "Factoids": [ "" ]
+        },
+        "Plock": {
+            "ListGroups": [ "Dwarf Planets" ],
+            "OrbitLineGroup": "Dwarf Planets",
+            "Text": "Plock is the sister planet to Karen",
+            "Factoids": [ "" ]
+        },
+        "Karen": {
+            "ListGroups": [ "Dwarf Planets" ],
+            "OrbitLineGroup": "Dwarf Planets",
+            "Text": "Karen is the sister planet to Plock",
+            "Factoids": [ "" ]
+        }
+    }
+}

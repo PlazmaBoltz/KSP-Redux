@@ -29,8 +29,38 @@
     <LoadFromLibrary Id="Kerbin" Parent="Kerbol"/>
     <LoadFromLibrary Id="Mun" Parent="Kerbin"/>
     <LoadFromLibrary Id="Minmus" Parent="Kerbin"/>
-    <LoadFromLibrary Id="Rocket" Parent="Kerbin" />
-    <LoadFromLibrary Id="Hunter" Parent="Kerbin" />
+    <LoadVehicleFromLibrary Id="Gemini7" Parent="Kerbin">
+        <SituationRef InstanceOf="Gemini7StartingSituation"/>
+        <Body2Cce X="1.815" Y="0.0091" Z="1.9134" />
+        <BodyRates X="0" Y="0.0011657209075534262" Z="0" />
+        <Color R="0.33" G="0.95" B="0" />
+    </LoadVehicleFromLibrary>
+    <LoadVehicleFromLibrary Id="Rocket" Parent="Kerbin">        
+        <Color R="0.33" G="0.95" B="0" />
+        <SituationRef InstanceOf="RocketStartingSituation"/>
+        <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
+    </LoadVehicleFromLibrary>
+    <LoadVehicleFromLibrary Id="Hunter" Parent="Kerbin">
+        <SituationRef InstanceOf="HunterStartingSituation"/>
+        <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
+        <BodyRates X="0" Y="-0.0011657209075534262" Z="0" />
+        <Color R="0.37" G="0.85" B="0" />
+        <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
+    </LoadVehicleFromLibrary>
+    <LoadVehicleFromLibrary Id="Banjo" Parent="Kerbin">
+        <SituationRef InstanceOf="BanjoStartingSituation"/>
+        <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
+        <BodyRates X="0" Y="-0.0011657209075534262" Z="0" />
+        <Color R="0.37" G="0.85" B="0" />
+        <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
+    </LoadVehicleFromLibrary>
+    <LoadVehicleFromLibrary Id="Polaris" Parent="Kerbin">
+        <SituationRef InstanceOf="PolarisStartingSituation"/>
+        <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
+        <BodyRates X="0" Y="-0.0011657209075534262" Z="0" />
+        <Color R="0.37" G="0.85" B="0" />
+        <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
+    </LoadVehicleFromLibrary>
     <LoadFromLibrary Id="Duna" Parent="Kerbol" />
     <LoadFromLibrary Id="Ike" Parent="Duna" />
     <LoadFromLibrary Id="Eve" Parent="Kerbol" />
