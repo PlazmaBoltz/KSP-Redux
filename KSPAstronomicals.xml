@@ -23,7 +23,7 @@
             <Azimuth Degrees="-0.363633" />
             <InitialParentFacingLongitude Degrees="-118" />
         </Rotation>
-        <MeshCollection Id="EarthScale"/>
+        <MeshCollection Id="KSP-Default"/>
         <Diffuse Path="Textures/PlanetTextures/Kerbin/Kerbin_Diffuse.ktx2" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Kerbin/Kerbin_Normal.ktx2" Category="Terrain"/>
         <Height Path="Textures/PlanetTextures/Kerbin/Kerbin_Height.ktx2" Category="Terrain">
@@ -377,7 +377,7 @@
     </AtmosphericBody>   
 
     <TerrestrialBody Id="Mun" Parent="Kerbin">  
-        <MeshCollection Id="Asteroid"/>
+        <MeshCollection Id="KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="12000" />
             <Inclination Degrees="0" />
@@ -405,7 +405,7 @@
 
 
     <TerrestrialBody Id="Minmus" Parent="Kerbin">   
-        <MeshCollection Id= "Asteroid"/>
+        <MeshCollection Id= "KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="47000" />
             <Inclination Degrees="6" />
@@ -435,7 +435,7 @@
 
 
     <TerrestrialBody Id="Moho" Parent="Kerbol">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="5263138.304" />
             <Inclination Degrees="7" />
@@ -447,7 +447,7 @@
         <Rotation DefinitionFrame="Ecliptic">
             <IsTidallyLocked Value="false" />
             <SiderealPeriod Days="58" Hours="15" Minutes="30" Seconds="14"/>
-            <Tilt Degrees="0" />
+            <Tilt Degrees="12.8" />
             <Azimuth Degrees="0" />
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
@@ -464,7 +464,7 @@
 
 
     <AtmosphericBody Id="Eve" Parent="Kerbol">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="9832684.544" />
             <Inclination Degrees="3.39458" />
@@ -828,7 +828,7 @@
 
 
     <TerrestrialBody Id="Gilly" Parent="Eve">
-        <MeshCollection Id="Asteroid"/>
+        <MeshCollection Id="KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="31500" />
             <Inclination Degrees="12" />
@@ -856,7 +856,7 @@
 
 
     <AtmosphericBody Id="Duna" Parent="Kerbol">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="20726155.264" />
             <Inclination Degrees="0.06" />
@@ -1087,7 +1087,7 @@
 
 
     <TerrestrialBody Id="Dres" Parent="Kerbol">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="KSP-Default"/>
         <SemiMajorAxis Km="40839348.203" />
         <Inclination Degrees="5" />
         <Eccentricity Value=".145" />
@@ -1118,6 +1118,7 @@
         <MeanRadius Km="138" />
         <Mass kg="321909370000000000000" />
         <Color R="0.72" G="0.72" B="0.72" />
+        <SphereOfInfluence Km="32832" />
     </TerrestrialBody>
 
     <AtmosphericBody Id="Jool" Parent="Kerbol">	
@@ -1161,8 +1162,8 @@
         </Atmosphere>
 
         <Clouds>
-            <OrbitTransitionStartAltitude Km="5000" />
-            <OrbitTransitionEndAltitude Km="3000000000" />
+            <OrbitTransitionStartAltitude Km="50000" />
+            <OrbitTransitionEndAltitude Km="70000" />
             <MaxShadowsAltitude Km="9000" />
             <VolumetricsFlickerReductionDistance Km="10000.0"/>
             <Layer Id="JoolLowerClouds">
@@ -1648,7 +1649,7 @@
         </Clouds>
     </AtmosphericBody>
     <TerrestrialBody Id="Pol" Parent="Jool">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="179890" />
             <Inclination Degrees="4.25" />
@@ -1675,7 +1676,7 @@
         <Color R="0.8" G="0.75" B="0.57" />
     </TerrestrialBody>
     <TerrestrialBody Id="Vall" Parent="Jool">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="43152" />
             <Inclination Degrees="0" />
@@ -1702,7 +1703,7 @@
         <Color R="0.95" G="0.78" B="0.64" />
     </TerrestrialBody>
     <TerrestrialBody Id="Tylo" Parent="Jool">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="68500" />
             <Inclination Degrees="0.025" />
@@ -1730,7 +1731,7 @@
         <Color R="0.66" G="0.59" B="0.38" />
     </TerrestrialBody>
     <TerrestrialBody Id="Bop" Parent="Jool">
-        <MeshCollection Id="Asteroid"/>
+        <MeshCollection Id="KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="128500" />
             <Inclination Degrees="15" />
@@ -1758,7 +1759,7 @@
     </TerrestrialBody>
 
     <AtmosphericBody Id="Laythe" Parent="Jool">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="27184" />
             <Inclination Degrees="0.374" />
@@ -1841,8 +1842,8 @@
             </Physical>
         </Atmosphere>
         <Clouds>
-            <OrbitTransitionStartAltitude Km="30" />
-            <OrbitTransitionEndAltitude Km="50" />
+            <OrbitTransitionStartAltitude Km="600" />
+            <OrbitTransitionEndAltitude Km="1200" />
             <MaxShadowsAltitude Km="100" />
             <VolumetricsFlickerReductionDistance Km="0"/>
             <Layer Id="LaytheClouds">
@@ -2126,7 +2127,7 @@
     </AtmosphericBody>
 
     <TerrestrialBody Id="Eeloo" Parent="Kerbol">
-        <MeshCollection Id="Default"/>
+        <MeshCollection Id="KSP-Default"/>
         <Orbit>
             <SemiMajorAxis Km="90118820" />
             <Inclination Degrees="6.15" />
@@ -2149,7 +2150,7 @@
             <Maximum Km="3.8734"/>
             <Minimum Km="-0.3869"/>
         </Height>
-        <Mass Kg="1114922400000000000000" />
+        <Mass Kg="111492240000000000000000" />
         <Color R="0.95" G="0.78" B="0.64" />
     </TerrestrialBody>
 </Assets>
