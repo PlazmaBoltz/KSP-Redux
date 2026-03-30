@@ -845,9 +845,9 @@
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
         <MeanRadius Km="6.2" />
-        <Diffuse Path="Textures/PlanetTextures/Eve/Gilly/Gilly_Color.png" Category="Terrain"/>
-        <Normal Path="../Core/Textures/Phobos_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Eve/Gilly/Gilly_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Eve/Gilly/Gilly_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Eve/Gilly/Gilly_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Eve/Gilly/Gilly_Height.ktx2" Category="Terrain">
             <Maximum Km="6.4006"/>
             <Minimum Km="1.4932"/>
         </Height>
