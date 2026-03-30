@@ -452,9 +452,9 @@
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
         <MeanRadius Km="250" />
-        <Diffuse Path="Textures/PlanetTextures/Moho/Moho_Color.dds" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Moho/Moho_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Moho/Moho_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Moho/Moho_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Moho/Moho_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Moho/Moho_Height.ktx2" Category="Terrain">
             <Maximum Km="6.8173"/>
             <Maximum Km="0.028"/>
         </Height>
@@ -481,9 +481,9 @@
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
         <MeanRadius Km="700" />
-        <Diffuse Id="EveDiffuse" Path="Textures/PlanetTextures/Eve/Eve_Color.dds" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Eve/Eve_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Eve/Eve_Height.png" Category="Terrain">
+        <Diffuse Id="EveDiffuse" Path="Textures/PlanetTextures/Eve/Eve_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Eve/Eve_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Eve/Eve_Height.ktx2" Category="Terrain">
             <Maximum Km="7.526"/>
             <Minimum Km="-1.8768"/>
         </Height>
@@ -872,9 +872,9 @@
             <Azimuth Degrees="0" />
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
-        <Diffuse Path="Textures/PlanetTextures/Duna/Duna_Diffuse.png" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Duna/Duna_Normal.dds" Power="0.1" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Duna/Duna_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Duna/Duna_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Duna/Duna_Normal.ktx2" Power="0.1" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Duna/Duna_Height.ktx2" Category="Terrain">
             <Maximum Km="8.2643"/>
             <Minimum Km="0.1245"/>
         </Height>
@@ -1069,9 +1069,9 @@
             <Azimuth Degrees="0" />
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
-        <Diffuse Path="Textures/PlanetTextures/Duna/Ike/Ike_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Duna/Ike/Ike_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Duna/Ike/Ike_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Duna/Ike/Ike_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Duna/Ike/Ike_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Duna/Ike/Ike_Height.ktx2" Category="Terrain">
             <Maximum Km="12.7351"/>
             <Minimum Km="0.0731"/>
         </Height>
@@ -1108,9 +1108,9 @@
             <Azimuth Degrees="0" />
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
-        <Diffuse Path="Textures/PlanetTextures/Dres/Dres_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Dres/Dres_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Dres/Dres_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Dres/Dres_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Dres/Dres_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Dres/Dres_Height.ktx2" Category="Terrain">
             <Maximum Km="5.6697"/>
             <Minimum Km="0.0254"/>
         </Height>
@@ -1139,7 +1139,7 @@
         </Rotation>
         <MeanRadius Km="6000" />
         <Mass Kg="4233212700000000000000000" />
-        <Diffuse Id="JoolDiffuse" Path="Textures/PlanetTextures/Jool/Jool_Diffuse.dds" Category="Terrain"/>
+        <Diffuse Id="JoolDiffuse" Path="Textures/PlanetTextures/Jool/Jool_Diffuse.ktx2" Category="Terrain"/>
         <Color R="0.08" G="0.47" B="0.2" />
         <Atmosphere>
             <Visual>
@@ -1664,9 +1664,9 @@
             <Azimuth Degrees="0" />
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
-        <Diffuse Path="Textures/PlanetTextures/Jool/Pol/Pol_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Jool/Pol/Pol_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Jool/Pol/Pol_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Jool/Pol/Pol_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Jool/Pol/Pol_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Jool/Pol/Pol_Height.ktx2" Category="Terrain">
             <Maximum Km="5.5902"/>
             <Minimum Km="0.7835"/>
         </Height>
@@ -1691,9 +1691,9 @@
             <Azimuth Degrees="0" />
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
-        <Diffuse Path="Textures/PlanetTextures/Jool/Vall/Vall_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Jool/Vall/Vall_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Jool/Vall/Vall_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Jool/Vall/Vall_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Jool/Vall/Vall_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Jool/Vall/Vall_Height.ktx2" Category="Terrain">
             <Maximum Km="7.9891"/>
             <Minimum Km="-0.3943"/>
         </Height>
@@ -1718,9 +1718,9 @@
             <Azimuth Degrees="0" />
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
-        <Diffuse Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Jool/Tylo/Tylo_Height.ktx2" Category="Terrain">
             <Maximum Km="11.2825"/>
             <Minimum Km="0"/>
         </Height>
@@ -1746,9 +1746,9 @@
             <Azimuth Degrees="0" />
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
-        <Diffuse Path="Textures/PlanetTextures/Jool/Bop/Bop_Diffuse.png" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Jool/Bop/Bop_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Jool/Bop/Bop_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Jool/Bop/Bop_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Jool/Bop/Bop_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Jool/Bop/Bop_Height.ktx2" Category="Terrain">
             <Maximum Km="21.754"/>
             <Minimum Km="2.0032"/>
         </Height>
@@ -1773,9 +1773,9 @@
             <Azimuth Degrees="0" />
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
-        <Diffuse Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Normal.dds" Power="0.4" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Normal.ktx2" Power="0.4" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Jool/Laythe/Laythe_Height.ktx2" Category="Terrain">
             <Maximum Km="2"/>
             <Minimum Km="-0.05"/>
         </Height>
@@ -2143,9 +2143,9 @@
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
         <MeanRadius Km="210" />
-        <Diffuse Path="Textures/PlanetTextures/Eeloo/Eeloo_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Eeloo/Eeloo_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Eeloo/Eeloo_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Eeloo/Eeloo_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Eeloo/Eeloo_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Eeloo/Eeloo_Height.ktx2" Category="Terrain">
             <Maximum Km="3.8734"/>
             <Minimum Km="-0.3869"/>
         </Height>
