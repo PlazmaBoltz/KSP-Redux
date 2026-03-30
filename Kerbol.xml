@@ -62,9 +62,4 @@
         <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
     </LoadVehicleFromLibrary>
 
-    <!-- POIs
-    <LoadFromLibrary Id="KSC" Parent="Kerbin Core"/>
-    <LoadFromLibrary Id="Kerbin Core" Parent="Kerbin"/>
-    -->
-
 </System>

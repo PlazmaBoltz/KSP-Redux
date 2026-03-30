@@ -3,7 +3,7 @@
     <StellarBody Id="Kerbol">
         <MeanRadius Km="261600" />
         <Mass Suns="0.00087827295" />
-        <Diffuse Path="Textures/PlanetTextures/Kerbol/Sol_Diffuse.jpg" Category="Terrain"/>
+        <Diffuse Path="Textures/PlanetTextures/Kerbol/Kerbol_Diffuse.ktx2" Category="Terrain"/>
         <Color R="1" G="1" B="1" />
         <Sunlight R="9" G="9" B="9" />
     </StellarBody>
@@ -24,9 +24,9 @@
             <InitialParentFacingLongitude Degrees="-118" />
         </Rotation>
         <MeshCollection Id="EarthScale"/>
-        <Diffuse Path="Textures/PlanetTextures/Kerbin/Kerbin_Diffuse.dds" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Kerbin/Kerbin_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Kerbin/Kerbin_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Kerbin/Kerbin_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Kerbin/Kerbin_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Kerbin/Kerbin_Height.ktx2" Category="Terrain">
             <Minimum Km="-1.4"/>
             <Maximum Km="6.7674"/>
         </Height>
@@ -393,9 +393,9 @@
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
         <Color R="0.33" G="0.33" B="0.33" /> <!-- used for the sprite and planetshine -->
-        <Diffuse Path="Textures/PlanetTextures/Kerbin/Mun/Mun_Color.png" Category="Terrain"/>
-        <Normal Path="Textures/PlanetTextures/Kerbin/Mun/Mun_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Kerbin/Mun/Mun_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Kerbin/Mun/Mun_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Kerbin/Mun/Mun_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Kerbin/Mun/Mun_Height.ktx2" Category="Terrain">
             <Maximum Km="7.0611"/>
             <Minimum Km="-0.2479"/>
         </Height>
@@ -422,9 +422,9 @@
             <InitialParentFacingLongitude Degrees="0" />
         </Rotation>
         <Color R="0.33" G="0.43" B="0.43" /> <!-- used for the sprite and planetshine -->
-        <Diffuse Path="Textures/PlanetTextures/Kerbin/Minmus/Minmus_Color.png" Category="Terrain"/>
-        <Normal Path="../Core/Textures/Luna_Normal.dds" Category="Terrain"/>
-        <Height Path="Textures/PlanetTextures/Kerbin/Minmus/Minmus_Height.png" Category="Terrain">
+        <Diffuse Path="Textures/PlanetTextures/Kerbin/Minmus/Minmus_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/PlanetTextures/Kerbin/Minmus/Minmus_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/PlanetTextures/Kerbin/Minmus/Minmus_Height.ktx2" Category="Terrain">
             <Maximum Km="5.7246"/>
             <Minimum Km="0"/>
         </Height>
@@ -2151,49 +2151,5 @@
         </Height>
         <Mass Kg="1114922400000000000000" />
         <Color R="0.95" G="0.78" B="0.64" />
-    </TerrestrialBody>
-
-
-    <!-- POIs -->
-    <TerrestrialBody Id="Kerbin Core" Parent="Kerbin">
-        <MeshCollection Id="Default"/>
-        <Orbit>
-            <SemiMajorAxis M="01" />
-            <Inclination Degrees="0" />
-            <Eccentricity Value="0" />
-            <LongitudeOfAscendingNode Degrees="0" />
-            <ArgumentOfPeriapsis Degrees="0" />
-            <TimeAtPeriapsis Seconds="0" />
-        </Orbit>
-        <Rotation DefinitionFrame="Ecliptic">
-            <IsTidallyLocked Value="false" />
-            <SiderealPeriod Days="2" Hours="16" Minutes="32" Seconds="10"/>
-            <Tilt Degrees="0" />
-            <Azimuth Degrees="0" />
-            <InitialParentFacingLongitude Degrees="0" />
-        </Rotation>
-        <MeanRadius M="1" />
-        <Mass Kg="1.7116e+19" />
-        <Color R="0" G="0" B="0" />
-    </TerrestrialBody>
-    <TerrestrialBody Id="KSC" Parent="Kerbin Core">
-        <MeshCollection Id="Default"/>
-        <Orbit>
-            <SemiMajorAxis Km="600" />
-            <Inclination Degrees="-23.5" />
-            <Eccentricity Value="0" />
-            <LongitudeOfAscendingNode Degrees="0" />
-            <ArgumentOfPeriapsis Degrees="0" />
-            <TimeAtPeriapsis Seconds="4200" />
-        </Orbit>
-        <Rotation DefinitionFrame="Ecliptic">
-            <IsTidallyLocked Value="true" />
-            <Tilt Degrees="0" />
-            <Azimuth Degrees="0" />
-            <InitialParentFacingLongitude Degrees="0" />
-        </Rotation>
-        <MeanRadius M="100" />
-        <Mass Kg="1" />
-        <Color R="0" G="0" B="0" />
     </TerrestrialBody>
 </Assets>
