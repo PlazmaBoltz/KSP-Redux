@@ -1111,8 +1111,8 @@
         <Diffuse Path="Textures/PlanetTextures/Dres/Dres_Diffuse.ktx2" Category="Terrain"/>
         <Normal Path="Textures/PlanetTextures/Dres/Dres_Normal.ktx2" Category="Terrain"/>
         <Height Path="Textures/PlanetTextures/Dres/Dres_Height.ktx2" Category="Terrain">
-            <Maximum Km="12.001"/>
-            <Minimum Km="0.001"/>
+            <Maximum Km="5.6697"/>
+            <Minimum Km="0.0254"/>
         </Height>
         <MeanAnomalyAtEpoch Degrees="180" />
         <MeanRadius Km="138" />
