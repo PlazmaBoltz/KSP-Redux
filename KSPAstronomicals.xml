@@ -57,7 +57,7 @@
             <Physical>
                 <SeaLevelPressure Atm="1.0"/>
                 <SeaLevelDensity KgPerM3="1.225"/>
-                <ScaleHeight Km="8"/>
+                <ScaleHeight Km="3.35"/>
             </Physical>
         </Atmosphere>
         <Ocean>
@@ -542,7 +542,7 @@
             <Physical>
                 <SeaLevelPressure Atm="5"/>
                 <SeaLevelDensity KgPerM3="50.0"/>
-                <ScaleHeight Km="6" />
+                <ScaleHeight Km="3.675" />
             </Physical>
         </Atmosphere>
         <Clouds>
@@ -903,7 +903,7 @@
             <Physical>
                 <SeaLevelPressure Atm="0.006"/>
                 <SeaLevelDensity KgPerM3="0.02"/>
-                <ScaleHeight Km="11" />
+                <ScaleHeight Km="3" />
             </Physical>
         </Atmosphere>
         <Clouds>
@@ -1116,7 +1116,7 @@
         </Height>
         <MeanAnomalyAtEpoch Degrees="180" />
         <MeanRadius Km="138" />
-        <Mass kg="321909370000000000000" />
+        <Mass Kg="321909370000000000000" />
         <Color R="0.72" G="0.72" B="0.72" />
         <SphereOfInfluence Km="32832" />
     </TerrestrialBody>
@@ -1157,7 +1157,7 @@
             <Physical>
                 <SeaLevelPressure Atm="1.0"/>
                 <SeaLevelDensity KgPerM3="0.16"/>
-                <ScaleHeight Km="75" />
+                <ScaleHeight Km="19.3" />
             </Physical>
         </Atmosphere>
 
@@ -1838,7 +1838,7 @@
             <Physical>
                 <SeaLevelPressure Atm="1"/>
                 <SeaLevelDensity KgPerM3="0.02"/>
-                <ScaleHeight Km="11" />
+                <ScaleHeight Km="2.45" />
             </Physical>
         </Atmosphere>
         <Clouds>
@@ -2122,7 +2122,7 @@
             </Layer>
         </Clouds>
         <MeanRadius Km="83.5" />
-        <Mass Zg="0.025" />
+        <Mass Kg="29397311000000000000000" />
         <Color R="0.26" G="0.55" B="0.62" />
     </AtmosphericBody>
 

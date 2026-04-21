@@ -1,16 +1,13 @@
-Version number: v1.1.2
+Version number: v1.3.2
 
 This is a mod that brings the KSP system (and Jeb) to KSA.
 
 Current Features:
 - Entire Stock System
-- A cat named Jeb
-- Outer Planets Mod (as an option)
+- Outer Planets Mod (as an submod)
 - KSP Music
 
 Planned features:
-- Better Atmospheres
-- Laythe and Eve Clouds
 - KSP Parts
 - Higher Quality Textures
 - Actual Kerbals
@@ -19,7 +16,7 @@ Planned features:
 --- HOW TO INSTALL ---
 1. Download the .zip file
 2. Unzip it
-3. Put it in your KSA directory under your Content folder
+3. Put it in your KSA directory under your Mods folder
 4. Find your manifest.toml file (also in the content folder)
 5. Insert the following into the manifest.toml file
 
@@ -36,11 +33,6 @@ enabled = true
 id = "KSP-Redux"
 enabled = true
 
-
-Change Log:
-- Removed Unused texture assets
-- Organized some planet textures
-
 --- WANT TO CONTRIBUTE? ---
 That's great! Just ping me on the KSA discord (@PlazmaBoltz) in the modding channel. I really want this to be more of a community project instead of just me and 1 other dev.
 
@@ -48,10 +40,6 @@ That's great! Just ping me on the KSA discord (@PlazmaBoltz) in the modding chan
 
 When will the receive updates?
 - It will receive updates whenever something significant is added or bug fixes are made
-
-Known Issues:
-- Eve and Laythe have no clouds
-- Sometimes planets will appear with only half of their texture
 
 
 
